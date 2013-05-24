@@ -8,7 +8,9 @@
 
 #import "RWAppDelegate.h"
 
-#import "RWMasterViewController.h"
+#import "RWDataController.h"
+
+#import "RWWorkoutsListController.h"
 
 @implementation RWAppDelegate
 
@@ -19,18 +21,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-        
-        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
-        RWMasterViewController *controller = (RWMasterViewController *)masterNavigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-    } else {
-        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-        RWMasterViewController *controller = (RWMasterViewController *)navigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
+    
+    UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
+    RWWorkoutsListController *controller = [navigationController.viewControllers objectAtIndex:0];
+    //controller.managedObjectContext = self.managedObjectContext;
+    
+    // initial database load
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults objectForKey:@"firstRun"])
+    {
+        [defaults setObject:[NSDate date] forKey:@"firstRun"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self firstRun];
     }
     return YES;
 }
@@ -156,6 +158,12 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void) firstRun
+{
+    RWDataController *dataController = [[RWDataController alloc] initWithAppDelegate:self];
+    [dataController initialDatabaseFill];
 }
 
 @end

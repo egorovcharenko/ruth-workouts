@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E959FAA174023B4001E18E4 /* workouts_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E959FA9174023B4001E18E4 /* workouts_data.plist */; };
+		0E959FAA174023B4001E18E4 /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E959FA9174023B4001E18E4 /* workouts.plist */; };
+		0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAC174A92B7001E18E4 /* RWDataController.m */; };
+		0E959FB0174A9E31001E18E4 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAF174A9E31001E18E4 /* Workout.m */; };
+		0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */; };
 		0EC9FA66173E9B2600C03DE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC9FA65173E9B2600C03DE6 /* UIKit.framework */; };
 		0EC9FA68173E9B2600C03DE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC9FA67173E9B2600C03DE6 /* Foundation.framework */; };
 		0EC9FA6A173E9B2600C03DE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC9FA69173E9B2600C03DE6 /* CoreGraphics.framework */; };
@@ -19,14 +22,18 @@
 		0EC9FA7C173E9B2600C03DE6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9FA7B173E9B2600C03DE6 /* Default@2x.png */; };
 		0EC9FA7E173E9B2600C03DE6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9FA7D173E9B2600C03DE6 /* Default-568h@2x.png */; };
 		0EC9FA81173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9FA7F173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard */; };
-		0EC9FA84173E9B2600C03DE6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9FA82173E9B2600C03DE6 /* MainStoryboard_iPad.storyboard */; };
 		0EC9FA87173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9FA85173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld */; };
-		0EC9FA8A173E9B2600C03DE6 /* RWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9FA89173E9B2600C03DE6 /* RWMasterViewController.m */; };
 		0EC9FA8D173E9B2600C03DE6 /* RWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9FA8C173E9B2600C03DE6 /* RWDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E959FA9174023B4001E18E4 /* workouts_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts_data.plist; sourceTree = "<group>"; };
+		0E959FA9174023B4001E18E4 /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
+		0E959FAB174A92B7001E18E4 /* RWDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDataController.h; sourceTree = "<group>"; };
+		0E959FAC174A92B7001E18E4 /* RWDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDataController.m; sourceTree = "<group>"; };
+		0E959FAE174A9E31001E18E4 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
+		0E959FAF174A9E31001E18E4 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
+		0E959FB2174BF536001E18E4 /* RWWorkoutsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWWorkoutsListController.h; path = ../RWWorkoutsListController.h; sourceTree = "<group>"; };
+		0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWWorkoutsListController.m; path = ../RWWorkoutsListController.m; sourceTree = "<group>"; };
 		0EC9FA62173E9B2600C03DE6 /* Ruth Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruth Workouts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC9FA65173E9B2600C03DE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0EC9FA67173E9B2600C03DE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,10 +49,7 @@
 		0EC9FA7B173E9B2600C03DE6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0EC9FA7D173E9B2600C03DE6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0EC9FA80173E9B2600C03DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		0EC9FA83173E9B2600C03DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0EC9FA86173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ruth_Workouts.xcdatamodel; sourceTree = "<group>"; };
-		0EC9FA88173E9B2600C03DE6 /* RWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWMasterViewController.h; sourceTree = "<group>"; };
-		0EC9FA89173E9B2600C03DE6 /* RWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWMasterViewController.m; sourceTree = "<group>"; };
 		0EC9FA8B173E9B2600C03DE6 /* RWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWDetailViewController.h; sourceTree = "<group>"; };
 		0EC9FA8C173E9B2600C03DE6 /* RWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E959FB1174AA656001E18E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E959FA9174023B4001E18E4 /* workouts.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		0EC9FA59173E9B2600C03DE6 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				0EC9FA94173E9BE500C03DE6 /* Data Model */,
+				0E959FB1174AA656001E18E4 /* Data */,
 				0EC9FA93173E9BD800C03DE6 /* Views */,
 				0EC9FA76173E9B2600C03DE6 /* RWAppDelegate.h */,
 				0EC9FA77173E9B2600C03DE6 /* RWAppDelegate.m */,
 				0EC9FA7F173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard */,
-				0EC9FA82173E9B2600C03DE6 /* MainStoryboard_iPad.storyboard */,
 				0EC9FA6E173E9B2600C03DE6 /* Supporting Files */,
-				0E959FA9174023B4001E18E4 /* workouts_data.plist */,
 			);
 			path = "Ruth Workouts";
 			sourceTree = "<group>";
@@ -125,8 +136,8 @@
 		0EC9FA93173E9BD800C03DE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0EC9FA88173E9B2600C03DE6 /* RWMasterViewController.h */,
-				0EC9FA89173E9B2600C03DE6 /* RWMasterViewController.m */,
+				0E959FB2174BF536001E18E4 /* RWWorkoutsListController.h */,
+				0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */,
 				0EC9FA8B173E9B2600C03DE6 /* RWDetailViewController.h */,
 				0EC9FA8C173E9B2600C03DE6 /* RWDetailViewController.m */,
 			);
@@ -137,6 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				0EC9FA85173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld */,
+				0E959FAB174A92B7001E18E4 /* RWDataController.h */,
+				0E959FAC174A92B7001E18E4 /* RWDataController.m */,
+				0E959FAE174A9E31001E18E4 /* Workout.h */,
+				0E959FAF174A9E31001E18E4 /* Workout.m */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -198,8 +213,7 @@
 				0EC9FA7C173E9B2600C03DE6 /* Default@2x.png in Resources */,
 				0EC9FA7E173E9B2600C03DE6 /* Default-568h@2x.png in Resources */,
 				0EC9FA81173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard in Resources */,
-				0EC9FA84173E9B2600C03DE6 /* MainStoryboard_iPad.storyboard in Resources */,
-				0E959FAA174023B4001E18E4 /* workouts_data.plist in Resources */,
+				0E959FAA174023B4001E18E4 /* workouts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +227,10 @@
 				0EC9FA74173E9B2600C03DE6 /* main.m in Sources */,
 				0EC9FA78173E9B2600C03DE6 /* RWAppDelegate.m in Sources */,
 				0EC9FA87173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld in Sources */,
-				0EC9FA8A173E9B2600C03DE6 /* RWMasterViewController.m in Sources */,
 				0EC9FA8D173E9B2600C03DE6 /* RWDetailViewController.m in Sources */,
+				0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */,
+				0E959FB0174A9E31001E18E4 /* Workout.m in Sources */,
+				0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,14 +251,6 @@
 				0EC9FA80173E9B2600C03DE6 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		0EC9FA82173E9B2600C03DE6 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EC9FA83173E9B2600C03DE6 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

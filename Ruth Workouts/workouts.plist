@@ -4,9 +4,15 @@
 <array>
 	<dict>
 		<key>number</key>
-		<integer>0</integer>
+		<integer>2</integer>
 		<key>name</key>
-		<string></string>
+		<string>second</string>
+	</dict>
+	<dict>
+		<key>number</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>first</string>
 	</dict>
 </array>
 </plist>

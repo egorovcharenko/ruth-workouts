@@ -19,13 +19,14 @@
     <entity name="SectionActivity" syncable="YES">
         <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="len" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="lenDetails" optional="YES" syncable="YES"/>
+        <attribute name="lenDetails" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lenMultiplier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="parentSection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="childActivities" inverseEntity="Section" syncable="YES"/>
     </entity>
-    <entity name="Workout" syncable="YES">
+    <entity name="Workout" representedClassName="Workout" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="childVariants" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="parentWorkout" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
     <entity name="WorkoutVariant" syncable="YES">
@@ -35,10 +36,10 @@
     </entity>
     <elements>
         <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
-        <element name="Workout" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Glossary" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Section" positionX="160" positionY="192" width="128" height="105"/>
         <element name="SectionActivity" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Workout" positionX="160" positionY="192" width="128" height="90"/>
         <element name="WorkoutVariant" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="Glossary" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
