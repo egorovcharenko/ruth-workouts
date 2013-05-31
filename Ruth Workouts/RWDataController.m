@@ -45,21 +45,17 @@
     if (err != nil) {
         NSLog(@"error saving managed object context: %@", err);
     }
+    
+    // debug
+    [self getAllWorkouts];
 }
 
 
 - (NSFetchedResultsController*) getAllWorkouts
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Workout" inManagedObjectContext:self.context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Workout" inManagedObjectContext:context];
     [fetchRequest setEntity:entity];
-    
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:20];
-    
-    NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@""];
-    //[fetchRequest setPredicate:filterPredicate];
     
     // Edit the sort key as appropriate.
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"number" ascending:YES];
@@ -69,7 +65,18 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.context sectionNameKeyPath:nil cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+    
+    int count = [aFetchedResultsController.fetchedObjects count];
+    NSLog(@"Workouts number = %d", count);
+    
+    NSError *error = nil;
+	if (![aFetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
     
     return aFetchedResultsController;
 }

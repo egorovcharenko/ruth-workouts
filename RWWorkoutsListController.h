@@ -9,11 +9,17 @@
 #import <UIKit/UIKit.h>
 @class RWDetailViewController;
 
+@class RWDataController;
+
 @interface RWWorkoutsListController : UITableViewController <NSFetchedResultsControllerDelegate, UITableViewDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) RWDetailViewController *detailViewController;
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+// data access
+@property RWDataController* dataController;
+// cache
+@property NSFetchedResultsController *fetchResultsController;
+- (void)setDataController;
+- (void)initFetchController;
 
 @end
