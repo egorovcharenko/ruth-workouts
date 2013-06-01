@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date">
-            <userInfo/>
-        </attribute>
-        <userInfo/>
-    </entity>
-    <entity name="Glossary" syncable="YES">
+    <entity name="Glossary" representedClassName="Glossary" syncable="YES">
         <attribute name="definition" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="termin" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Section" syncable="YES">
+    <entity name="Section" representedClassName="Section" syncable="YES">
         <attribute name="length" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="childActivities" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SectionActivity" inverseName="parentSection" inverseEntity="SectionActivity" syncable="YES"/>
+        <relationship name="childActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SectionActivity" inverseName="parentSection" inverseEntity="SectionActivity" syncable="YES"/>
         <relationship name="parentVariant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="childSections" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
-    <entity name="SectionActivity" syncable="YES">
+    <entity name="SectionActivity" representedClassName="SectionActivity" syncable="YES">
         <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="len" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="lenDetails" optional="YES" attributeType="String" syncable="YES"/>
@@ -27,19 +21,27 @@
     <entity name="Workout" representedClassName="Workout" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="childVariants" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="parentWorkout" inverseEntity="WorkoutVariant" syncable="YES"/>
+        <relationship name="childVariants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="parentWorkout" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
-    <entity name="WorkoutVariant" syncable="YES">
+    <entity name="WorkoutVariant" representedClassName="WorkoutVariant" syncable="YES">
         <attribute name="length" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="childSections" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="parentVariant" inverseEntity="Section" syncable="YES"/>
+        <attribute name="tips" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="childSections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="parentVariant" inverseEntity="Section" syncable="YES"/>
         <relationship name="parentWorkout" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="childVariants" inverseEntity="Workout" syncable="YES"/>
+        <relationship name="variantEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutVariantEvent" inverseName="planVariant" inverseEntity="WorkoutVariantEvent" syncable="YES"/>
+    </entity>
+    <entity name="WorkoutVariantEvent" representedClassName="WorkoutVariantEvent" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="totalLength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="planVariant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="variantEvents" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
         <element name="Glossary" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Section" positionX="160" positionY="192" width="128" height="105"/>
         <element name="SectionActivity" positionX="160" positionY="192" width="128" height="135"/>
         <element name="Workout" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="WorkoutVariant" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="WorkoutVariant" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="WorkoutVariantEvent" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>

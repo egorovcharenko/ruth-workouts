@@ -8,6 +8,9 @@
 
 #import "RWDataController.h"
 #import "Workout.h"
+#import "WorkoutVariant.h"
+#import "Section.h"
+#import "SectionActivity.h"
 
 #import "RWAppDelegate.h"
 
@@ -33,10 +36,45 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"workouts" ofType:@"plist"];
     NSArray *items = [NSArray arrayWithContentsOfFile:path];
     
+    // load all data
     for (NSDictionary *dict in items) {
+        // workouts
         Workout *workout = [NSEntityDescription insertNewObjectForEntityForName:@"Workout" inManagedObjectContext:context];
-        workout.number = [dict objectForKey:@"number"];
+        workout.number = [[dict objectForKey:@"number"] integerValue];
         workout.name = [dict objectForKey:@"name"];
+        
+        // variants
+        NSArray *variants = [dict objectForKey:@"variants"];
+        for (NSDictionary *dict2 in variants) {
+            WorkoutVariant *variant = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariant" inManagedObjectContext:context];
+            [workout addChildVariantsObject:variant];
+            
+            variant.length = [[dict2 objectForKey:@"length"] integerValue];
+            
+            // sections
+            NSArray *sections = [dict2 objectForKey:@"sections"];
+            for (NSDictionary *dict3 in sections) {
+                Section *section = [NSEntityDescription insertNewObjectForEntityForName:@"Section" inManagedObjectContext:context];
+                [variant addChildSectionsObject:section];
+                
+                section.length = [[dict3 objectForKey:@"length"] integerValue];
+                section.name = [dict3 objectForKey:@"name"];
+                
+                // activities
+                NSArray *activities = [dict3 objectForKey:@"activities"];
+                for (NSDictionary *dict4 in activities) {
+                    SectionActivity *activity = [NSEntityDescription insertNewObjectForEntityForName:@"SectionActivity" inManagedObjectContext:context];
+                    [section addChildActivitiesObject:activity];
+                    
+                    activity.name = [dict4 objectForKey:@"name"];
+                    activity.details = [dict4 objectForKey:@"details"];
+                    activity.lenMultiplier = [[dict4 objectForKey:@"len_multiplier"] integerValue];
+                    activity.len = [[dict4 objectForKey:@"len"] integerValue];
+                    activity.lenDetails = [dict4 objectForKey:@"len_details"];
+
+                }
+            }
+        }
     }
     
     NSError *err = nil;
@@ -45,11 +83,7 @@
     if (err != nil) {
         NSLog(@"error saving managed object context: %@", err);
     }
-    
-    // debug
-    [self getAllWorkouts];
 }
-
 
 - (NSFetchedResultsController*) getAllWorkouts
 {

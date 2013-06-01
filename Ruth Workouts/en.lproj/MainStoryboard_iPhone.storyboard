@@ -50,10 +50,11 @@
         <scene sceneID="11">
             <objects>
                 <navigationController title="Workouts" id="3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts_icon.png" id="1s0-kG-3Ea"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" id="1s0-kG-3Ea"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="4">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.1529411765" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="fQd-up-fMy">
                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>
@@ -218,30 +219,116 @@
         <scene sceneID="18">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="RWWorkoutsListController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="NSp-Ja-EmR">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Workout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-sz-N8N">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Variants" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="88" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-9J-HLi">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="88" id="rWy-vf-qt5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.15294117647058825" green="0.15686274509803921" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="FMz-9J-HLi" secondAttribute="trailing" constant="4" id="3xS-nu-314"/>
+                                <constraint firstItem="FMz-9J-HLi" firstAttribute="bottom" secondItem="NSp-Ja-EmR" secondAttribute="bottom" type="default" id="Upa-9t-Jyb"/>
+                                <constraint firstItem="rXJ-sz-N8N" firstAttribute="leading" secondItem="NSp-Ja-EmR" secondAttribute="leading" constant="50" id="fYl-39-IHn"/>
+                                <constraint firstItem="rXJ-sz-N8N" firstAttribute="top" secondItem="NSp-Ja-EmR" secondAttribute="top" constant="11" id="iX5-zP-k7R"/>
+                                <constraint firstItem="FMz-9J-HLi" firstAttribute="top" secondItem="NSp-Ja-EmR" secondAttribute="top" type="default" id="m4j-Gf-2h4"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" style="IBUITableViewCellStyleDefault" id="lJ0-d7-vTF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="70" id="lJ0-d7-vTF" customClass="RWWorkoutCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-xy-YDY">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="33" id="8ZX-pf-Ssb"/>
+                                                <constraint firstAttribute="height" constant="21" id="Ae7-Xf-Y76"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.30588235289999999" green="0.36862745099999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Workout name" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" preferredMaxLayoutWidth="179" translatesAutoresizingMaskIntoConstraints="NO" id="PY2-88-NKA">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="69" id="a87-cL-51Y"/>
+                                                <constraint firstAttribute="width" constant="179" id="axF-J9-l2y"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" red="0.30588235289999999" green="0.36862745099999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUQ-ml-464">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="29" id="H1T-O0-exL"/>
+                                                <constraint firstAttribute="width" constant="79" id="JJs-HN-Ryf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" title="len1" backgroundImage="length_button">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI5-wH-hgd">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="29" id="eNT-NL-Jdj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <size key="titleShadowOffset" width="0.0" height="1"/>
+                                            <state key="normal" title="len2" backgroundImage="length_button">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="PY2-88-NKA" firstAttribute="leading" secondItem="lJ0-d7-vTF" secondAttribute="leading" constant="50" type="user" id="LUG-dE-vmE"/>
+                                    <constraint firstItem="PY2-88-NKA" firstAttribute="leading" secondItem="l9i-xy-YDY" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="RQA-a6-jCE"/>
+                                    <constraint firstItem="lUQ-ml-464" firstAttribute="top" secondItem="lJ0-d7-vTF" secondAttribute="top" constant="3" id="cTL-oM-PrU"/>
+                                    <constraint firstAttribute="trailing" secondItem="lUQ-ml-464" secondAttribute="trailing" constant="7" id="h9p-D2-4LZ"/>
+                                    <constraint firstItem="TI5-wH-hgd" firstAttribute="trailing" secondItem="lUQ-ml-464" secondAttribute="trailing" type="default" id="iwH-rB-m7V"/>
+                                    <constraint firstItem="PY2-88-NKA" firstAttribute="top" secondItem="lJ0-d7-vTF" secondAttribute="top" type="default" id="kWA-ul-Anr"/>
+                                    <constraint firstItem="TI5-wH-hgd" firstAttribute="leading" secondItem="lUQ-ml-464" secondAttribute="leading" type="default" id="u12-yb-ccR"/>
+                                    <constraint firstAttribute="bottom" secondItem="TI5-wH-hgd" secondAttribute="bottom" constant="4" id="ulg-s0-DW5"/>
+                                    <constraint firstItem="l9i-xy-YDY" firstAttribute="centerY" secondItem="PY2-88-NKA" secondAttribute="centerY" type="default" id="xE6-uW-THn"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="firstButton" destination="lUQ-ml-464" id="GQr-Oh-A61"/>
+                                    <outlet property="numberLabel" destination="l9i-xy-YDY" id="EXD-hY-6N6"/>
+                                    <outlet property="secondButton" destination="TI5-wH-hgd" id="IeC-iI-Z0g"/>
+                                    <outlet property="workoutName" destination="PY2-88-NKA" id="5Ti-3e-KpN"/>
                                     <segue destination="21" kind="push" identifier="showDetail" id="jZb-fq-zAk"/>
                                 </connections>
                             </tableViewCell>
@@ -252,7 +339,7 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="36"/>
+                    <navigationItem key="navigationItem" id="36"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,7 +380,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="workouts_icon.png" width="16" height="16"/>
+        <image name="length_button" width="16" height="16"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
@@ -303,6 +390,17 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWDetailViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RWWorkoutCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWWorkoutCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="firstButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="labelTimesCompleted1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="labelTimesCompleted2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="secondButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="workoutName" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="RWWorkoutsListController" superclassName="UITableViewController">

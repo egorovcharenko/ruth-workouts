@@ -18,24 +18,9 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-- (BOOL)application: (UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void)setupTabbar
 {
-    // Override point for customization after application launch.
-    
-    UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
-    RWWorkoutsListController *controller = [navigationController.viewControllers objectAtIndex:0];
-    //controller.managedObjectContext = self.managedObjectContext;
-    
-    // initial database load
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if (![defaults objectForKey:@"firstRun"])
-    {
-        [defaults setObject:[NSDate date] forKey:@"firstRun"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        [self firstRun];
-    }
-    
-    // tabbar
+    // setup tabbar
     // remove gloss from tabbar
     [[UITabBar appearance] setSelectionIndicatorImage:[[UIImage alloc] init]];
     
@@ -65,7 +50,7 @@
     UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar_background"];
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
-
+    
     // change text color
     UIColor *titleNormalColor = [UIColor colorWithRed:187/255.0 green:187/255.0 blue:187/255.0 alpha:1.0];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -75,6 +60,30 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        titleHighlightedColor, UITextAttributeTextColor,
                                                        nil] forState:UIControlStateHighlighted];
+}
+
+- (BOOL)application: (UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+    
+    UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
+    RWWorkoutsListController *controller = [navigationController.viewControllers objectAtIndex:0];
+    //controller.managedObjectContext = self.managedObjectContext;
+    
+    // on first run - do the initial database load
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults objectForKey:@"firstRun"])
+    {
+        [defaults setObject:[NSDate date] forKey:@"firstRun"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self firstRun];
+    }
+    
+    // set background
+    [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
+    
+    // setup tabbar
+    [self setupTabbar];
 
     return YES;
 }

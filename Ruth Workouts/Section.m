@@ -1,19 +1,20 @@
 //
-//  Workout.m
+//  Section.m
 //  Ruth Workouts
 //
 //  Created by Egor Ovcharenko on 01.06.13.
 //  Copyright (c) 2013 Egor Ovcharenko. All rights reserved.
 //
 
-#import "Workout.h"
+#import "Section.h"
 #import "WorkoutVariant.h"
 
 
-@implementation Workout
+@implementation Section
 
+@dynamic length;
 @dynamic name;
-@dynamic number;
-@dynamic childVariants;
+@dynamic childActivities;
+@dynamic parentVariant;
 
 @end

@@ -13,6 +13,8 @@
 #import "RWAppDelegate.h"
 #import "RWDataController.h"
 #import "Workout.h"
+#import "WorkoutVariant.h"
+#import "RWWorkoutCell.h"
 
 @interface RWWorkoutsListController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -24,10 +26,6 @@
 
 - (void)awakeFromNib
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        self.clearsSelectionOnViewWillAppear = NO;
-        self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-    }
     [super awakeFromNib];
 }
 
@@ -35,10 +33,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    //self.navigationItem.rightBarButtonItem = addButton;
     
     self.detailViewController = (RWDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
@@ -67,7 +65,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    RWWorkoutCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -75,7 +73,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     //differ between your sections or if you
     //have only on section return a static value
-    return 40;
+    return 0;
 }
 
 
@@ -197,11 +195,45 @@
  }
  */
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(RWWorkoutCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     Workout* workout = (Workout*)[self.fetchResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = workout.name;
+    
+    // workout details
+    cell.workoutName.text = workout.name;
+    cell.numberLabel.text = [NSString stringWithFormat:@"# %d", workout.number];
+    
+    // get variants
+    NSArray* array = [workout.childVariants allObjects];
+    if ([array count] == 2){
+        WorkoutVariant *variant1 = array[0];
+        WorkoutVariant *variant2 = array[1];
+        
+        if (variant1.length > variant2.length)
+        {
+            // swap variants
+            WorkoutVariant* temp = variant1;
+            variant1 = variant2;
+            variant2 = temp;
+        }
+        
+        // show variants
+        NSString *length1 = [NSString stringWithFormat:@"%d m", variant1.length];
+        [cell.firstButton setTitle:length1 forState:UIControlStateNormal];
+        
+        NSString *length2 = [NSString stringWithFormat:@"%d m", variant2.length];
+        [cell.secondButton setTitle:length2 forState:UIControlStateNormal];
+        
+        // show times completed
+        
+    }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70.0;
+}
+
 
 @end
 
