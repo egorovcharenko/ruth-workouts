@@ -101,8 +101,8 @@
     // nil for section name key path means "no sections".
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
     
-    int count = [aFetchedResultsController.fetchedObjects count];
-    NSLog(@"Workouts number = %d", count);
+    //int count = [aFetchedResultsController.fetchedObjects count];
+    //NSLog(@"Workouts number = %d", count);
     
     NSError *error = nil;
 	if (![aFetchedResultsController performFetch:&error]) {

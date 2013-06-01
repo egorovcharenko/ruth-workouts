@@ -7,19 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-@class RWDetailViewController;
-
 @class RWDataController;
 
-@interface RWWorkoutsListController : UITableViewController <NSFetchedResultsControllerDelegate, UITableViewDelegate, UITextFieldDelegate>
+#import "RWGeneralListController.h"
 
-@property (strong, nonatomic) RWDetailViewController *detailViewController;
+@interface RWWorkoutsListController : RWGeneralListController 
 
-// data access
-@property RWDataController* dataController;
-// cache
-@property NSFetchedResultsController *fetchResultsController;
-- (void)setDataController;
-- (void)initFetchController;
+// variant buttons
+- (IBAction)firstVariantClicked:(id)sender forEvent:(UIEvent *)event;
+- (IBAction)secondVariantClicked:(id)sender forEvent:(UIEvent *)event;
+
 
 @end

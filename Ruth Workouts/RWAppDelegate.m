@@ -59,7 +59,7 @@
     UIColor *titleHighlightedColor = [UIColor colorWithRed:118/255.0 green:200/255.0 blue:216/255.0 alpha:1.0];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        titleHighlightedColor, UITextAttributeTextColor,
-                                                       nil] forState:UIControlStateHighlighted];
+                                                       nil] forState:UIControlStateSelected];
 }
 
 - (BOOL)application: (UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -67,7 +67,7 @@
     // Override point for customization after application launch.
     
     UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
-    RWWorkoutsListController *controller = [navigationController.viewControllers objectAtIndex:0];
+    //RWWorkoutsListController *controller = [navigationController.viewControllers objectAtIndex:0];
     //controller.managedObjectContext = self.managedObjectContext;
     
     // on first run - do the initial database load

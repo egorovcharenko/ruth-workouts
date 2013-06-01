@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0E124F95175A515700A0A5CD /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E124F94175A515700A0A5CD /* background@2x.png */; };
+		0E124F9D175A655800A0A5CD /* RWWorkoutDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124F9C175A655800A0A5CD /* RWWorkoutDetailsController.m */; };
+		0E124FA0175A6F2100A0A5CD /* RWGeneralListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124F9F175A6F2100A0A5CD /* RWGeneralListController.m */; };
+		0E124FA4175A742500A0A5CD /* RWActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124FA3175A742500A0A5CD /* RWActivityCell.m */; };
+		0E124FA6175A7B3C00A0A5CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E124FA5175A7B3C00A0A5CD /* QuartzCore.framework */; };
 		0E959FAA174023B4001E18E4 /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E959FA9174023B4001E18E4 /* workouts.plist */; };
 		0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAC174A92B7001E18E4 /* RWDataController.m */; };
 		0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */; };
@@ -27,7 +31,6 @@
 		0EC9FA7E173E9B2600C03DE6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9FA7D173E9B2600C03DE6 /* Default-568h@2x.png */; };
 		0EC9FA81173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9FA7F173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard */; };
 		0EC9FA87173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9FA85173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld */; };
-		0EC9FA8D173E9B2600C03DE6 /* RWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9FA8C173E9B2600C03DE6 /* RWDetailViewController.m */; };
 		0EEF4C0A1759344400142660 /* misc_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EEF4C021759344400142660 /* misc_icon@2x.png */; };
 		0EEF4C0B1759344400142660 /* misc_icon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EEF4C031759344400142660 /* misc_icon_selected@2x.png */; };
 		0EEF4C0C1759344400142660 /* statistics_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EEF4C041759344400142660 /* statistics_icon@2x.png */; };
@@ -48,6 +51,13 @@
 
 /* Begin PBXFileReference section */
 		0E124F94175A515700A0A5CD /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		0E124F9B175A655800A0A5CD /* RWWorkoutDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWWorkoutDetailsController.h; sourceTree = "<group>"; };
+		0E124F9C175A655800A0A5CD /* RWWorkoutDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWWorkoutDetailsController.m; sourceTree = "<group>"; };
+		0E124F9E175A6F2100A0A5CD /* RWGeneralListController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = RWGeneralListController.h; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		0E124F9F175A6F2100A0A5CD /* RWGeneralListController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = RWGeneralListController.m; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		0E124FA2175A742500A0A5CD /* RWActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWActivityCell.h; sourceTree = "<group>"; };
+		0E124FA3175A742500A0A5CD /* RWActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWActivityCell.m; sourceTree = "<group>"; };
+		0E124FA5175A7B3C00A0A5CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E959FA9174023B4001E18E4 /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
 		0E959FAB174A92B7001E18E4 /* RWDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDataController.h; sourceTree = "<group>"; };
 		0E959FAC174A92B7001E18E4 /* RWDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDataController.m; sourceTree = "<group>"; };
@@ -73,8 +83,6 @@
 		0EC9FA7D173E9B2600C03DE6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0EC9FA80173E9B2600C03DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		0EC9FA86173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ruth_Workouts.xcdatamodel; sourceTree = "<group>"; };
-		0EC9FA8B173E9B2600C03DE6 /* RWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWDetailViewController.h; sourceTree = "<group>"; };
-		0EC9FA8C173E9B2600C03DE6 /* RWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWDetailViewController.m; sourceTree = "<group>"; };
 		0EEF4C021759344400142660 /* misc_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "misc_icon@2x.png"; sourceTree = "<group>"; };
 		0EEF4C031759344400142660 /* misc_icon_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "misc_icon_selected@2x.png"; sourceTree = "<group>"; };
 		0EEF4C041759344400142660 /* statistics_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "statistics_icon@2x.png"; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E124FA6175A7B3C00A0A5CD /* QuartzCore.framework in Frameworks */,
 				0EC9FA66173E9B2600C03DE6 /* UIKit.framework in Frameworks */,
 				0EC9FA68173E9B2600C03DE6 /* Foundation.framework in Frameworks */,
 				0EC9FA6A173E9B2600C03DE6 /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +124,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E124F96175A600E00A0A5CD /* Details of workouts */ = {
+			isa = PBXGroup;
+			children = (
+				0E124FA2175A742500A0A5CD /* RWActivityCell.h */,
+				0E124FA3175A742500A0A5CD /* RWActivityCell.m */,
+				0E124F9B175A655800A0A5CD /* RWWorkoutDetailsController.h */,
+				0E124F9C175A655800A0A5CD /* RWWorkoutDetailsController.m */,
+			);
+			name = "Details of workouts";
+			sourceTree = "<group>";
+		};
+		0E124FA1175A6F2800A0A5CD /* General List controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E124F9E175A6F2100A0A5CD /* RWGeneralListController.h */,
+				0E124F9F175A6F2100A0A5CD /* RWGeneralListController.m */,
+			);
+			name = "General List controller";
+			sourceTree = "<group>";
+		};
 		0E959FB1174AA656001E18E4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +176,7 @@
 		0EC9FA59173E9B2600C03DE6 = {
 			isa = PBXGroup;
 			children = (
+				0E124FA5175A7B3C00A0A5CD /* QuartzCore.framework */,
 				0EC9FA6D173E9B2600C03DE6 /* Ruth Workouts */,
 				0EC9FA64173E9B2600C03DE6 /* Frameworks */,
 				0EC9FA63173E9B2600C03DE6 /* Products */,
@@ -204,9 +234,9 @@
 		0EC9FA93173E9BD800C03DE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E124FA1175A6F2800A0A5CD /* General List controller */,
 				0EEF4C15175A34F200142660 /* List of workouts */,
-				0EC9FA8B173E9B2600C03DE6 /* RWDetailViewController.h */,
-				0EC9FA8C173E9B2600C03DE6 /* RWDetailViewController.m */,
+				0E124F96175A600E00A0A5CD /* Details of workouts */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -337,7 +367,6 @@
 				0EC9FA74173E9B2600C03DE6 /* main.m in Sources */,
 				0EC9FA78173E9B2600C03DE6 /* RWAppDelegate.m in Sources */,
 				0EC9FA87173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld in Sources */,
-				0EC9FA8D173E9B2600C03DE6 /* RWDetailViewController.m in Sources */,
 				0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */,
 				0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */,
 				0EEF4C14175A2EF600142660 /* RWWorkoutCell.m in Sources */,
@@ -347,6 +376,9 @@
 				0EEF4C3F175A462800142660 /* Section.m in Sources */,
 				0EEF4C42175A462800142660 /* SectionActivity.m in Sources */,
 				0EEF4C45175A462800142660 /* WorkoutVariant.m in Sources */,
+				0E124F9D175A655800A0A5CD /* RWWorkoutDetailsController.m in Sources */,
+				0E124FA0175A6F2100A0A5CD /* RWGeneralListController.m in Sources */,
+				0E124FA4175A742500A0A5CD /* RWActivityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
