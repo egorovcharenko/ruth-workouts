@@ -7,6 +7,7 @@
     <entity name="Section" representedClassName="Section" syncable="YES">
         <attribute name="length" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="childActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SectionActivity" inverseName="parentSection" inverseEntity="SectionActivity" syncable="YES"/>
         <relationship name="parentVariant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="childSections" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
@@ -16,6 +17,7 @@
         <attribute name="lenDetails" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lenMultiplier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="parentSection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="childActivities" inverseEntity="Section" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES">
@@ -38,8 +40,8 @@
     </entity>
     <elements>
         <element name="Glossary" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Section" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="SectionActivity" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Section" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="SectionActivity" positionX="160" positionY="192" width="128" height="150"/>
         <element name="Workout" positionX="160" positionY="192" width="128" height="90"/>
         <element name="WorkoutVariant" positionX="160" positionY="192" width="128" height="120"/>
         <element name="WorkoutVariantEvent" positionX="160" positionY="192" width="128" height="105"/>

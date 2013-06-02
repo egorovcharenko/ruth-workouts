@@ -120,10 +120,10 @@
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 70.0;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 70.0;
+//}
 
 
 - (IBAction)firstVariantClicked:(id)sender forEvent:(UIEvent *)event {

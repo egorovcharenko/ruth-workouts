@@ -24,4 +24,6 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
+- (CGRect) sizeOfLabel:(NSString*)text maxLabelWidth:(NSInteger)maxLabelWidth;
+
 @end

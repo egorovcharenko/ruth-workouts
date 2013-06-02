@@ -57,6 +57,7 @@
                 Section *section = [NSEntityDescription insertNewObjectForEntityForName:@"Section" inManagedObjectContext:context];
                 [variant addChildSectionsObject:section];
                 
+                section.order = [[dict3 objectForKey:@"order"] integerValue];
                 section.length = [[dict3 objectForKey:@"length"] integerValue];
                 section.name = [dict3 objectForKey:@"name"];
                 
@@ -66,12 +67,12 @@
                     SectionActivity *activity = [NSEntityDescription insertNewObjectForEntityForName:@"SectionActivity" inManagedObjectContext:context];
                     [section addChildActivitiesObject:activity];
                     
+                    activity.order = [[dict4 objectForKey:@"order"] integerValue];
                     activity.name = [dict4 objectForKey:@"name"];
                     activity.details = [dict4 objectForKey:@"details"];
                     activity.lenMultiplier = [[dict4 objectForKey:@"len_multiplier"] integerValue];
                     activity.len = [[dict4 objectForKey:@"len"] integerValue];
                     activity.lenDetails = [dict4 objectForKey:@"len_details"];
-
                 }
             }
         }

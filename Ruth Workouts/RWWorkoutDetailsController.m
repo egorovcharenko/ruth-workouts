@@ -52,45 +52,76 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionNumber
 {
-    NSArray *sections = [variant.childSections allObjects];
-    Section *section = sections [sectionNumber];
+    Section *section = [self getSection:sectionNumber];
     return [section.childActivities count];
+}
+
+- (Section*) getSection:(NSInteger)sectionNumber
+{
+    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]];
+    
+    NSArray *sortedSections = [[variant.childSections allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    
+    return sortedSections[sectionNumber];
+}
+
+- (SectionActivity *)getSectionActivity:(NSIndexPath *)indexPath
+{
+    Section *section = [self getSection:indexPath.section];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]];
+    //int count = [section.childActivities count];
+    NSArray *sortedActivities = [[section.childActivities allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    
+    return sortedActivities [indexPath.row];
 }
 
 - (void)configureCell:(RWActivityCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *sections = [variant.childSections allObjects];
-    Section *section = sections [indexPath.section];
- 
-    NSArray *activities = [section.childActivities allObjects];
-    SectionActivity *activity = activities [indexPath.row];
+    SectionActivity *activity;
+    activity = [self getSectionActivity:indexPath];
     
-    cell.detailsLabel.text = activity.details;
+    if ([activity.lenDetails length] == 0)
+        activity.lenDetails = @" ";
+    
+    // details label
+    cell.detailsLabel.text =  activity.details;
+    
+    // len details label
     cell.lenDetailsLabel.text = activity.lenDetails;
     
-    // set len label
-    NSString *firstPart = [NSString stringWithFormat:@"%d x", activity.lenMultiplier];
-    NSString *secondPart = [NSString stringWithFormat:@"%d", activity.len];
-    NSString *thirdPart = @"m";
+    // swim button
+    [cell.activityNameButton setTitle:activity.name forState:UIControlStateNormal];
+    [cell.activityNameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIEdgeInsets edge = UIEdgeInsetsMake(13, 13, 14, 13);
+    UIImage *tasks_top = [UIImage imageNamed:@"orange_button"];
+    UIImage *stretchableImage = [tasks_top resizableImageWithCapInsets:edge];
+    [cell.activityNameButton setBackgroundImage:stretchableImage forState:UIControlStateNormal];
+    CGRect rect = [self sizeOfLabel:activity.name maxLabelWidth:999];
+    cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
     
+    // length label
+    NSString *firstPart = [NSString stringWithFormat:@"%d x ", activity.lenMultiplier];
+    NSString *secondPart = [NSString stringWithFormat:@"%d", activity.len];
+    NSString *thirdPart = @"";
+    
+    // set len label
+    if (activity.lenMultiplier == 1){
+        firstPart = @"";
+    }
     NSString *text = [NSString stringWithFormat:@"%@%@%@",
                       firstPart,
                       secondPart,
                       thirdPart];
-    
-    
     // Define general attributes for the entire text
     NSDictionary *attribs = @{
-                              NSForegroundColorAttributeName: cell.lenLabel.textColor,
-                              NSFontAttributeName: cell.lenLabel.font
+                              NSForegroundColorAttributeName: [cell.lenButton titleColorForState:UIControlStateNormal],
+                              NSFontAttributeName: cell.lenButton.titleLabel.font
                               };
     NSMutableAttributedString *attributedText =
     [[NSMutableAttributedString alloc] initWithString:text
                                            attributes:attribs];
-    
     UIColor *grayTextColor = [UIColor colorWithWhite:60.0/255.0 alpha:1.0];
-    UIColor *cyanTextColor = [UIColor colorWithRed:74.0/255.0 green:187.0/255.0 blue:209.0/255.0 alpha:1.0];
-    
+    UIColor *cyanTextColor = grayTextColor;// [UIColor colorWithRed:74.0/255.0 green:187.0/255.0 blue:209.0/255.0 alpha:1.0];
     // Red text attributes
     NSRange redTextRange = [text rangeOfString:firstPart];
     [attributedText setAttributes:@{NSForegroundColorAttributeName:grayTextColor}
@@ -102,14 +133,27 @@
                             range:greenTextRange];
     
     // Purple and bold text attributes
-    UIFont *boldFont = [UIFont boldSystemFontOfSize:cell.lenLabel.font.pointSize];
+    //UIFont *boldFont = [UIFont boldSystemFontOfSize:cell.lenLabel.font.pointSize];
     NSRange purpleBoldTextRange = [text rangeOfString:thirdPart];
     
-    [attributedText setAttributes:@{NSForegroundColorAttributeName:grayTextColor,
-              NSFontAttributeName:boldFont}
-                            range:purpleBoldTextRange];
+    [attributedText setAttributes:@{NSForegroundColorAttributeName:grayTextColor
+     //,NSFontAttributeName:boldFont
+     }
+    range:purpleBoldTextRange];
     
-    cell.lenLabel.attributedText = attributedText;
+    //cell.lenLabel.attributedText = attributedText;
+    
+    // len button
+    {
+        UIEdgeInsets edge = UIEdgeInsetsMake(5, 5, 5, 5);
+        UIImage *tasks_top = [UIImage imageNamed:@"blue_button"];
+        UIImage *stretchableImage = [tasks_top resizableImageWithCapInsets:edge];
+        [cell.lenButton setBackgroundImage:stretchableImage forState:UIControlStateNormal];
+        //[cell.lenButton setAttributedTitle:attributedText forState:UIControlStateNormal];
+        [cell.lenButton setTitle:[attributedText string] forState:UIControlStateNormal];
+        //CGRect rect = [self sizeOfLabel:[attributedText string] maxLabelWidth:999];
+        //cell.lenButtonWidthConstraint.constant = rect.size.width + 10;
+    }
     
 }
 
@@ -125,10 +169,11 @@
     return 30;
 }
 
+
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionNumber
 {
-    NSArray *sections = [variant.childSections allObjects];
-    Section *section = sections [sectionNumber];
+    Section *section = [self getSection:sectionNumber];
     CGFloat width = CGRectGetWidth(self.view.bounds);
     
     //allocate the view if it doesn't exist yet
@@ -138,8 +183,8 @@
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = headerManualView.bounds;
     gradient.colors = [NSArray arrayWithObjects:
-                       [(id)[UIColor colorWithWhite:67.0/255.0 alpha:1.0]CGColor],
-                       [(id)[UIColor colorWithWhite:84.0/255.0 alpha:1.0]CGColor],
+                       (id)[[UIColor colorWithWhite:67.0/255.0 alpha:1.0]CGColor],
+                       (id)[[UIColor colorWithWhite:84.0/255.0 alpha:1.0]CGColor],
                        nil];
     [headerManualView.layer addSublayer:gradient];
     
@@ -166,5 +211,19 @@
     
     return headerManualView;
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SectionActivity* activity = [self getSectionActivity:indexPath];
+    
+    if (activity.details.length > 0){
+        CGRect rect = [self sizeOfLabel:activity.details maxLabelWidth:150];
+        return rect.size.height + 40;
+    } else {
+        return 40;
+    }
+}
+
 
 @end

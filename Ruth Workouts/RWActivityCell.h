@@ -10,7 +10,11 @@
 
 @interface RWActivityCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *lenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lenDetailsLabel;
+@property (weak, nonatomic) IBOutlet UIButton *activityNameButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *detailsButtonWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *detailsButtonHeightConstraint;
+@property (weak, nonatomic) IBOutlet UIButton *lenButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *lenButtonWidthConstraint;
 
 @end
