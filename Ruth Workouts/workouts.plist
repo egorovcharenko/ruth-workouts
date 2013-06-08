@@ -10,11 +10,11 @@
 		<key>variants</key>
 		<array>
 			<dict>
-				<key>length</key>
-				<integer>2000</integer>
 				<key>sections</key>
 				<array>
 					<dict>
+						<key>order</key>
+						<string>1</string>
 						<key>name</key>
 						<string>Warm-up: Free</string>
 						<key>length</key>
@@ -22,6 +22,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -39,6 +41,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>2</string>
 						<key>name</key>
 						<string>Butterfly</string>
 						<key>length</key>
@@ -46,6 +50,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
@@ -58,6 +64,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>2</string>
 								<key>name</key>
 								<string>Drill</string>
 								<key>details</key>
@@ -70,6 +78,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>3</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -84,6 +94,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>3</string>
 						<key>name</key>
 						<string>Backstroke</string>
 						<key>length</key>
@@ -91,6 +103,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Drill</string>
 								<key>details</key>
@@ -103,6 +117,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>2</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -117,6 +133,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>4</string>
 						<key>name</key>
 						<string>Breastroke</string>
 						<key>length</key>
@@ -124,6 +142,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -139,6 +159,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>5</string>
 						<key>name</key>
 						<string>Freestyle</string>
 						<key>length</key>
@@ -146,6 +168,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Pull</string>
 								<key>details</key>
@@ -159,6 +183,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>2</string>
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
@@ -173,6 +199,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>6</string>
 						<key>name</key>
 						<string>Swim down</string>
 						<key>length</key>
@@ -180,6 +208,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Drill</string>
 								<key>details</key>
@@ -196,11 +226,11 @@
 				</array>
 			</dict>
 			<dict>
-				<key>length</key>
-				<integer>3000</integer>
 				<key>sections</key>
 				<array>
 					<dict>
+						<key>order</key>
+						<string>1</string>
 						<key>name</key>
 						<string>Warm-up: Free</string>
 						<key>length</key>
@@ -208,6 +238,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -225,6 +257,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>2</string>
 						<key>name</key>
 						<string>Butterfly</string>
 						<key>length</key>
@@ -232,6 +266,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
@@ -244,6 +280,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>2</string>
 								<key>name</key>
 								<string>Drill</string>
 								<key>details</key>
@@ -256,6 +294,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>3</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -270,6 +310,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>3</string>
 						<key>name</key>
 						<string>Backstroke</string>
 						<key>length</key>
@@ -277,6 +319,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Drill</string>
 								<key>details</key>
@@ -289,6 +333,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>2</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -303,6 +349,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>4</string>
 						<key>name</key>
 						<string>Breastroke</string>
 						<key>length</key>
@@ -310,6 +358,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
@@ -325,6 +375,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>5</string>
 						<key>name</key>
 						<string>Freestyle</string>
 						<key>length</key>
@@ -332,6 +384,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Pull</string>
 								<key>details</key>
@@ -345,6 +399,8 @@
 								<string></string>
 							</dict>
 							<dict>
+								<key>order</key>
+								<string>2</string>
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
@@ -359,6 +415,8 @@
 						</array>
 					</dict>
 					<dict>
+						<key>order</key>
+						<string>6</string>
 						<key>name</key>
 						<string>Swim down</string>
 						<key>length</key>
@@ -366,6 +424,8 @@
 						<key>activities</key>
 						<array>
 							<dict>
+								<key>order</key>
+								<string>1</string>
 								<key>name</key>
 								<string>Drill</string>
 								<key>details</key>
@@ -374,6 +434,477 @@
 								<integer>1</integer>
 								<key>len</key>
 								<integer>200</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Freestyle 50&apos;s, then swim IM&apos;s and pull&amp;swim Choice</string>
+		<key>variants</key>
+		<array>
+			<dict>
+				<key>sections</key>
+				<array>
+					<dict>
+						<key>order</key>
+						<string>1</string>
+						<key>name</key>
+						<string>Warm-up</string>
+						<key>length</key>
+						<integer>300</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Drills</string>
+								<key>details</key>
+								<string>Choice</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>300</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>order</key>
+						<string>2</string>
+						<key>name</key>
+						<string>Freestyle</string>
+						<key>length</key>
+						<integer>900</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>(&quot;on&quot; means starting every forty seconds)</string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :55</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :65</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :75</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>4</string>
+								<key>name</key>
+								<string>Kick</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>5</string>
+								<key>name</key>
+								<string>Kick</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>25</integer>
+								<key>len_details</key>
+								<string>15 sec.rest</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>order</key>
+						<string>3</string>
+						<key>name</key>
+						<string>IM</string>
+						<key>length</key>
+						<integer>400</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>Fly + Back</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>25 Fly + 75 Back</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>Fly + Breast</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>25 Fly + 75 Breast</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>Fly + Free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>25 Fly + 75 Free</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>4</string>
+								<key>name</key>
+								<string>IM</string>
+								<key>details</key>
+								<string>Fly + Free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>order</key>
+						<string>4</string>
+						<key>name</key>
+						<string>Choice</string>
+						<key>length</key>
+						<integer>400</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Pull</string>
+								<key>details</key>
+								<string>least favorite stroke</string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Pull</string>
+								<key>details</key>
+								<string>favorite stroke</string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>25</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>timed</string>
+								<key>len_multiplier</key>
+								<integer>2</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>sections</key>
+				<array>
+					<dict>
+						<key>order</key>
+						<string>1</string>
+						<key>name</key>
+						<string>Warm-up</string>
+						<key>length</key>
+						<integer>400</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Drills</string>
+								<key>details</key>
+								<string>Choice</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>400</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>order</key>
+						<string>2</string>
+						<key>name</key>
+						<string>Freestyle</string>
+						<key>length</key>
+						<integer>1000</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>(&quot;on&quot; means starting every forty seconds)</string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :55</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :65</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :75</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>4</string>
+								<key>name</key>
+								<string>Kick</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>5</string>
+								<key>name</key>
+								<string>Kick</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>8</integer>
+								<key>len</key>
+								<integer>25</integer>
+								<key>len_details</key>
+								<string>15 sec.rest</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>order</key>
+						<string>3</string>
+						<key>name</key>
+						<string>IM</string>
+						<key>length</key>
+						<integer>800</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>Fly + Back</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string>50 Fly + 150 Back</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>Fly + Breast</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string>50 Fly + 150 Breast</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>Fly + Free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string>50 Fly + 150 Free</string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>4</string>
+								<key>name</key>
+								<string>IM</string>
+								<key>details</key>
+								<string>Fly + Free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>order</key>
+						<string>4</string>
+						<key>name</key>
+						<string>Choice</string>
+						<key>length</key>
+						<integer>800</integer>
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Pull</string>
+								<key>details</key>
+								<string>least favorite stroke</string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Pull</string>
+								<key>details</key>
+								<string>favorite stroke</string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>timed</string>
+								<key>len_multiplier</key>
+								<integer>2</integer>
+								<key>len</key>
+								<integer>100</integer>
 								<key>len_details</key>
 								<string></string>
 							</dict>

@@ -25,7 +25,6 @@
 		0E19BDD51763A97D0017F351 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BDD41763A97D0017F351 /* Social.framework */; };
 		0E19BDD91763BCDA0017F351 /* RWTipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19BDD81763BCDA0017F351 /* RWTipsController.m */; };
 		0E19BDDB1763BD3C0017F351 /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E19BDDA1763BD3C0017F351 /* tips.plist */; };
-		0E959FAA174023B4001E18E4 /* workouts_old.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E959FA9174023B4001E18E4 /* workouts_old.plist */; };
 		0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAC174A92B7001E18E4 /* RWDataController.m */; };
 		0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */; };
 		0E98E6C31756867F00AD5523 /* workouts_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E98E6C21756867F00AD5523 /* workouts_icon@2x.png */; };
@@ -90,7 +89,6 @@
 		0E19BDD71763BCDA0017F351 /* RWTipsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTipsController.h; sourceTree = "<group>"; };
 		0E19BDD81763BCDA0017F351 /* RWTipsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTipsController.m; sourceTree = "<group>"; };
 		0E19BDDA1763BD3C0017F351 /* tips.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tips.plist; sourceTree = "<group>"; };
-		0E959FA9174023B4001E18E4 /* workouts_old.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts_old.plist; sourceTree = "<group>"; };
 		0E959FAB174A92B7001E18E4 /* RWDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDataController.h; sourceTree = "<group>"; };
 		0E959FAC174A92B7001E18E4 /* RWDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDataController.m; sourceTree = "<group>"; };
 		0E959FB2174BF536001E18E4 /* RWWorkoutsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWWorkoutsListController.h; path = ../RWWorkoutsListController.h; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				0E124FA9175BAB5500A0A5CD /* workouts.plist */,
-				0E959FA9174023B4001E18E4 /* workouts_old.plist */,
 				0E19BDDA1763BD3C0017F351 /* tips.plist */,
 			);
 			name = Data;
@@ -415,7 +412,6 @@
 				0EC9FA7C173E9B2600C03DE6 /* Default@2x.png in Resources */,
 				0EC9FA7E173E9B2600C03DE6 /* Default-568h@2x.png in Resources */,
 				0EC9FA81173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard in Resources */,
-				0E959FAA174023B4001E18E4 /* workouts_old.plist in Resources */,
 				0E98E6C31756867F00AD5523 /* workouts_icon@2x.png in Resources */,
 				0EA4F7CF17592F7E0035EF7C /* workouts_icon_selected@2x.png in Resources */,
 				0EA4F7D1175931EF0035EF7C /* tabbar_background@2x.png in Resources */,
