@@ -11,6 +11,7 @@
 #import "WorkoutVariant.h"
 #import "Section.h"
 #import "SectionActivity.h"
+#import "WorkoutVariantEvent.h"
 
 #import "RWAppDelegate.h"
 
@@ -49,7 +50,8 @@
             WorkoutVariant *variant = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariant" inManagedObjectContext:context];
             [workout addChildVariantsObject:variant];
             
-            variant.length = [[dict2 objectForKey:@"length"] integerValue];
+            //variant.length = [[dict2 objectForKey:@"length"] integerValue];
+            int variantLen = 0;
             
             // sections
             NSArray *sections = [dict2 objectForKey:@"sections"];
@@ -58,9 +60,10 @@
                 [variant addChildSectionsObject:section];
                 
                 section.order = [[dict3 objectForKey:@"order"] integerValue];
-                section.length = [[dict3 objectForKey:@"length"] integerValue];
+                //section.length = [[dict3 objectForKey:@"length"] integerValue];
                 section.name = [dict3 objectForKey:@"name"];
                 
+                int sectionLen = 0;
                 // activities
                 NSArray *activities = [dict3 objectForKey:@"activities"];
                 for (NSDictionary *dict4 in activities) {
@@ -73,8 +76,17 @@
                     activity.lenMultiplier = [[dict4 objectForKey:@"len_multiplier"] integerValue];
                     activity.len = [[dict4 objectForKey:@"len"] integerValue];
                     activity.lenDetails = [dict4 objectForKey:@"len_details"];
+                    
+                    sectionLen += activity.len * activity.lenMultiplier;
                 }
+                
+                // calculate section length automatically
+                section.length = sectionLen;
+                variantLen += sectionLen;
             }
+            
+            // calculate total length automatically
+            variant.length = variantLen;
         }
     }
     
@@ -114,6 +126,23 @@
 	}
     
     return aFetchedResultsController;
+}
+
+- (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant
+{
+    WorkoutVariantEvent *newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariantEvent" inManagedObjectContext:context];
+    
+    newEvent.date = [NSDate date];
+    newEvent.comment = @"";
+    newEvent.totalLength = [[NSNumber alloc] initWithDouble: variant.length];
+    
+    NSError *err = nil;
+    [context save:&err];
+    
+    if (err != nil) {
+        NSLog(@"error saving managed object context: %@", err);
+    }
+
 }
 
 @end

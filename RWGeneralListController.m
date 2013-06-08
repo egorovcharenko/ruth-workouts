@@ -45,12 +45,13 @@
     return NO;
 }
 
-- (CGRect) sizeOfLabel:(NSString*)text maxLabelWidth:(NSInteger)maxLabelWidth
+- (CGRect) sizeOfLabel:(NSString*)text maxLabelWidth:(NSInteger)maxLabelWidth font:(UIFont*)font
 {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.numberOfLines = 0;
     label.lineBreakMode = NSLineBreakByWordWrapping;
     label.text = text;
+    label.font = font;
     
     CGRect frame = label.frame;
     frame.size.width = maxLabelWidth;

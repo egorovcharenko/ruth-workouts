@@ -1,41 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="74e-6t-zLw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="74e-6t-zLw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller - Tips-->
         <scene sceneID="7cy-ef-hbp">
             <objects>
                 <tableViewController id="XaO-jC-79f" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fzh-Ej-QpL">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="149" sectionHeaderHeight="22" sectionFooterHeight="22" id="fzh-Ej-QpL">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zCn-jg-zAH">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="149" id="zCn-jg-zAH">
+                                <rect key="frame" x="0.0" y="22" width="320" height="149"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="# 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR2-eE-hYw">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="8pe-pJ-W4Y"/>
+                                                <constraint firstAttribute="width" constant="30" id="MqO-kB-AoF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" red="0.30588235294117649" green="0.36862745098039218" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-ky-m8K">
+                                            <color key="backgroundColor" red="0.47058823529411764" green="0.78823529411764703" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrG-b4-Owe">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="131" id="BfZ-mJ-9Yn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dvz-ky-m8K" firstAttribute="top" secondItem="zCn-jg-zAH" secondAttribute="top" type="default" id="0UA-Bd-3bj"/>
+                                    <constraint firstAttribute="trailing" secondItem="KrG-b4-Owe" secondAttribute="trailing" constant="20" type="default" id="7nq-HN-b60"/>
+                                    <constraint firstItem="Dvz-ky-m8K" firstAttribute="trailing" secondItem="zCn-jg-zAH" secondAttribute="trailing" type="default" id="ONf-ii-Ind"/>
+                                    <constraint firstItem="Dvz-ky-m8K" firstAttribute="leading" secondItem="zCn-jg-zAH" secondAttribute="leading" type="default" id="U6I-9U-JPe"/>
+                                    <constraint firstItem="KrG-b4-Owe" firstAttribute="top" secondItem="Dvz-ky-m8K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gpD-nx-TnG"/>
+                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="top" secondItem="Dvz-ky-m8K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nwp-k7-vop"/>
+                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="leading" secondItem="zCn-jg-zAH" secondAttribute="leading" constant="20" type="default" id="vs2-Rb-2hE"/>
+                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="top" secondItem="zCn-jg-zAH" secondAttribute="top" constant="17" id="vtn-se-7lf"/>
+                                    <constraint firstItem="KrG-b4-Owe" firstAttribute="leading" secondItem="ZR2-eE-hYw" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="yCp-bl-Yd4"/>
+                                </constraints>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="CyU-5x-GZ6"/>
+                    <navigationItem key="navigationItem" title="Tips" id="CyU-5x-GZ6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULk-xj-sAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1019" y="120"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Tips-->
         <scene sceneID="rgf-Nh-e0y">
             <objects>
-                <navigationController definesPresentationContext="YES" id="jgV-O3-6gk" sceneMemberID="viewController">
+                <navigationController title="Tips" definesPresentationContext="YES" id="jgV-O3-6gk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="EhW-5s-wAj"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KTd-MW-WcR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="KTd-MW-WcR">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -68,6 +104,36 @@
             </objects>
             <point key="canvasLocation" x="1215" y="-576"/>
         </scene>
+        <!--Table View Controller - Item-->
+        <scene sceneID="DwS-e7-NDc">
+            <objects>
+                <tableViewController id="ZMl-Qs-nd0" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wtz-9i-uzQ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0Xd-Pb-7Fe">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZMl-Qs-nd0" id="oRc-tZ-MR0"/>
+                            <outlet property="delegate" destination="ZMl-Qs-nd0" id="xgw-B6-iIF"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="jln-GZ-UM7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rQ-Lh-mcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="-1291"/>
+        </scene>
         <!--Table View Controller - Root View Controller-->
         <scene sceneID="4Dv-Dz-aGs">
             <objects>
@@ -92,22 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ri-cZ-dH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1207" y="-1782"/>
-        </scene>
-        <!--View Controller - Item 1-->
-        <scene sceneID="apH-RL-L3x">
-            <objects>
-                <viewController id="gQJ-ik-f35" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fHy-UX-LL8">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="1sS-S8-FqB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iTx-hq-1Ul" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1210" y="-1273"/>
+            <point key="canvasLocation" x="1687" y="-1494"/>
         </scene>
         <!--Table View Controller - Root View Controller-->
         <scene sceneID="A5A-wI-EZY">
@@ -205,10 +256,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="bl5-0X-6gL"/>
-                        <segue destination="gQJ-ik-f35" kind="relationship" relationship="viewControllers" id="Z4u-jw-TFO"/>
                         <segue destination="jgV-O3-6gk" kind="relationship" relationship="viewControllers" id="GPf-9P-9O0"/>
                         <segue destination="dB6-qF-y9q" kind="relationship" relationship="viewControllers" id="kI1-8W-7MJ"/>
                         <segue destination="bMQ-SC-vfB" kind="relationship" relationship="viewControllers" id="iYM-wR-agh"/>
+                        <segue destination="ZMl-Qs-nd0" kind="relationship" relationship="viewControllers" id="Aab-91-5kE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6f-Bh-BXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -344,7 +395,7 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="36"/>
+                    <navigationItem key="navigationItem" title="List of workouts" id="36"/>
                     <connections>
                         <segue destination="sAc-gA-as4" kind="push" identifier="showWorkout" id="ws0-Bg-6ZN"/>
                     </connections>
@@ -504,15 +555,118 @@
                             <outlet property="delegate" destination="sAc-gA-as4" id="6t3-Cp-XZs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="XSZ-3a-0dQ"/>
+                    <navigationItem key="navigationItem" id="XSZ-3a-0dQ">
+                        <barButtonItem key="rightBarButtonItem" title="Complete" style="plain" id="aEh-KK-ITi">
+                            <connections>
+                                <action selector="completeWorkoutClicked:" destination="sAc-gA-as4" id="pwG-Yz-fuK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="WCf-TR-ZNL" kind="push" identifier="completeWorkout" id="Y4I-Bf-YS0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMu-qv-D9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2188" y="-576"/>
         </scene>
+        <!--Complete Workout View Controller - Workout completed-->
+        <scene sceneID="VLg-Fv-gL3">
+            <objects>
+                <viewController id="WCf-TR-ZNL" customClass="RWCompleteWorkoutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V8F-08-aZQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Congratulations!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heb-ch-qPF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="0IS-4I-9AA"/>
+                                    <constraint firstAttribute="height" constant="36" id="cdb-OP-mZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJo-fW-zLy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Deb-99-C0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="share_fb_button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareFacebookButtonClicked:" destination="WCf-TR-ZNL" eventType="touchUpInside" id="Jkx-7O-vDe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLv-Lp-RY5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WOf-Va-SAY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="share_twitter_button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareTwitterButtonClicked:" destination="WCf-TR-ZNL" eventType="touchUpInside" id="NkL-tr-g2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUI-5Z-s0U">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ht6-4Y-j11"/>
+                                    <constraint firstAttribute="width" constant="301" id="LCU-hy-NKf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="share_back_button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="WCf-TR-ZNL" eventType="touchUpInside" id="xKk-At-1US"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VUI-5Z-s0U" firstAttribute="centerX" secondItem="V8F-08-aZQ" secondAttribute="centerX" type="default" id="O9s-Ne-uHY"/>
+                            <constraint firstItem="nLv-Lp-RY5" firstAttribute="top" secondItem="yJo-fW-zLy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OJA-zP-7YA"/>
+                            <constraint firstItem="VUI-5Z-s0U" firstAttribute="leading" secondItem="nLv-Lp-RY5" secondAttribute="leading" type="default" id="ZL0-gB-i28"/>
+                            <constraint firstItem="Heb-ch-qPF" firstAttribute="top" secondItem="V8F-08-aZQ" secondAttribute="top" constant="42" id="e6J-Mx-2Gy"/>
+                            <constraint firstItem="VUI-5Z-s0U" firstAttribute="trailing" secondItem="nLv-Lp-RY5" secondAttribute="trailing" type="default" id="gBl-pN-wTF"/>
+                            <constraint firstItem="nLv-Lp-RY5" firstAttribute="leading" secondItem="yJo-fW-zLy" secondAttribute="leading" type="default" id="jJf-PP-dWp"/>
+                            <constraint firstItem="yJo-fW-zLy" firstAttribute="centerX" secondItem="Heb-ch-qPF" secondAttribute="centerX" type="default" id="o2z-NR-fBi"/>
+                            <constraint firstItem="VUI-5Z-s0U" firstAttribute="top" secondItem="nLv-Lp-RY5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="q0J-f1-3cf"/>
+                            <constraint firstItem="nLv-Lp-RY5" firstAttribute="trailing" secondItem="yJo-fW-zLy" secondAttribute="trailing" type="default" id="qtO-AG-4KK"/>
+                            <constraint firstItem="yJo-fW-zLy" firstAttribute="top" secondItem="V8F-08-aZQ" secondAttribute="top" constant="113" id="xTG-d5-jrN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Workout completed" id="I87-9y-DFu"/>
+                    <connections>
+                        <outlet property="shareFBButton" destination="yJo-fW-zLy" id="JbN-Zc-s1B"/>
+                        <outlet property="shareTwitterButton" destination="nLv-Lp-RY5" id="pgN-5M-dVq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHx-k9-J6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2639" y="-576"/>
+        </scene>
     </scenes>
     <resources>
         <image name="length_button" width="16" height="16"/>
+        <image name="share_back_button" width="16" height="16"/>
+        <image name="share_fb_button" width="16" height="16"/>
+        <image name="share_twitter_button" width="16" height="16"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
@@ -528,6 +682,16 @@
                 <relationship kind="outlet" name="lenButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="lenButtonWidthConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="lenDetailsLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RWCompleteWorkoutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWCompleteWorkoutViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonClicked:"/>
+                <relationship kind="action" name="shareFacebookButtonClicked:"/>
+                <relationship kind="action" name="shareTwitterButtonClicked:"/>
+                <relationship kind="outlet" name="shareFBButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="shareTwitterButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="RWGeneralListController" superclassName="UITableViewController">
@@ -546,6 +710,9 @@
         </class>
         <class className="RWWorkoutDetailsController" superclassName="RWGeneralListController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWWorkoutDetailsController.h"/>
+            <relationships>
+                <relationship kind="action" name="completeWorkoutClicked:"/>
+            </relationships>
         </class>
         <class className="RWWorkoutsListController" superclassName="RWGeneralListController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWWorkoutsListController.h"/>

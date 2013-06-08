@@ -10,6 +10,7 @@
 
 #import "RWAppDelegate.h"
 
+@class WorkoutVariant;
 @interface RWDataController : NSObject <NSFetchedResultsControllerDelegate>
 
 @property NSManagedObjectContext *context;
@@ -24,5 +25,5 @@
 
 // workouts
 - (NSFetchedResultsController*) getAllWorkouts;
-
+- (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant;
 @end

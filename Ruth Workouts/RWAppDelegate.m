@@ -66,7 +66,7 @@
 {
     // Override point for customization after application launch.
     
-    UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
+    //UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
     //RWWorkoutsListController *controller = [navigationController.viewControllers objectAtIndex:0];
     //controller.managedObjectContext = self.managedObjectContext;
     

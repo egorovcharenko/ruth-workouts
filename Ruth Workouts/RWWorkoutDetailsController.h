@@ -13,5 +13,6 @@
 @interface RWWorkoutDetailsController : RWGeneralListController
 
 @property WorkoutVariant* variant;
+- (IBAction)completeWorkoutClicked:(id)sender;
 
 @end

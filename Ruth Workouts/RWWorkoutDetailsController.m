@@ -11,6 +11,7 @@
 #import "Section.h"
 #import "SectionActivity.h"
 #import "WorkoutVariant.h"
+#import "RWCompleteWorkoutViewController.h"
 
 #import "RWActivityCell.h"
 
@@ -96,7 +97,7 @@
     UIImage *tasks_top = [UIImage imageNamed:@"orange_button"];
     UIImage *stretchableImage = [tasks_top resizableImageWithCapInsets:edge];
     [cell.activityNameButton setBackgroundImage:stretchableImage forState:UIControlStateNormal];
-    CGRect rect = [self sizeOfLabel:activity.name maxLabelWidth:999];
+    CGRect rect = [self sizeOfLabel:activity.name maxLabelWidth:999 font:nil];
     cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
     
     // length label
@@ -212,18 +213,44 @@
     return headerManualView;
 }
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SectionActivity* activity = [self getSectionActivity:indexPath];
     
     if (activity.details.length > 0){
-        CGRect rect = [self sizeOfLabel:activity.details maxLabelWidth:150];
+        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+        CGRect rect = [self sizeOfLabel:activity.details maxLabelWidth:150 font:detailsFont];
         return rect.size.height + 40;
     } else {
         return 40;
     }
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"completeWorkout"]) {
+        RWCompleteWorkoutViewController *controller = (RWCompleteWorkoutViewController *)segue.destinationViewController;
+        controller.variant = self.variant;
+    }
+}
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if(buttonIndex == 1)
+	{
+        [self.dataController addCompleteWorkoutEvent:variant];
+        [self performSegueWithIdentifier:@"completeWorkout" sender:nil];
+	}
+}
+
+- (IBAction)completeWorkoutClicked:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Are you sure?"
+                                                    message:@"Have you really completed this workout?"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:nil];
+    [alert addButtonWithTitle:@"It's completed"];
+    [alert show];
+}
 @end

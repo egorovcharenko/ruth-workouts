@@ -2,7 +2,7 @@
 //  WorkoutVariantEvent.h
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 02.06.13.
+//  Created by Egor Ovcharenko on 08.06.13.
 //  Copyright (c) 2013 Egor Ovcharenko. All rights reserved.
 //
 
@@ -14,8 +14,8 @@
 @interface WorkoutVariantEvent : NSManagedObject
 
 @property (nonatomic, retain) NSString * comment;
-@property (nonatomic) NSTimeInterval date;
-@property (nonatomic) int16_t totalLength;
+@property (nonatomic, retain) NSDate * date;
+@property (nonatomic, retain) NSNumber * totalLength;
 @property (nonatomic, retain) WorkoutVariant *planVariant;
 
 @end

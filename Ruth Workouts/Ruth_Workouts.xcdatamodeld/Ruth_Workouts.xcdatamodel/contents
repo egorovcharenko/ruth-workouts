@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Glossary" representedClassName="Glossary" syncable="YES">
         <attribute name="definition" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="termin" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,6 +19,10 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="parentSection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="childActivities" inverseEntity="Section" syncable="YES"/>
+    </entity>
+    <entity name="Tip" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -45,5 +49,6 @@
         <element name="Workout" positionX="160" positionY="192" width="128" height="90"/>
         <element name="WorkoutVariant" positionX="160" positionY="192" width="128" height="120"/>
         <element name="WorkoutVariantEvent" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Tip" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
