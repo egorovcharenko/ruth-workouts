@@ -23,7 +23,7 @@
 // fill
 - (void) initialDatabaseFill;
 - (void) tipsFill;
-
+- (void) glossaryFill;
 
 // workouts
 - (NSFetchedResultsController*) getAllWorkouts;
@@ -31,5 +31,8 @@
 
 // tips
 - (NSFetchedResultsController*) getAllTips;
+
+// glossary
+- (NSFetchedResultsController*) getAllGlossaryTopics;
 
 @end

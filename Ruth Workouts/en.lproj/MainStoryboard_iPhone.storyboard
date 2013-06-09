@@ -211,27 +211,63 @@
             </objects>
             <point key="canvasLocation" x="-303" y="-570"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Glossary View Controller - Glossary-->
         <scene sceneID="sif-wI-WQi">
             <objects>
-                <tableViewController id="Suu-ZD-qEq" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qnc-LN-nmu">
+                <tableViewController id="Suu-ZD-qEq" customClass="RWGlossaryViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="112" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qnc-LN-nmu">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7Jb-NP-lJt">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="112" id="7Jb-NP-lJt" customClass="RWGlossaryCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="85" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-yR-Au8">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="5Ay-1D-s8t"/>
+                                                <constraint firstAttribute="width" constant="85" type="user" id="a0l-V2-IHJ"/>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" type="user" id="jky-DD-8QL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="o8M-1H-8Bi">
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="337" constant="103" type="user" id="bPX-Zm-EZL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="o8M-1H-8Bi" firstAttribute="leading" secondItem="7Jb-NP-lJt" secondAttribute="leading" constant="95" type="user" id="0EG-tO-QrQ"/>
+                                    <constraint firstItem="PiP-yR-Au8" firstAttribute="leading" secondItem="7Jb-NP-lJt" secondAttribute="leading" constant="8" type="user" id="JuX-sP-I2D"/>
+                                    <constraint firstItem="o8M-1H-8Bi" firstAttribute="trailing" secondItem="7Jb-NP-lJt" secondAttribute="trailing" constant="-5" type="user" id="MBA-dO-coS"/>
+                                    <constraint firstAttribute="bottom" secondItem="o8M-1H-8Bi" secondAttribute="bottom" constant="1" type="user" id="euD-Hd-799"/>
+                                    <constraint firstItem="PiP-yR-Au8" firstAttribute="top" secondItem="7Jb-NP-lJt" secondAttribute="top" constant="8" type="user" id="l0j-wA-gNY"/>
+                                    <constraint firstItem="o8M-1H-8Bi" firstAttribute="top" secondItem="7Jb-NP-lJt" secondAttribute="top" constant="1" type="user" id="tdA-UT-XOe"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="terminDefinitionLabel" destination="o8M-1H-8Bi" id="y8e-WK-Mw7"/>
+                                    <outlet property="terminNameLabel" destination="PiP-yR-Au8" id="6ZO-W2-0eh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="77n-at-Lga"/>
+                    <navigationItem key="navigationItem" title="Glossary" id="77n-at-Lga"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LH9-VV-RnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,7 +278,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="bMQ-SC-vfB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="kea-HZ-Oc0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MEA-W5-bsl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="MEA-W5-bsl">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -266,8 +302,8 @@
                     <connections>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="bl5-0X-6gL"/>
                         <segue destination="jgV-O3-6gk" kind="relationship" relationship="viewControllers" id="GPf-9P-9O0"/>
-                        <segue destination="dB6-qF-y9q" kind="relationship" relationship="viewControllers" id="kI1-8W-7MJ"/>
                         <segue destination="bMQ-SC-vfB" kind="relationship" relationship="viewControllers" id="iYM-wR-agh"/>
+                        <segue destination="dB6-qF-y9q" kind="relationship" relationship="viewControllers" id="kI1-8W-7MJ"/>
                         <segue destination="ZMl-Qs-nd0" kind="relationship" relationship="viewControllers" id="Aab-91-5kE"/>
                     </connections>
                 </tabBarController>
@@ -705,6 +741,16 @@
         </class>
         <class className="RWGeneralListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWGeneralListController.h"/>
+        </class>
+        <class className="RWGlossaryCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWGlossaryCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="terminDefinitionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="terminNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RWGlossaryViewController" superclassName="RWGeneralListController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWGlossaryViewController.h"/>
         </class>
         <class className="RWTipsCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWTipsCell.h"/>

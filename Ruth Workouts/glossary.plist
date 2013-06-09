@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>topic_name</key>
+		<string>Competitive Strokes</string>
+		<key>topic_content</key>
+		<array>
+			<dict>
+				<key>termin</key>
+				<string>Butterly (fly)</string>
+				<key>definition</key>
+				<string>Double arm and double kick with body undulation and straight arm recovery</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Backstroke (back crawl)</string>
+				<key>definition</key>
+				<string>Alternating arm and kick with pronounced roll on each pull</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Breaststroke</string>
+				<key>definition</key>
+				<string>Double arm and kick, underwater recovery, modified frog kick (whip kick)</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Freestyle (crawl)</string>
+				<key>definition</key>
+				<string>Alternating arm and kick, breathing to side, standard stroke used by all</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Individual Medly (IM) </string>
+				<key>definition</key>
+				<string>All of the above in that order</string>
+			</dict>
+		</array>
+	</dict><dict>
+		<key>topic_name</key>
+		<string>Recreational Strokes</string>
+		<key>topic_content</key>
+		<array>
+			<dict>
+				<key>termin</key>
+				<string>Sidestroke</string>
+				<key>definition</key>
+				<string>Completely on one side, one arm does upper half stroke, other lower, scissors kick</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Trudgeon Crawl</string>
+				<key>definition</key>
+				<string>Same as freestyle, but with scissors kick</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Elementary Backstroke</string>
+				<key>definition</key>
+				<string>Flat on back, double arm underwater, recover only to shoulder level, frog kick</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Underwater swimming</string>
+				<key>definition</key>
+				<string>Same as breaststroke, but continue stroke all the way back</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Dog Paddle</string>
+				<key>definition</key>
+				<string>Duh - you know.   It's actually fun to do during cool down</string>
+			</dict>
+		</array>
+	</dict><dict>
+		<key>topic_name</key>
+		<string>Workout Terms	</string>
+		<key>topic_content</key>
+		<array>
+			<dict>
+				<key>termin</key>
+				<string>SKPS</string>
+				<key>definition</key>
+				<string>Swim Kick Pull Swim</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Kick</string>
+				<key>definition</key>
+				<string>Usually with a board stretched out in front of you</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Pull</string>
+				<key>definition</key>
+				<string>plastic foam pull buoy between legs to concentrate on the pull without kicking</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Interval</string>
+				<key>definition</key>
+				<string>start on a specific time.  the rest time will vary</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Repeat</string>
+				<key>definition</key>
+				<string>Rest a specified time, e.g. swim ten times 50 yards, rest 15 seconds between each swim</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>On</string>
+				<key>definition</key>
+				<string>as in Go on 75, i.e., swim 5 times 200 yards, going on 5 minute intervals</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>DPS</string>
+				<key>definition</key>
+				<string>distance per stroke, the number of yards one armstroke takes you</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>SC</string>
+				<key>definition</key>
+				<string>stroke cycle, one sc equals two armstrokes</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Fartlek or Speed play</string>
+				<key>definition</key>
+				<string>vary speeds during a continuous swim</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Set</string>
+				<key>definition</key>
+				<string>A related group of swims, like a course in a menu</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>WU</string>
+				<key>definition</key>
+				<string>Warm up, a short swim or series of swim to raise your heart rate and loosen up</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>WD</string>
+				<key>definition</key>
+				<string>Warm (or cool) down, a short swim to relax and avoid soreness</string>
+			</dict>
+		</array>
+	</dict><dict>
+		<key>topic_name</key>
+		<string>Drill sampler	</string>
+		<key>topic_content</key>
+		<array>
+			<dict>
+				<key>termin</key>
+				<string>Butterfly</string>
+				<key>definition</key>
+				<string>One-arm strokes, the other forward, breathe to side or forward, change arms at wall. 
+No arms, hands back at sides, kick head down, kick head up.
+Lots of kicking with or without board because propulsion is easily 30% from kick.</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Backstroke</string>
+				<key>definition</key>
+				<string>One-arm, stay on side for 6 or more kicks, roll all the way to other side, repeat with other arm.</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Breaststroke</string>
+				<key>definition</key>
+				<string>Swim with dolphin (butterfly) kick to introduce undulation into stroke.</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Freestyle</string>
+				<key>definition</key>
+				<string>One-arm, catch-up (touch hand in front before beginning stroke), fist swimming (get feel of water resistance from the whole arm), hesitation (delay recovery with hand held back), ripple (skim the water with fingers while elbow is held high), hypoxic swimming (reduce the number of breaths), tarzan (head up and forward), underwater recovery (slide hand forward close to torso).</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Individual Medley</string>
+				<key>definition</key>
+				<string>All of the above, sometimes changing the order of the IM, such as Fly last</string>
+			</dict>
+		</array>
+	</dict><dict>
+		<key>topic_name</key>
+		<string>Sets</string>
+		<key>topic_content</key>
+		<array>
+			<dict>
+				<key>termin</key>
+				<string>Ladder</string>
+				<key>definition</key>
+				<string>Increase or decrease the yardage, either straight like 400, 300, 200, 100 or 4x100, 4x75, 4x50, 4x25, or 4x100, 3x100, 2x100, 100, or mix them or reverse the order</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Pyramid</string>
+				<key>definition</key>
+				<string>As above, but up and down, such as 8x50, 4x100, 2x200, 1x400, and back down</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Straight / broken</string>
+				<key>definition</key>
+				<string>Straight is a swim without stopping; Broken is a distance divided into shorter swims. Alternate straight and broken, for example, would be 500, 10x50, 400, 8x50, 300, 6x50, etcetera.  you can SKPS on the straight yardage, and swim on the broken.</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Descending</string>
+				<key>definition</key>
+				<string>You descend either the strokes or the time. A combination example: swim slow 50, counting strokes; swim same speed with fewer strokes; swim 2 seconds faster with the fewer strokes, rest and do the 3x50 five times, each slow, slow with fewer strokes and faster with same stroke count.  Any distance can be used for several repeats and then start from the top</string>
+			</dict><dict>
+				<key>termin</key>
+				<string>Individual Medley</string>
+				<key>definition</key>
+				<string>All the workouts can be done alternating free and im, for example the straight/broken swims can be straight free and the broken swims im.  most of the workouts on 50 swimworkouts are a combination of im and free</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -13,6 +13,8 @@
 #import "SectionActivity.h"
 #import "WorkoutVariantEvent.h"
 #import "Tip.h"
+#import "GlossaryTopic.h"
+#import "GlossaryTermin.h"
 
 #import "RWAppDelegate.h"
 
@@ -37,6 +39,7 @@
 {
     [self workoutsFill];
     [self tipsFill];
+    [self glossaryFill];
 }
 
 -(void) workoutsFill
@@ -165,6 +168,36 @@
     return aFetchedResultsController;
 }
 
+- (NSFetchedResultsController*) getAllGlossaryTopics
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"GlossaryTopic" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+    
+    //int count = [aFetchedResultsController.fetchedObjects count];
+    //NSLog(@"Workouts number = %d", count);
+    
+    NSError *error = nil;
+	if (![aFetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
+    
+    return aFetchedResultsController;
+}
+
 - (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant
 {
     WorkoutVariantEvent *newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariantEvent" inManagedObjectContext:context];
@@ -202,5 +235,42 @@
         NSLog(@"error saving managed object context: %@", err);
     }
 }
+
+
+- (void) glossaryFill
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"glossary" ofType:@"plist"];
+    NSArray *items = [NSArray arrayWithContentsOfFile:path];
+    
+    int topicOrder = 0;
+    // load all data
+    for (NSDictionary *dict in items) {
+        GlossaryTopic *topic = [NSEntityDescription insertNewObjectForEntityForName:@"GlossaryTopic" inManagedObjectContext:context];
+        
+        topic.name = [dict objectForKey:@"topic_name"];
+        topic.order = ++ topicOrder;
+        
+        // termins
+        int terminOrder = 0;
+        NSArray *content = [dict objectForKey:@"topic_content"];
+        for (NSDictionary *dict2 in content) {
+            GlossaryTermin *termin = [NSEntityDescription insertNewObjectForEntityForName:@"GlossaryTermin" inManagedObjectContext:context];
+            
+            termin.name = [dict2 objectForKey:@"termin"];
+            termin.definition = [dict2 objectForKey:@"definition"];
+            termin.order = ++ terminOrder;
+            
+            [topic addTopicTerminsObject:termin];
+        }
+    }
+    
+    NSError *err = nil;
+    [context save:&err];
+    
+    if (err != nil) {
+        NSLog(@"error saving managed object context: %@", err);
+    }
+}
+
 
 @end
