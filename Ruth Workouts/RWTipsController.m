@@ -8,6 +8,10 @@
 
 #import "RWTipsController.h"
 
+#import "Tip.h"
+
+#import "RWTipsCell.h"
+
 @interface RWTipsController ()
 
 @end
@@ -33,6 +37,42 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    int count = [self.fetchResultsController.fetchedObjects count];
+    return count;
+}
+
+- (void)initFetchController
+{
+    // init fetch controller
+    self.fetchResultsController = [self.dataController getAllTips];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    RWTipsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
+}
+
+- (void)configureCell:(RWTipsCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    Tip *tip = [self.fetchResultsController objectAtIndexPath:indexPath];
+    
+    cell.tipNumberLabel.text = [NSString stringWithFormat:@"# %d", tip.number];;
+    cell.tipTextLabel.text = tip.text;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Tip *tip = [self.fetchResultsController objectAtIndexPath:indexPath];
+    
+    UIFont *detailsFont = [UIFont fontWithName:@"Helvetica" size:17];
+    CGRect rect = [self sizeOfLabel:tip.text maxLabelWidth:242 font:detailsFont];
+    return rect.size.height + 25;
 }
 
 @end

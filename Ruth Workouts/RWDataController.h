@@ -22,8 +22,14 @@
 
 // fill
 - (void) initialDatabaseFill;
+- (void) tipsFill;
+
 
 // workouts
 - (NSFetchedResultsController*) getAllWorkouts;
 - (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant;
+
+// tips
+- (NSFetchedResultsController*) getAllTips;
+
 @end

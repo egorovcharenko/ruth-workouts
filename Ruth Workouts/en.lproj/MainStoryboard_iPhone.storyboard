@@ -4,16 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Tips-->
+        <!--Tips Controller - Tips-->
         <scene sceneID="7cy-ef-hbp">
             <objects>
-                <tableViewController id="XaO-jC-79f" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="149" sectionHeaderHeight="22" sectionFooterHeight="22" id="fzh-Ej-QpL">
+                <tableViewController id="XaO-jC-79f" customClass="RWTipsController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="149" sectionHeaderHeight="22" sectionFooterHeight="22" id="fzh-Ej-QpL">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="149" id="zCn-jg-zAH">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="149" id="zCn-jg-zAH" customClass="RWTipsCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="149"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -23,7 +23,7 @@
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="# 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR2-eE-hYw">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="8pe-pJ-W4Y"/>
-                                                <constraint firstAttribute="width" constant="30" id="MqO-kB-AoF"/>
+                                                <constraint firstAttribute="width" constant="30" type="user" id="MqO-kB-AoF"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" red="0.30588235294117649" green="0.36862745098039218" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,30 +33,39 @@
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-ky-m8K">
                                             <color key="backgroundColor" red="0.47058823529411764" green="0.78823529411764703" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
-                                        </view>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrG-b4-Owe">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="131" id="BfZ-mJ-9Yn"/>
+                                                <constraint firstAttribute="height" constant="9" type="user" id="508-4Z-FrJ"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="KrG-b4-Owe">
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="340" constant="131" type="user" id="OAB-EN-jUB"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Dvz-ky-m8K" firstAttribute="top" secondItem="zCn-jg-zAH" secondAttribute="top" type="default" id="0UA-Bd-3bj"/>
+                                    <constraint firstItem="Dvz-ky-m8K" firstAttribute="top" secondItem="zCn-jg-zAH" secondAttribute="top" type="user" id="0UA-Bd-3bj"/>
                                     <constraint firstAttribute="trailing" secondItem="KrG-b4-Owe" secondAttribute="trailing" constant="20" type="default" id="7nq-HN-b60"/>
+                                    <constraint firstItem="KrG-b4-Owe" firstAttribute="leading" secondItem="zCn-jg-zAH" secondAttribute="leading" constant="50" type="user" id="Bjj-Sx-9tz"/>
                                     <constraint firstItem="Dvz-ky-m8K" firstAttribute="trailing" secondItem="zCn-jg-zAH" secondAttribute="trailing" type="default" id="ONf-ii-Ind"/>
                                     <constraint firstItem="Dvz-ky-m8K" firstAttribute="leading" secondItem="zCn-jg-zAH" secondAttribute="leading" type="default" id="U6I-9U-JPe"/>
-                                    <constraint firstItem="KrG-b4-Owe" firstAttribute="top" secondItem="Dvz-ky-m8K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gpD-nx-TnG"/>
-                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="top" secondItem="Dvz-ky-m8K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nwp-k7-vop"/>
-                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="leading" secondItem="zCn-jg-zAH" secondAttribute="leading" constant="20" type="default" id="vs2-Rb-2hE"/>
-                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="top" secondItem="zCn-jg-zAH" secondAttribute="top" constant="17" id="vtn-se-7lf"/>
-                                    <constraint firstItem="KrG-b4-Owe" firstAttribute="leading" secondItem="ZR2-eE-hYw" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="yCp-bl-Yd4"/>
+                                    <constraint firstAttribute="bottom" secondItem="KrG-b4-Owe" secondAttribute="bottom" constant="1" type="user" id="fRD-dS-sxM"/>
+                                    <constraint firstItem="KrG-b4-Owe" firstAttribute="top" secondItem="Dvz-ky-m8K" secondAttribute="bottom" constant="2" type="user" id="gpD-nx-TnG"/>
+                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="top" secondItem="Dvz-ky-m8K" secondAttribute="bottom" constant="10" type="user" id="nwp-k7-vop"/>
+                                    <constraint firstItem="ZR2-eE-hYw" firstAttribute="leading" secondItem="zCn-jg-zAH" secondAttribute="leading" constant="12" type="user" id="vs2-Rb-2hE"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="tipNumberLabel" destination="ZR2-eE-hYw" id="0hn-Uv-vqz"/>
+                                    <outlet property="tipTextLabel" destination="KrG-b4-Owe" id="aEF-P0-0gO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -696,6 +705,16 @@
         </class>
         <class className="RWGeneralListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWGeneralListController.h"/>
+        </class>
+        <class className="RWTipsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWTipsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tipNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tipTextLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RWTipsController" superclassName="RWGeneralListController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RWTipsController.h"/>
         </class>
         <class className="RWWorkoutCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RWWorkoutCell.h"/>

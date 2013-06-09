@@ -19,12 +19,6 @@
     [self initFetchController];
 }
 
-- (void)initFetchController
-{
-    // init fetch controller
-    self.fetchResultsController = [self.dataController getAllWorkouts];
-}
-
 - (void)setDataController
 {
     // data controller

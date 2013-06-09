@@ -25,6 +25,8 @@
 		0E19BDD51763A97D0017F351 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BDD41763A97D0017F351 /* Social.framework */; };
 		0E19BDD91763BCDA0017F351 /* RWTipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19BDD81763BCDA0017F351 /* RWTipsController.m */; };
 		0E19BDDB1763BD3C0017F351 /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E19BDDA1763BD3C0017F351 /* tips.plist */; };
+		0E19BDDE1763BEED0017F351 /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19BDDD1763BEED0017F351 /* Tip.m */; };
+		0E19BDE11763C12B0017F351 /* RWTipsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19BDE01763C12B0017F351 /* RWTipsCell.m */; };
 		0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAC174A92B7001E18E4 /* RWDataController.m */; };
 		0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */; };
 		0E98E6C31756867F00AD5523 /* workouts_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E98E6C21756867F00AD5523 /* workouts_icon@2x.png */; };
@@ -89,6 +91,10 @@
 		0E19BDD71763BCDA0017F351 /* RWTipsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTipsController.h; sourceTree = "<group>"; };
 		0E19BDD81763BCDA0017F351 /* RWTipsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTipsController.m; sourceTree = "<group>"; };
 		0E19BDDA1763BD3C0017F351 /* tips.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tips.plist; sourceTree = "<group>"; };
+		0E19BDDC1763BEED0017F351 /* Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tip.h; sourceTree = "<group>"; };
+		0E19BDDD1763BEED0017F351 /* Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tip.m; sourceTree = "<group>"; };
+		0E19BDDF1763C12B0017F351 /* RWTipsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTipsCell.h; sourceTree = "<group>"; };
+		0E19BDE01763C12B0017F351 /* RWTipsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTipsCell.m; sourceTree = "<group>"; };
 		0E959FAB174A92B7001E18E4 /* RWDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDataController.h; sourceTree = "<group>"; };
 		0E959FAC174A92B7001E18E4 /* RWDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDataController.m; sourceTree = "<group>"; };
 		0E959FB2174BF536001E18E4 /* RWWorkoutsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWWorkoutsListController.h; path = ../RWWorkoutsListController.h; sourceTree = "<group>"; };
@@ -183,6 +189,8 @@
 		0E19BDD61763BCB40017F351 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				0E19BDDF1763C12B0017F351 /* RWTipsCell.h */,
+				0E19BDE01763C12B0017F351 /* RWTipsCell.m */,
 				0E19BDD71763BCDA0017F351 /* RWTipsController.h */,
 				0E19BDD81763BCDA0017F351 /* RWTipsController.m */,
 			);
@@ -351,6 +359,8 @@
 				0E124FAF175BACC400A0A5CD /* Glossary.m */,
 				0E124FAB175BACC400A0A5CD /* Workout.h */,
 				0E124FAC175BACC400A0A5CD /* Workout.m */,
+				0E19BDDC1763BEED0017F351 /* Tip.h */,
+				0E19BDDD1763BEED0017F351 /* Tip.m */,
 			);
 			name = "Generated classes";
 			sourceTree = "<group>";
@@ -463,6 +473,8 @@
 				0EBE130A176396010051D450 /* RWCompleteWorkoutViewController.m in Sources */,
 				0EBE130D1763A3950051D450 /* WorkoutVariantEvent.m in Sources */,
 				0E19BDD91763BCDA0017F351 /* RWTipsController.m in Sources */,
+				0E19BDDE1763BEED0017F351 /* Tip.m in Sources */,
+				0E19BDE11763C12B0017F351 /* RWTipsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

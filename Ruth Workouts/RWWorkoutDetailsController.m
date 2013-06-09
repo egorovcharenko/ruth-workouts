@@ -51,6 +51,12 @@
     return [variant.childSections count];
 }
 
+- (void)initFetchController
+{
+    // init fetch controller
+    self.fetchResultsController = [self.dataController getAllWorkouts];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionNumber
 {
     Section *section = [self getSection:sectionNumber];

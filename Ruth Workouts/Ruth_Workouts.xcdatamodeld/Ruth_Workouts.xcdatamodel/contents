@@ -20,7 +20,7 @@
         <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="parentSection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="childActivities" inverseEntity="Section" syncable="YES"/>
     </entity>
-    <entity name="Tip" syncable="YES">
+    <entity name="Tip" representedClassName="Tip" syncable="YES">
         <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
     </entity>

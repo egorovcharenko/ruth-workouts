@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>number</key>
+		<integer>1</integer>
+		<key>text</key>
+		<string>Bring a friend or two to the pool.</string>
+	</dict>
+	<dict>
+		<key>number</key>
+		<integer>2</integer>
+		<key>text</key>
+		<string>Become familiar with the pace clock.</string>
+	</dict><dict>
+		<key>number</key>
+		<integer>3</integer>
+		<key>text</key>
+		<string>Have *toys* on hand, mostly for variety, but don't overuse them.  Especially the pull-buoy can easily become a crutch, usually for men with inflexible ankles due either to age or strength achieved through bicycling.</string>
+	</dict><dict>
+		<key>number</key>
+		<integer>4</integer>
+		<key>text</key>
+		<string>Use a number for the whole work-out when you're making your own.  It's easy to remember if you don't want to bring it with you.</string>
+	</dict><dict>
+		<key>number</key>
+		<integer>5</integer>
+		<key>text</key>
+		<string>The workouts for the first few months have a similar structure.  They begin with a warm-up, then a main set of intervals and repeats, followed by practicing new strokes and drills.  The warm-up has a purpose in addition to stretching muscles.  You've probably noticed that your third lap is the most taxing. It takes a couple minutes to switch from your anaerobic system to aerobic, when breathing becomes much easier.</string>
+	</dict><dict>
+		<key>number</key>
+		<integer>6</integer>
+		<key>text</key>
+		<string>A Facebook discussion group has been put up
+by a swimmer doing the 0-1650 plan. If you would 
+like to join or begin a discussion please go to "FB 0-1650 talk" - http://goo.gl/xDkS2</string>
+	</dict><dict>
+		<key>number</key>
+		<integer>7</integer>
+		<key>text</key>
+		<string>Assuming you want to swim one hour 3 times per week, it's probably a good idea to continue the one mile on day one, but there are many ways of making the other two sessions a bit more fun. </string>
+	</dict><dict>
+		<key>number</key>
+		<integer>8</integer>
+		<key>text</key>
+		<string>For maximum fitness benefits, it helps to exercise at different speeds to occasionally raise your heart rate. </string>
+	</dict><dict>
+		<key>number</key>
+		<integer>9</integer>
+		<key>text</key>
+		<string>Using different strokes strenghthens different muscles, of course, but it is also less boring. </string>
+	</dict>
+</array>
 </plist>

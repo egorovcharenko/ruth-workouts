@@ -40,6 +40,12 @@
     return 1;
 }
 
+- (void)initFetchController
+{
+    // init fetch controller
+    self.fetchResultsController = [self.dataController getAllWorkouts];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     int count = [self.fetchResultsController.fetchedObjects count];
