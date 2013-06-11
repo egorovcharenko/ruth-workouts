@@ -1,0 +1,76 @@
+//
+//  RWMiscViewController.m
+//  Ruth Workouts
+//
+//  Created by Egor Ovcharenko on 09.06.13.
+//  Copyright (c) 2013 Egor Ovcharenko. All rights reserved.
+//
+
+#import "RWMiscViewController.h"
+#import <MessageUI/MessageUI.h>
+#import "Appirater.h"
+
+@interface RWMiscViewController ()
+
+@end
+
+@implementation RWMiscViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)rateButtonClicked:(id)sender
+{
+    [Appirater rateApp];
+}
+
+- (IBAction)sendFeedbackButtonClicked:(id)sender
+{
+    [self openMail:sender];
+}
+
+- (IBAction)openMail:(id)sender
+{
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = nil;
+        [mailer setSubject:@"Feedback on 'Ruth Workouts'"];
+        NSArray *toRecipients = [NSArray arrayWithObjects:@"egor.ovcharenko@gmail.com", nil];
+        [mailer setToRecipients:toRecipients];
+        NSString *emailBody = @"Hi Egor, ";
+        [mailer setMessageBody:emailBody isHTML:NO];
+        [self presentViewController:mailer animated:YES completion:^(){
+            //put your code here
+        }];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
+                                                        message:@"Your device doesn't support the composer sheet"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
+}
+
+@end

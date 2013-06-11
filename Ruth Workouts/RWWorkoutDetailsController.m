@@ -222,14 +222,22 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SectionActivity* activity = [self getSectionActivity:indexPath];
+    int detailsLen = 0;
+    int lenDetailsLen = 0;
     
     if (activity.details.length > 0){
         UIFont *detailsFont = [UIFont fontWithName:@"Helvetica-Bold" size:14];
         CGRect rect = [self sizeOfLabel:activity.details maxLabelWidth:150 font:detailsFont];
-        return rect.size.height + 40;
-    } else {
-        return 40;
+        detailsLen = rect.size.height + 40;
     }
+    
+    if (activity.lenDetails.length > 0){
+        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica" size:14];
+        CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:93 font:detailsFont];
+        lenDetailsLen = rect.size.height + 20;
+    }
+    
+    return MAX(detailsLen, lenDetailsLen);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

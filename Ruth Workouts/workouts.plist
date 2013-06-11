@@ -36,7 +36,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -61,7 +61,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -75,7 +75,7 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -83,13 +83,13 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>2</integer>
 								<key>len</key>
 								<integer>50</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -114,7 +114,7 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -122,13 +122,13 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>1</integer>
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -154,7 +154,7 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -180,7 +180,7 @@
 								<key>len</key>
 								<integer>75</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -188,13 +188,13 @@
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>1</integer>
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -219,7 +219,7 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -252,7 +252,7 @@
 								<key>len</key>
 								<integer>250</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -277,7 +277,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -291,7 +291,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -299,13 +299,13 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>2</integer>
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -330,7 +330,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -338,13 +338,13 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>1</integer>
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -370,7 +370,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -396,7 +396,7 @@
 								<key>len</key>
 								<integer>75</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -404,13 +404,13 @@
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>1</integer>
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -435,7 +435,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -474,7 +474,7 @@
 								<key>len</key>
 								<integer>300</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -507,7 +507,7 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>4</integer>
 								<key>len</key>
@@ -521,7 +521,7 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>4</integer>
 								<key>len</key>
@@ -535,13 +535,13 @@
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>1</integer>
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -549,7 +549,7 @@
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>4</integer>
 								<key>len</key>
@@ -622,7 +622,7 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -647,7 +647,7 @@
 								<key>len</key>
 								<integer>50</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -661,7 +661,7 @@
 								<key>len</key>
 								<integer>25</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -675,7 +675,7 @@
 								<key>len</key>
 								<integer>50</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -705,7 +705,7 @@
 								<key>len</key>
 								<integer>400</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -738,7 +738,7 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>4</integer>
 								<key>len</key>
@@ -752,7 +752,7 @@
 								<key>name</key>
 								<string>Swim</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>4</integer>
 								<key>len</key>
@@ -766,13 +766,13 @@
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>1</integer>
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -780,7 +780,7 @@
 								<key>name</key>
 								<string>Kick</string>
 								<key>details</key>
-								<string></string>
+								<string/>
 								<key>len_multiplier</key>
 								<integer>8</integer>
 								<key>len</key>
@@ -853,7 +853,7 @@
 								<key>len</key>
 								<integer>200</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
@@ -878,7 +878,7 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -892,7 +892,7 @@
 								<key>len</key>
 								<integer>50</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 							<dict>
 								<key>order</key>
@@ -906,12 +906,478 @@
 								<key>len</key>
 								<integer>100</integer>
 								<key>len_details</key>
-								<string></string>
+								<string/>
 							</dict>
 						</array>
 					</dict>
 				</array>
 			</dict>
+		</array>
+	</dict><dict>
+		<key>number</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>Free fartlek, then combination of Fly+Free and Back+Breast</string>
+		<key>variants</key>
+		<array>
+			<dict>
+				<key>sections</key>
+				<array>
+					<dict>
+						<key>order</key>
+						<string>1</string>
+						<key>name</key>
+						<string>Warm-up</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>500</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>2</string>
+						<key>name</key>
+						<string>Fly+Free</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>25 FLY, 25 free</string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>free, FLY</string>
+							</dict><dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>FLY, free</string>
+							</dict><dict>
+								<key>order</key>
+								<string>4</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>free, FLY</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>3</string>
+						<key>name</key>
+						<string>Back+Breast</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>work turns hard</string>
+								<key>len_multiplier</key>
+								<integer>2</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>75 back, 25 breast</string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>work turns hard</string>
+								<key>len_multiplier</key>
+								<integer>2</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>25 back, 75 breast</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>4</string>
+						<key>name</key>
+						<string>Free</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Kick</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>6</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :75</string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>4</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>moderate 75,
+10 sec rest, then hard 25</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>5</string>
+						<key>name</key>
+						<string>Swim-down</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Pull</string>
+								<key>details</key>
+								<string>free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>200</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+					
+					
+					
+				</array>
+			</dict><dict>
+				<key>sections</key>
+				<array>
+					<dict>
+						<key>order</key>
+						<string>1</string>
+						<key>name</key>
+						<string>Warm-up</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>500</integer>
+								<key>len_details</key>
+								<string>1 length easy,1 hard,2 easy, 2 hard,3,3,4,4.</string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>500</integer>
+								<key>len_details</key>
+								<string>reverse: 4 to 1</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>2</string>
+						<key>name</key>
+						<string>Fly+Free</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>25 FLY, 75 free </string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>25 free, 25 FLY, 50 free </string>
+							</dict><dict>
+								<key>order</key>
+								<string>3</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>50 free, 25 FLY, 25 free</string>
+							</dict><dict>
+								<key>order</key>
+								<string>4</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>75 free, 25 FLY</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>3</string>
+						<key>name</key>
+						<string>Back+Breast</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>work turns hard</string>
+								<key>len_multiplier</key>
+								<integer>2</integer>
+								<key>len</key>
+								<integer>150</integer>
+								<key>len_details</key>
+								<string>100 back, 50 breast</string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string>work turns hard</string>
+								<key>len_multiplier</key>
+								<integer>2</integer>
+								<key>len</key>
+								<integer>150</integer>
+								<key>len_details</key>
+								<string>50 back, 100 breast</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>4</string>
+						<key>name</key>
+						<string>Free</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Kick</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>8</integer>
+								<key>len</key>
+								<integer>50</integer>
+								<key>len_details</key>
+								<string>on :60</string>
+							</dict><dict>
+								<key>order</key>
+								<string>2</string>
+								<key>name</key>
+								<string>Swim</string>
+								<key>details</key>
+								<string></string>
+								<key>len_multiplier</key>
+								<integer>8</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>moderate 75, 
+10 sec rest, then hard 25</string>
+							</dict>
+						</array>
+					</dict><dict>
+						<key>order</key>
+						<string>5</string>
+						<key>name</key>
+						<string>Swim-down</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>Pull</string>
+								<key>details</key>
+								<string>free</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>300</integer>
+								<key>len_details</key>
+								<string></string>
+							</dict>
+						</array>
+					</dict>
+					
+					
+					
+				</array>
+			</dict>
+			
+		</array>
+	</dict><dict>
+		<key>number</key>
+		<integer>99</integer>
+		<key>name</key>
+		<string>Template</string>
+		<key>variants</key>
+		<array>
+			<dict>
+				<key>sections</key>
+				<array>
+					<dict>
+						<key>order</key>
+						<string>1</string>
+						<key>name</key>
+						<string>---</string>
+						
+						
+						<key>activities</key>
+						<array>
+							<dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>---</string>
+								<key>details</key>
+								<string>---</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>---</string>
+							</dict><dict>
+								<key>order</key>
+								<string>1</string>
+								<key>name</key>
+								<string>---</string>
+								<key>details</key>
+								<string>---</string>
+								<key>len_multiplier</key>
+								<integer>1</integer>
+								<key>len</key>
+								<integer>100</integer>
+								<key>len_details</key>
+								<string>---</string>
+							</dict>
+						</array>
+					</dict>
+					
+					
+					
+				</array>
+			</dict>
+			
 		</array>
 	</dict>
 </array>
