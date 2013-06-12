@@ -121,7 +121,7 @@
         NSString *length2 = [NSString stringWithFormat:@"%d m", variant2.length];
         [cell.secondButton setTitle:length2 forState:UIControlStateNormal];
         
-        // show times completed
+        // TODO show times completed
         
     }
 }

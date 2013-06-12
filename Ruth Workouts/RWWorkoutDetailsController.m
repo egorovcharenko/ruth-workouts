@@ -237,7 +237,7 @@
         lenDetailsLen = rect.size.height + 20;
     }
     
-    return MAX(detailsLen, lenDetailsLen);
+    return MAX(MAX(detailsLen, lenDetailsLen), 40);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

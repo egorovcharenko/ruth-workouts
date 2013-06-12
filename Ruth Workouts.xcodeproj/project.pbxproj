@@ -13,7 +13,7 @@
 		0E124FA4175A742500A0A5CD /* RWActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124FA3175A742500A0A5CD /* RWActivityCell.m */; };
 		0E124FA6175A7B3C00A0A5CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E124FA5175A7B3C00A0A5CD /* QuartzCore.framework */; };
 		0E124FA8175B35F300A0A5CD /* orange_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E124FA7175B35F300A0A5CD /* orange_button@2x.png */; };
-		0E124FAA175BAB5500A0A5CD /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E124FA9175BAB5500A0A5CD /* workouts.plist */; };
+		0E124FAA175BAB5500A0A5CD /* workouts_old.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E124FA9175BAB5500A0A5CD /* workouts_old.plist */; };
 		0E124FAD175BACC400A0A5CD /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124FAC175BACC400A0A5CD /* Workout.m */; };
 		0E124FB3175BACC400A0A5CD /* SectionActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124FB2175BACC400A0A5CD /* SectionActivity.m */; };
 		0E124FB6175BACC400A0A5CD /* WorkoutVariant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124FB5175BACC400A0A5CD /* WorkoutVariant.m */; };
@@ -43,6 +43,7 @@
 		0E19BE3D1764B6690017F351 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BE3C1764B6690017F351 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0E8BDD751764C3670051F352 /* send_feedback_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD741764C3670051F352 /* send_feedback_button@2x.png */; };
 		0E8BDD771764C4210051F352 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8BDD761764C4210051F352 /* MessageUI.framework */; };
+		0E8BDD7A1768FDDF0051F352 /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD791768FDDF0051F352 /* workouts.plist */; };
 		0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAC174A92B7001E18E4 /* RWDataController.m */; };
 		0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */; };
 		0E98E6C31756867F00AD5523 /* workouts_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E98E6C21756867F00AD5523 /* workouts_icon@2x.png */; };
@@ -89,7 +90,7 @@
 		0E124FA3175A742500A0A5CD /* RWActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWActivityCell.m; sourceTree = "<group>"; };
 		0E124FA5175A7B3C00A0A5CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E124FA7175B35F300A0A5CD /* orange_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "orange_button@2x.png"; path = "../../../../SkyDrive/03. Мобильные проекты/06. Ruth's swim workouts/orange_button@2x.png"; sourceTree = "<group>"; };
-		0E124FA9175BAB5500A0A5CD /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
+		0E124FA9175BAB5500A0A5CD /* workouts_old.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts_old.plist; sourceTree = "<group>"; };
 		0E124FAB175BACC400A0A5CD /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
 		0E124FAC175BACC400A0A5CD /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
 		0E124FB1175BACC400A0A5CD /* SectionActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionActivity.h; sourceTree = "<group>"; };
@@ -158,6 +159,7 @@
 		0E19BE3C1764B6690017F351 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0E8BDD741764C3670051F352 /* send_feedback_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send_feedback_button@2x.png"; sourceTree = "<group>"; };
 		0E8BDD761764C4210051F352 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0E8BDD791768FDDF0051F352 /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
 		0E959FAB174A92B7001E18E4 /* RWDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDataController.h; sourceTree = "<group>"; };
 		0E959FAC174A92B7001E18E4 /* RWDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDataController.m; sourceTree = "<group>"; };
 		0E959FB2174BF536001E18E4 /* RWWorkoutsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWWorkoutsListController.h; path = ../RWWorkoutsListController.h; sourceTree = "<group>"; };
@@ -341,7 +343,8 @@
 		0E959FB1174AA656001E18E4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0E124FA9175BAB5500A0A5CD /* workouts.plist */,
+				0E8BDD791768FDDF0051F352 /* workouts.plist */,
+				0E124FA9175BAB5500A0A5CD /* workouts_old.plist */,
 				0E19BDDA1763BD3C0017F351 /* tips.plist */,
 				0E19BDE9176485270017F351 /* glossary.plist */,
 			);
@@ -599,7 +602,7 @@
 				0EEF4C47175A4F9800142660 /* length_button@2x.png in Resources */,
 				0E124F95175A515700A0A5CD /* background@2x.png in Resources */,
 				0E124FA8175B35F300A0A5CD /* orange_button@2x.png in Resources */,
-				0E124FAA175BAB5500A0A5CD /* workouts.plist in Resources */,
+				0E124FAA175BAB5500A0A5CD /* workouts_old.plist in Resources */,
 				0E124FBE175BC69B00A0A5CD /* blue_button@2x.png in Resources */,
 				0E124FC2175BD12F00A0A5CD /* Icon.png in Resources */,
 				0E124FC4175BD12F00A0A5CD /* Icon@2x.png in Resources */,
@@ -615,6 +618,7 @@
 				0E19BE361764B0BF0017F351 /* AppiraterLocalizable.strings in Resources */,
 				0E19BE371764B0BF0017F351 /* README.md in Resources */,
 				0E8BDD751764C3670051F352 /* send_feedback_button@2x.png in Resources */,
+				0E8BDD7A1768FDDF0051F352 /* workouts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

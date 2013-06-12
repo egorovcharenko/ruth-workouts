@@ -402,7 +402,6 @@
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-xy-YDY">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="33" id="8ZX-pf-Ssb"/>
                                                 <constraint firstAttribute="height" constant="79" id="nQe-Tr-mnb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -461,6 +460,7 @@
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="l9i-xy-YDY" firstAttribute="leading" secondItem="lJ0-d7-vTF" secondAttribute="leading" type="default" id="3xP-Ii-JPB"/>
                                     <constraint firstItem="l9i-xy-YDY" firstAttribute="top" secondItem="lJ0-d7-vTF" secondAttribute="top" type="default" id="CCh-GM-KHG"/>
                                     <constraint firstItem="PY2-88-NKA" firstAttribute="leading" secondItem="lJ0-d7-vTF" secondAttribute="leading" constant="50" type="user" id="LUG-dE-vmE"/>
                                     <constraint firstItem="lUQ-ml-464" firstAttribute="top" secondItem="lJ0-d7-vTF" secondAttribute="top" constant="9" id="Qi7-Se-yLO"/>
