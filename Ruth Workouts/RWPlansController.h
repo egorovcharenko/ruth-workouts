@@ -1,17 +1,13 @@
 //
-//  Tip.m
+//  RWPlansController.h
 //  Ruth Workouts
 //
 //  Created by Egor Ovcharenko on 14.05.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
-#import "Tip.h"
+#import "RWGeneralListController.h"
 
-
-@implementation Tip
-
-@dynamic number;
-@dynamic text;
+@interface RWPlansController : RWGeneralListController
 
 @end

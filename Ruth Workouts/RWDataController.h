@@ -35,4 +35,8 @@
 // glossary
 - (NSFetchedResultsController*) getAllGlossaryTopics;
 
+// plans
+- (NSFetchedResultsController*) getAllPlans;
+
+
 @end
