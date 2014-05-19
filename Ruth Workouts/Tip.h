@@ -2,7 +2,7 @@
 //  Tip.h
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 14.05.14.
+//  Created by Egor Ovcharenko on 18.05.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 

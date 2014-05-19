@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0757241928F740002524AE /* RWPlanStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0757231928F740002524AE /* RWPlanStartViewController.m */; };
+		0E07572719290913002524AE /* WorkoutVariant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07572619290913002524AE /* WorkoutVariant.m */; };
+		0E07572A19290913002524AE /* SectionActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07572919290913002524AE /* SectionActivity.m */; };
+		0E07572D19290913002524AE /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07572C19290913002524AE /* Tip.m */; };
+		0E07573319290914002524AE /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07573219290914002524AE /* Workout.m */; };
+		0E07573619290914002524AE /* GlossaryTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07573519290914002524AE /* GlossaryTopic.m */; };
+		0E07573919290914002524AE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07573819290914002524AE /* Section.m */; };
+		0E07573C19290914002524AE /* WorkoutVariantEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07573B19290914002524AE /* WorkoutVariantEvent.m */; };
+		0E07573F19290914002524AE /* GlossaryTermin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07573E19290914002524AE /* GlossaryTermin.m */; };
+		0E07574219290A68002524AE /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E07574119290A68002524AE /* Plan.m */; };
 		0E124F95175A515700A0A5CD /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E124F94175A515700A0A5CD /* background@2x.png */; };
 		0E124F9D175A655800A0A5CD /* RWWorkoutDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124F9C175A655800A0A5CD /* RWWorkoutDetailsController.m */; };
 		0E124FA0175A6F2100A0A5CD /* RWGeneralListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E124F9F175A6F2100A0A5CD /* RWGeneralListController.m */; };
@@ -34,21 +44,13 @@
 		0E19BE391764B65B0017F351 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BE381764B65B0017F351 /* CFNetwork.framework */; };
 		0E19BE3B1764B6630017F351 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BE3A1764B6620017F351 /* SystemConfiguration.framework */; };
 		0E19BE3D1764B6690017F351 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BE3C1764B6690017F351 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0E2C1D121927E4330021B582 /* signal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C1D111927E4330021B582 /* signal@2x.png */; };
 		0E8BDD751764C3670051F352 /* send_feedback_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD741764C3670051F352 /* send_feedback_button@2x.png */; };
 		0E8BDD771764C4210051F352 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8BDD761764C4210051F352 /* MessageUI.framework */; };
 		0E8BDD7A1768FDDF0051F352 /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD791768FDDF0051F352 /* workouts.plist */; };
 		0E8BDD7C177282940051F352 /* rate_app_button_without_stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD7B177282940051F352 /* rate_app_button_without_stars@2x.png */; };
 		0E8FE2E41923EF8F0012352D /* RWPlansController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2E31923EF8F0012352D /* RWPlansController.m */; };
 		0E8FE2E71923EFF20012352D /* RWPlanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2E61923EFF20012352D /* RWPlanCell.m */; };
-		0E8FE2EA1923F3220012352D /* WorkoutVariantEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2E91923F3220012352D /* WorkoutVariantEvent.m */; };
-		0E8FE2ED1923F3230012352D /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2EC1923F3230012352D /* Workout.m */; };
-		0E8FE2F01923F3230012352D /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2EF1923F3230012352D /* Section.m */; };
-		0E8FE2F31923F3230012352D /* GlossaryTermin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2F21923F3230012352D /* GlossaryTermin.m */; };
-		0E8FE2F61923F3230012352D /* GlossaryTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2F51923F3230012352D /* GlossaryTopic.m */; };
-		0E8FE2F91923F3230012352D /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2F81923F3230012352D /* Plan.m */; };
-		0E8FE2FC1923F3230012352D /* WorkoutVariant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2FB1923F3230012352D /* WorkoutVariant.m */; };
-		0E8FE2FF1923F3230012352D /* SectionActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE2FE1923F3230012352D /* SectionActivity.m */; };
-		0E8FE3021923F3230012352D /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FE3011923F3230012352D /* Tip.m */; };
 		0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FAC174A92B7001E18E4 /* RWDataController.m */; };
 		0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E959FB3174BF536001E18E4 /* RWWorkoutsListController.m */; };
 		0E98E6C31756867F00AD5523 /* workouts_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E98E6C21756867F00AD5523 /* workouts_icon@2x.png */; };
@@ -85,6 +87,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0757221928F740002524AE /* RWPlanStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPlanStartViewController.h; sourceTree = "<group>"; };
+		0E0757231928F740002524AE /* RWPlanStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPlanStartViewController.m; sourceTree = "<group>"; };
+		0E07572519290913002524AE /* WorkoutVariant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutVariant.h; sourceTree = "<group>"; };
+		0E07572619290913002524AE /* WorkoutVariant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutVariant.m; sourceTree = "<group>"; };
+		0E07572819290913002524AE /* SectionActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionActivity.h; sourceTree = "<group>"; };
+		0E07572919290913002524AE /* SectionActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionActivity.m; sourceTree = "<group>"; };
+		0E07572B19290913002524AE /* Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tip.h; sourceTree = "<group>"; };
+		0E07572C19290913002524AE /* Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tip.m; sourceTree = "<group>"; };
+		0E07573119290914002524AE /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
+		0E07573219290914002524AE /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
+		0E07573419290914002524AE /* GlossaryTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTopic.h; sourceTree = "<group>"; };
+		0E07573519290914002524AE /* GlossaryTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTopic.m; sourceTree = "<group>"; };
+		0E07573719290914002524AE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		0E07573819290914002524AE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		0E07573A19290914002524AE /* WorkoutVariantEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutVariantEvent.h; sourceTree = "<group>"; };
+		0E07573B19290914002524AE /* WorkoutVariantEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutVariantEvent.m; sourceTree = "<group>"; };
+		0E07573D19290914002524AE /* GlossaryTermin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTermin.h; sourceTree = "<group>"; };
+		0E07573E19290914002524AE /* GlossaryTermin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTermin.m; sourceTree = "<group>"; };
+		0E07574019290A68002524AE /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plan.h; sourceTree = "<group>"; };
+		0E07574119290A68002524AE /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plan.m; sourceTree = "<group>"; };
 		0E124F94175A515700A0A5CD /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		0E124F9B175A655800A0A5CD /* RWWorkoutDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWWorkoutDetailsController.h; sourceTree = "<group>"; };
 		0E124F9C175A655800A0A5CD /* RWWorkoutDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWWorkoutDetailsController.m; sourceTree = "<group>"; };
@@ -147,6 +169,7 @@
 		0E19BE381764B65B0017F351 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0E19BE3A1764B6620017F351 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0E19BE3C1764B6690017F351 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0E2C1D111927E4330021B582 /* signal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal@2x.png"; sourceTree = "<group>"; };
 		0E8BDD741764C3670051F352 /* send_feedback_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send_feedback_button@2x.png"; sourceTree = "<group>"; };
 		0E8BDD761764C4210051F352 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0E8BDD791768FDDF0051F352 /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
@@ -155,24 +178,6 @@
 		0E8FE2E31923EF8F0012352D /* RWPlansController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPlansController.m; sourceTree = "<group>"; };
 		0E8FE2E51923EFF20012352D /* RWPlanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPlanCell.h; sourceTree = "<group>"; };
 		0E8FE2E61923EFF20012352D /* RWPlanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPlanCell.m; sourceTree = "<group>"; };
-		0E8FE2E81923F3220012352D /* WorkoutVariantEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutVariantEvent.h; sourceTree = "<group>"; };
-		0E8FE2E91923F3220012352D /* WorkoutVariantEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutVariantEvent.m; sourceTree = "<group>"; };
-		0E8FE2EB1923F3230012352D /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
-		0E8FE2EC1923F3230012352D /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
-		0E8FE2EE1923F3230012352D /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
-		0E8FE2EF1923F3230012352D /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
-		0E8FE2F11923F3230012352D /* GlossaryTermin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTermin.h; sourceTree = "<group>"; };
-		0E8FE2F21923F3230012352D /* GlossaryTermin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTermin.m; sourceTree = "<group>"; };
-		0E8FE2F41923F3230012352D /* GlossaryTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlossaryTopic.h; sourceTree = "<group>"; };
-		0E8FE2F51923F3230012352D /* GlossaryTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlossaryTopic.m; sourceTree = "<group>"; };
-		0E8FE2F71923F3230012352D /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plan.h; sourceTree = "<group>"; };
-		0E8FE2F81923F3230012352D /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plan.m; sourceTree = "<group>"; };
-		0E8FE2FA1923F3230012352D /* WorkoutVariant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutVariant.h; sourceTree = "<group>"; };
-		0E8FE2FB1923F3230012352D /* WorkoutVariant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutVariant.m; sourceTree = "<group>"; };
-		0E8FE2FD1923F3230012352D /* SectionActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionActivity.h; sourceTree = "<group>"; };
-		0E8FE2FE1923F3230012352D /* SectionActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionActivity.m; sourceTree = "<group>"; };
-		0E8FE3001923F3230012352D /* Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tip.h; sourceTree = "<group>"; };
-		0E8FE3011923F3230012352D /* Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tip.m; sourceTree = "<group>"; };
 		0E959FAB174A92B7001E18E4 /* RWDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDataController.h; sourceTree = "<group>"; };
 		0E959FAC174A92B7001E18E4 /* RWDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDataController.m; sourceTree = "<group>"; };
 		0E959FB2174BF536001E18E4 /* RWWorkoutsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWWorkoutsListController.h; path = ../RWWorkoutsListController.h; sourceTree = "<group>"; };
@@ -237,6 +242,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0757211928F71D002524AE /* Plan Start */ = {
+			isa = PBXGroup;
+			children = (
+				0E0757221928F740002524AE /* RWPlanStartViewController.h */,
+				0E0757231928F740002524AE /* RWPlanStartViewController.m */,
+			);
+			name = "Plan Start";
+			sourceTree = "<group>";
+		};
 		0E124F96175A600E00A0A5CD /* Details of workouts */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +391,7 @@
 		0E98E6C11756867300AD5523 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				0E2C1D111927E4330021B582 /* signal@2x.png */,
 				0E19BE091764AB8D0017F351 /* Misc screen */,
 				0EBE1300176383E40051D450 /* Share screen */,
 				0EBE12FE176380160051D450 /* complete_workout_button@2x.png */,
@@ -471,6 +486,7 @@
 		0EC9FA93173E9BD800C03DE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E0757211928F71D002524AE /* Plan Start */,
 				0E8BDD781764CAFD0051F352 /* Statistics */,
 				0E124FA1175A6F2800A0A5CD /* General List controller */,
 				0E8FE2E11923EE9B0012352D /* List of plans */,
@@ -509,24 +525,24 @@
 		0EEF4C1F175A37F800142660 /* Generated classes */ = {
 			isa = PBXGroup;
 			children = (
-				0E8FE2E81923F3220012352D /* WorkoutVariantEvent.h */,
-				0E8FE2E91923F3220012352D /* WorkoutVariantEvent.m */,
-				0E8FE2EB1923F3230012352D /* Workout.h */,
-				0E8FE2EC1923F3230012352D /* Workout.m */,
-				0E8FE2EE1923F3230012352D /* Section.h */,
-				0E8FE2EF1923F3230012352D /* Section.m */,
-				0E8FE2F11923F3230012352D /* GlossaryTermin.h */,
-				0E8FE2F21923F3230012352D /* GlossaryTermin.m */,
-				0E8FE2F41923F3230012352D /* GlossaryTopic.h */,
-				0E8FE2F51923F3230012352D /* GlossaryTopic.m */,
-				0E8FE2F71923F3230012352D /* Plan.h */,
-				0E8FE2F81923F3230012352D /* Plan.m */,
-				0E8FE2FA1923F3230012352D /* WorkoutVariant.h */,
-				0E8FE2FB1923F3230012352D /* WorkoutVariant.m */,
-				0E8FE2FD1923F3230012352D /* SectionActivity.h */,
-				0E8FE2FE1923F3230012352D /* SectionActivity.m */,
-				0E8FE3001923F3230012352D /* Tip.h */,
-				0E8FE3011923F3230012352D /* Tip.m */,
+				0E07572519290913002524AE /* WorkoutVariant.h */,
+				0E07572619290913002524AE /* WorkoutVariant.m */,
+				0E07572819290913002524AE /* SectionActivity.h */,
+				0E07572919290913002524AE /* SectionActivity.m */,
+				0E07572B19290913002524AE /* Tip.h */,
+				0E07572C19290913002524AE /* Tip.m */,
+				0E07573119290914002524AE /* Workout.h */,
+				0E07573219290914002524AE /* Workout.m */,
+				0E07573419290914002524AE /* GlossaryTopic.h */,
+				0E07573519290914002524AE /* GlossaryTopic.m */,
+				0E07573719290914002524AE /* Section.h */,
+				0E07573819290914002524AE /* Section.m */,
+				0E07573A19290914002524AE /* WorkoutVariantEvent.h */,
+				0E07573B19290914002524AE /* WorkoutVariantEvent.m */,
+				0E07573D19290914002524AE /* GlossaryTermin.h */,
+				0E07573E19290914002524AE /* GlossaryTermin.m */,
+				0E07574019290A68002524AE /* Plan.h */,
+				0E07574119290A68002524AE /* Plan.m */,
 			);
 			name = "Generated classes";
 			sourceTree = "<group>";
@@ -560,6 +576,11 @@
 				CLASSPREFIX = RW;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Egor Ovcharenko";
+				TargetAttributes = {
+					0EC9FA61173E9B2600C03DE6 = {
+						DevelopmentTeam = 7FMPYD4JLS;
+					};
+				};
 			};
 			buildConfigurationList = 0EC9FA5D173E9B2600C03DE6 /* Build configuration list for PBXProject "Ruth Workouts" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -609,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EC9FA72173E9B2600C03DE6 /* InfoPlist.strings in Resources */,
+				0E2C1D121927E4330021B582 /* signal@2x.png in Resources */,
 				0EC9FA7A173E9B2600C03DE6 /* Default.png in Resources */,
 				0EC9FA7C173E9B2600C03DE6 /* Default@2x.png in Resources */,
 				0EC9FA7E173E9B2600C03DE6 /* Default-568h@2x.png in Resources */,
@@ -657,31 +679,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EC9FA74173E9B2600C03DE6 /* main.m in Sources */,
-				0E8FE2F61923F3230012352D /* GlossaryTopic.m in Sources */,
 				0EC9FA78173E9B2600C03DE6 /* RWAppDelegate.m in Sources */,
+				0E07573C19290914002524AE /* WorkoutVariantEvent.m in Sources */,
+				0E07572A19290913002524AE /* SectionActivity.m in Sources */,
 				0EC9FA87173E9B2600C03DE6 /* Ruth_Workouts.xcdatamodeld in Sources */,
 				0E959FAD174A92B7001E18E4 /* RWDataController.m in Sources */,
 				0E959FB4174BF536001E18E4 /* RWWorkoutsListController.m in Sources */,
-				0E8FE2F01923F3230012352D /* Section.m in Sources */,
 				0EEF4C14175A2EF600142660 /* RWWorkoutCell.m in Sources */,
-				0E8FE2FF1923F3230012352D /* SectionActivity.m in Sources */,
+				0E07572719290913002524AE /* WorkoutVariant.m in Sources */,
 				0E124F9D175A655800A0A5CD /* RWWorkoutDetailsController.m in Sources */,
 				0E124FA0175A6F2100A0A5CD /* RWGeneralListController.m in Sources */,
 				0E124FA4175A742500A0A5CD /* RWActivityCell.m in Sources */,
-				0E8FE2FC1923F3230012352D /* WorkoutVariant.m in Sources */,
-				0E8FE2F31923F3230012352D /* GlossaryTermin.m in Sources */,
 				0EBE130A176396010051D450 /* RWCompleteWorkoutViewController.m in Sources */,
+				0E0757241928F740002524AE /* RWPlanStartViewController.m in Sources */,
 				0E19BDD91763BCDA0017F351 /* RWTipsController.m in Sources */,
+				0E07572D19290913002524AE /* Tip.m in Sources */,
 				0E8FE2E71923EFF20012352D /* RWPlanCell.m in Sources */,
 				0E19BDE11763C12B0017F351 /* RWTipsCell.m in Sources */,
 				0E19BDE5176484A80017F351 /* RWGlossaryViewController.m in Sources */,
-				0E8FE2ED1923F3230012352D /* Workout.m in Sources */,
 				0E19BDE8176484BB0017F351 /* RWGlossaryCell.m in Sources */,
-				0E8FE2F91923F3230012352D /* Plan.m in Sources */,
-				0E8FE2EA1923F3220012352D /* WorkoutVariantEvent.m in Sources */,
+				0E07573319290914002524AE /* Workout.m in Sources */,
 				0E8FE2E41923EF8F0012352D /* RWPlansController.m in Sources */,
-				0E8FE3021923F3230012352D /* Tip.m in Sources */,
+				0E07573619290914002524AE /* GlossaryTopic.m in Sources */,
+				0E07573919290914002524AE /* Section.m in Sources */,
+				0E07574219290A68002524AE /* Plan.m in Sources */,
 				0E19BE0F1764ADB40017F351 /* RWMiscViewController.m in Sources */,
+				0E07573F19290914002524AE /* GlossaryTermin.m in Sources */,
 				0E19BE341764B0BF0017F351 /* Appirater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

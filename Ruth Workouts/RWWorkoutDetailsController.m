@@ -54,7 +54,7 @@
 - (void)initFetchController
 {
     // init fetch controller
-    self.fetchResultsController = [self.dataController getAllWorkouts];
+    self.fetchResultsController = [self.dataController getAllDefaultWorkouts];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionNumber

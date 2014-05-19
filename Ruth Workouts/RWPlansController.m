@@ -10,6 +10,7 @@
 
 #include "RWPlanCell.h"
 #include "Plan.h"
+#include "RWPlanStartViewController.h"
 
 
 @interface RWPlansController ()
@@ -68,13 +69,40 @@
     //[self performSegueWithIdentifier: @"showWorkout" sender: self];
 }
 
-- (void)configureCell:(RWWorkoutCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(RWPlanCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     Plan* plan = (Plan*)[self.fetchResultsController objectAtIndexPath:indexPath];
     
     // plan details
-    //cell.workoutName.text = workout.name;
-    //cell.numberLabel.text = [NSString stringWithFormat:@"# %d", workout.number];
+    cell.numberLabel.text = [NSString stringWithFormat:@"%d", plan.number];
+    cell.nameLabel.text = plan.name;
+    cell.descLabel.text = plan.desc;
+    cell.startButton.tag = plan.number;
+    
+    
+    if ([plan.status isEqualToString:@"Active"]) {
+        [cell.startButton setHidden:true];
+    
+        // start date
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"dd.MM.yyyy"];
+        NSDate *date = plan.startDate;
+        cell.startDateLabel.text = [NSString stringWithFormat:@"Started on %@",[dateFormatter stringFromDate:date]];
+        
+        // next training
+        [cell.nextTrainingLabel setHidden:false];
+        
+        
+        
+        cell.nextTrainingLabel = ;
+        //
+    } else if ([plan.status isEqualToString:@"Awaiting"]) {
+        [cell.startButton setHidden:false];
+    
+        cell.startDateLabel.text = @"Not started yet";
+        
+        [cell.nextTrainingLabel setHidden:true];
+    } // TODO else if (plan.status isEqualToString:@"Finished"){
     
     // get variants
     /*NSArray* array = [workout.childVariants allObjects];
@@ -129,4 +157,20 @@
 }
 */
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"segue: %@",segue.identifier);
+    if ([segue.identifier isEqualToString:@"startPlan"]) {
+        RWPlanStartViewController *destViewController = segue.destinationViewController;
+        int row = ((UIButton*) sender).tag - 1;
+        
+        Plan* plan = (Plan*)[self.fetchResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0]];
+        
+        destViewController.plan = plan;
+    }
+}
+
+- (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue
+{
+    [self.tableView reloadData];
+}
 @end

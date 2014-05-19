@@ -10,4 +10,6 @@
 
 @interface RWPlansController : RWGeneralListController
 
+- (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue;
+
 @end

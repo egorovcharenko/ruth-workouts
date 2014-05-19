@@ -2,7 +2,7 @@
 //  Plan.m
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 14.05.14.
+//  Created by Egor Ovcharenko on 18.05.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
@@ -12,10 +12,13 @@
 
 @implementation Plan
 
-@dynamic name;
-@dynamic startDate;
 @dynamic desc;
+@dynamic name;
 @dynamic number;
+@dynamic startDate;
+@dynamic status;
+@dynamic weekdaysSelected;
 @dynamic childWorkouts;
+@dynamic nextWorkout;
 
 @end
