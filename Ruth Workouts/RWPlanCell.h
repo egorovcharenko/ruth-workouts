@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *nextTrainingLabel;
 @property (weak, nonatomic) IBOutlet UILabel *workoutsProgress;
+@property (weak, nonatomic) IBOutlet UILabel *workoutsStaticSign;
 
 
 @end

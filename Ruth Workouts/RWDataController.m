@@ -43,6 +43,16 @@
     [self glossaryFill];
 }
 
+- (void)saveData
+{
+    NSError *err = nil;
+    [context save:&err];
+    
+    if (err != nil) {
+        NSLog(@"error saving managed object context: %@", err);
+    }
+}
+
 -(void) workoutsFill
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"workouts" ofType:@"plist"];
@@ -68,12 +78,13 @@
             Workout *workout = [NSEntityDescription insertNewObjectForEntityForName:@"Workout" inManagedObjectContext:context];
             [plan addChildWorkoutsObject:workout];
             
-            workout.number = [[dict objectForKey:@"number"] integerValue];
+            workout.number = [dict objectForKey:@"number"];
             workout.name = [dict objectForKey:@"name"];
-            workout.daysToNextWorkoutIdeal = [[dict objectForKey:@"daysToNextWorkoutIdeal"] integerValue];
-            workout.daysToNextWorkoutMax = [[dict objectForKey:@"daysToNextWorkoutMax"] integerValue];
-            workout.daysToNextWorkoutMin = [[dict objectForKey:@"daysToNextWorkoutMin"] integerValue];
-            workout.selectedVariantNumber = 1;
+            workout.daysToNextWorkoutIdeal = [dict objectForKey:@"daysToNextWorkoutIdeal"];
+            workout.daysToNextWorkoutMax = [dict objectForKey:@"daysToNextWorkoutMax"];
+            workout.daysToNextWorkoutMin = [dict objectForKey:@"daysToNextWorkoutMin"];
+            workout.selectedVariantNumber = [NSNumber numberWithInt:1];
+            workout.status = @"Not planned";
             
             // variants
             NSArray *variants = [dict objectForKey:@"variants"];
@@ -85,7 +96,7 @@
                 //variant.length = [[dict2 objectForKey:@"length"] integerValue];
                 int variantLen = 0;
                 
-                variant.number = variantNumber;
+                variant.number = [NSNumber numberWithInteger:variantNumber];
                 variantNumber ++;
                 
                 // sections
@@ -121,17 +132,12 @@
                 }
                 
                 // calculate total length automatically
-                variant.length = variantLen;
+                variant.length = [NSNumber numberWithInteger:variantLen];
             }
         } // workout end
     } //  plan end
     
-    NSError *err = nil;
-    [context save:&err];
-    
-    if (err != nil) {
-        NSLog(@"error saving managed object context: %@", err);
-    }
+    [self saveData];
 }
 
 - (NSFetchedResultsController*) getAllDefaultWorkouts
@@ -234,20 +240,32 @@
 
 - (Plan*) getPlanByNum:(int) planNum
 {
-    NSPredicate *predicate = nil;
-    predicate = [NSPredicate predicateWithFormat:@"number=%@", planNum];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Plan" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
     
-    NSFetchedResultsController* frc = [self getAllPlans];
-    [frc.fetchRequest setPredicate:predicate];
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"number" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"number=%d", planNum];
+    [fetchRequest setPredicate:fetchPredicate];
+    
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
     
     NSError *error = nil;
-    if (![frc performFetch:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        //abort();
-    }
-    NSIndexPath* ip = [[NSIndexPath alloc] initWithIndex:planNum];
-    Plan* result = [frc objectAtIndexPath:ip];
-
+	if (![aFetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
+    NSIndexPath* ip = [NSIndexPath indexPathForRow:0 inSection:0];
+    Plan* result = [aFetchedResultsController objectAtIndexPath:ip];
+    
     return result;
 }
 
@@ -290,7 +308,7 @@
     
     newEvent.date = [NSDate date];
     newEvent.comment = @"";
-    newEvent.totalLength = variant.length;
+    newEvent.totalLength = [NSNumber numberWithInt: variant.length];
     
     NSError *err = nil;
     [context save:&err];
@@ -411,16 +429,19 @@
             }
         }
         
-        int daysToAdd = rollingWorkout.daysToNextWorkoutMin;
+        int daysToAdd = [rollingWorkout.daysToNextWorkoutMin integerValue];
         rollingDateMidnight = [rollingDateMidnight dateByAddingTimeInterval:60*60*24 * daysToAdd];
         
-        deltaDays = rollingWorkout.daysToNextWorkoutMax - rollingWorkout.daysToNextWorkoutMin;
+        deltaDays =[rollingWorkout.daysToNextWorkoutMax integerValue] - [rollingWorkout.daysToNextWorkoutMin integerValue];
         
     }
     
     // display warning if the rest period is out of bounds and the option to cancel the plan
     
     // social?
+    
+    // set next workout to 1
+    plan.nextWorkout = [self getWorkoutByNumber:1 plan:plan];
     
     // save data to DB
     NSError *err = nil;
@@ -432,8 +453,59 @@
         NSLog(@"error saving managed object context: %@", err);
     }
     
-    // go to previous screen
-    
 }
+
+- (NSSet*) getCompletedWorkouts: (Plan*) plan
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"status =%@", @"Completed"];
+    return [plan.childWorkouts filteredSetUsingPredicate:predicate];
+}
+
+- (WorkoutVariant*) getWorkoutVariantByNumber: (Workout*) workout number: (int) number
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"number = %d", number];
+    return [[workout.childVariants filteredSetUsingPredicate:predicate] anyObject];
+}
+
+- (WorkoutVariantEvent*) getLatestWorkoutVariantEvent: (WorkoutVariant*) variant
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"parentVariant = %@", variant];
+    NSSortDescriptor *date = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+    
+    return [[[variant.variantEvents filteredSetUsingPredicate:predicate] sortedArrayUsingDescriptors:[NSArray arrayWithObjects: date, nil] ] firstObject];
+}
+
+- (NSFetchedResultsController*) getWorkoutsOfAPlan: (Plan*) plan
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Workout" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"number" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"parentPlan.number=%d", plan.number];
+    [fetchRequest setPredicate:fetchPredicate];
+    
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+    
+    int count = [aFetchedResultsController.fetchedObjects count];
+    NSLog(@"Plan workouts count = %d", count);
+    
+    NSError *error = nil;
+	if (![aFetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
+    
+    return aFetchedResultsController;
+}
+
 
 @end

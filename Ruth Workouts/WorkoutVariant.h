@@ -2,7 +2,7 @@
 //  WorkoutVariant.h
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 18.05.14.
+//  Created by Egor Ovcharenko on 01.06.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
@@ -13,8 +13,8 @@
 
 @interface WorkoutVariant : NSManagedObject
 
-@property (nonatomic) int16_t length;
-@property (nonatomic) int16_t number;
+@property (nonatomic, retain) NSNumber * length;
+@property (nonatomic, retain) NSNumber * number;
 @property (nonatomic, retain) NSString * tips;
 @property (nonatomic, retain) NSSet *childSections;
 @property (nonatomic, retain) Workout *parentWorkout;

@@ -22436,8 +22436,6 @@
 									<string>1</string>
 									<key>name</key>
 									<string>100's</string>
-									
-									
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22446,7 +22444,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22461,16 +22459,15 @@
 									<string>2</string>
 									<key>name</key>
 									<string>50's</string>
-									
-									
-									<key>activities</key><array>
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22479,23 +22476,22 @@
 											<string>Rest for 8 breaths between 50s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
 								<dict>
 									<key>order</key>
 									<string>3</string>
 									<key>name</key>
 									<string>25's</string>
-									
-									
-									<key>activities</key><array>
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22504,16 +22500,17 @@
 											<string>Rest for 4 breaths between 25s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
-								
-								
-								
+
+
+
 							</array>
 						</dict>
-						
+
 					</array>
-				</dict><dict>
+				</dict>
+				<dict>
 					<key>number</key>
 					<integer>2</integer>
 					<key>daysToNextWorkoutIdeal</key>
@@ -22534,8 +22531,8 @@
 									<string>1</string>
 									<key>name</key>
 									<string>100's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22544,7 +22541,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22559,16 +22556,17 @@
 									<string>2</string>
 									<key>name</key>
 									<string>50's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22577,23 +22575,24 @@
 											<string>Rest for 8 breaths between 50s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
 								<dict>
 									<key>order</key>
 									<string>3</string>
 									<key>name</key>
 									<string>25's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22602,16 +22601,17 @@
 											<string>Rest for 4 breaths between 25s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
-								
-								
-								
+
+
+
 							</array>
 						</dict>
-						
+
 					</array>
-				</dict><dict>
+				</dict>
+				<dict>
 					<key>number</key>
 					<integer>3</integer>
 					<key>daysToNextWorkoutIdeal</key>
@@ -22632,8 +22632,8 @@
 									<string>1</string>
 									<key>name</key>
 									<string>100's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22642,7 +22642,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22657,16 +22657,17 @@
 									<string>2</string>
 									<key>name</key>
 									<string>50's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22675,23 +22676,24 @@
 											<string>Rest for 8 breaths between 50s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
 								<dict>
 									<key>order</key>
 									<string>3</string>
 									<key>name</key>
 									<string>25's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22700,16 +22702,17 @@
 											<string>Rest for 4 breaths between 25s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
-								
-								
-								
+
+
+
 							</array>
 						</dict>
-						
+
 					</array>
-				</dict><dict>
+				</dict>
+				<dict>
 					<key>number</key>
 					<integer>4</integer>
 					<key>daysToNextWorkoutIdeal</key>
@@ -22730,8 +22733,8 @@
 									<string>1</string>
 									<key>name</key>
 									<string>200's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22740,7 +22743,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>1</integer>
 											<key>len</key>
@@ -22749,13 +22752,14 @@
 											<string>Rest for 12 breaths after 200</string>
 										</dict>
 									</array>
-								</dict><dict>
+								</dict>
+								<dict>
 									<key>order</key>
 									<string>1</string>
 									<key>name</key>
 									<string>100's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22764,7 +22768,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22779,16 +22783,17 @@
 									<string>2</string>
 									<key>name</key>
 									<string>50's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22797,23 +22802,24 @@
 											<string>Rest for 6 breaths between 50s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
 								<dict>
 									<key>order</key>
 									<string>3</string>
 									<key>name</key>
 									<string>25's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22822,16 +22828,17 @@
 											<string>Rest for 4 breaths between 25s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
-								
-								
-								
+
+
+
 							</array>
 						</dict>
-						
+
 					</array>
-				</dict><dict>
+				</dict>
+				<dict>
 					<key>number</key>
 					<integer>5</integer>
 					<key>daysToNextWorkoutIdeal</key>
@@ -22852,8 +22859,8 @@
 									<string>1</string>
 									<key>name</key>
 									<string>200's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22862,7 +22869,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>1</integer>
 											<key>len</key>
@@ -22871,13 +22878,14 @@
 											<string>Rest for 12 breaths after 200</string>
 										</dict>
 									</array>
-								</dict><dict>
+								</dict>
+								<dict>
 									<key>order</key>
 									<string>1</string>
 									<key>name</key>
 									<string>100's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22886,7 +22894,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22901,16 +22909,17 @@
 									<string>2</string>
 									<key>name</key>
 									<string>50's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22919,23 +22928,24 @@
 											<string>Rest for 6 breaths between 50s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
 								<dict>
 									<key>order</key>
 									<string>3</string>
 									<key>name</key>
 									<string>25's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -22944,16 +22954,17 @@
 											<string>Rest for 4 breaths between 25s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
-								
-								
-								
+
+
+
 							</array>
 						</dict>
-						
+
 					</array>
-				</dict><dict>
+				</dict>
+				<dict>
 					<key>number</key>
 					<integer>6</integer>
 					<key>daysToNextWorkoutIdeal</key>
@@ -22974,8 +22985,8 @@
 									<string>1</string>
 									<key>name</key>
 									<string>200's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -22984,7 +22995,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>1</integer>
 											<key>len</key>
@@ -22993,13 +23004,14 @@
 											<string>Rest for 12 breaths after 200</string>
 										</dict>
 									</array>
-								</dict><dict>
+								</dict>
+								<dict>
 									<key>order</key>
 									<string>1</string>
 									<key>name</key>
 									<string>100's</string>
-									
-									
+
+
 									<key>activities</key>
 									<array>
 										<dict>
@@ -23008,7 +23020,7 @@
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -23023,16 +23035,17 @@
 									<string>2</string>
 									<key>name</key>
 									<string>50's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -23041,23 +23054,24 @@
 											<string>Rest for 6 breaths between 50s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
 								<dict>
 									<key>order</key>
 									<string>3</string>
 									<key>name</key>
 									<string>25's</string>
-									
-									
-									<key>activities</key><array>
+
+
+									<key>activities</key>
+									<array>
 										<dict>
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
 											<string>Swim</string>
 											<key>details</key>
-											<string></string>
+											<string/>
 											<key>len_multiplier</key>
 											<integer>4</integer>
 											<key>len</key>
@@ -23066,14 +23080,14 @@
 											<string>Rest for 4 breaths between 25s</string>
 										</dict>
 									</array>
-									
+
 								</dict>
-								
-								
-								
+
+
+
 							</array>
 						</dict>
-						
+
 					</array>
 				</dict>
 			</array>
@@ -23088,7 +23102,689 @@
 			<key>weekdaysSelected</key>
 			<integer>21</integer>
 			<key>workouts</key>
-			<array/>
+			<array>
+				<dict>
+					<key>number</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutIdeal</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMin</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMax</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>1</string>
+					<key>variants</key>
+					<array>
+						<dict>
+							<key>sections</key>
+							<array>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>100's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>100</integer>
+											<key>len_details</key>
+											<string>Rest for 12 breaths between 100s</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>2</string>
+									<key>name</key>
+									<string>50's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>50</integer>
+											<key>len_details</key>
+											<string>Rest for 8 breaths between 50s</string>
+										</dict>
+									</array>
+
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>3</string>
+									<key>name</key>
+									<string>25's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>25</integer>
+											<key>len_details</key>
+											<string>Rest for 4 breaths between 25s</string>
+										</dict>
+									</array>
+
+								</dict>
+
+
+
+							</array>
+						</dict>
+
+					</array>
+				</dict>
+				<dict>
+					<key>number</key>
+					<integer>2</integer>
+					<key>daysToNextWorkoutIdeal</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMin</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMax</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>2</string>
+					<key>variants</key>
+					<array>
+						<dict>
+							<key>sections</key>
+							<array>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>100's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>100</integer>
+											<key>len_details</key>
+											<string>Rest for 12 breaths between 100s</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>2</string>
+									<key>name</key>
+									<string>50's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>50</integer>
+											<key>len_details</key>
+											<string>Rest for 8 breaths between 50s</string>
+										</dict>
+									</array>
+
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>3</string>
+									<key>name</key>
+									<string>25's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>25</integer>
+											<key>len_details</key>
+											<string>Rest for 4 breaths between 25s</string>
+										</dict>
+									</array>
+
+								</dict>
+
+
+
+							</array>
+						</dict>
+
+					</array>
+				</dict>
+				<dict>
+					<key>number</key>
+					<integer>3</integer>
+					<key>daysToNextWorkoutIdeal</key>
+					<integer>2</integer>
+					<key>daysToNextWorkoutMin</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMax</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>3</string>
+					<key>variants</key>
+					<array>
+						<dict>
+							<key>sections</key>
+							<array>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>100's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>100</integer>
+											<key>len_details</key>
+											<string>Rest for 12 breaths between 100s</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>2</string>
+									<key>name</key>
+									<string>50's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>50</integer>
+											<key>len_details</key>
+											<string>Rest for 8 breaths between 50s</string>
+										</dict>
+									</array>
+
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>3</string>
+									<key>name</key>
+									<string>25's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>25</integer>
+											<key>len_details</key>
+											<string>Rest for 4 breaths between 25s</string>
+										</dict>
+									</array>
+
+								</dict>
+
+
+
+							</array>
+						</dict>
+
+					</array>
+				</dict>
+				<dict>
+					<key>number</key>
+					<integer>4</integer>
+					<key>daysToNextWorkoutIdeal</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMin</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMax</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>4</string>
+					<key>variants</key>
+					<array>
+						<dict>
+							<key>sections</key>
+							<array>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>200's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>1</integer>
+											<key>len</key>
+											<integer>200</integer>
+											<key>len_details</key>
+											<string>Rest for 12 breaths after 200</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>100's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>100</integer>
+											<key>len_details</key>
+											<string>Rest for 10 breaths between 100s</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>2</string>
+									<key>name</key>
+									<string>50's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>50</integer>
+											<key>len_details</key>
+											<string>Rest for 6 breaths between 50s</string>
+										</dict>
+									</array>
+
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>3</string>
+									<key>name</key>
+									<string>25's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>25</integer>
+											<key>len_details</key>
+											<string>Rest for 4 breaths between 25s</string>
+										</dict>
+									</array>
+
+								</dict>
+
+
+
+							</array>
+						</dict>
+
+					</array>
+				</dict>
+				<dict>
+					<key>number</key>
+					<integer>5</integer>
+					<key>daysToNextWorkoutIdeal</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMin</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMax</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>5</string>
+					<key>variants</key>
+					<array>
+						<dict>
+							<key>sections</key>
+							<array>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>200's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>1</integer>
+											<key>len</key>
+											<integer>200</integer>
+											<key>len_details</key>
+											<string>Rest for 12 breaths after 200</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>100's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>100</integer>
+											<key>len_details</key>
+											<string>Rest for 10 breaths between 100s</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>2</string>
+									<key>name</key>
+									<string>50's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>50</integer>
+											<key>len_details</key>
+											<string>Rest for 6 breaths between 50s</string>
+										</dict>
+									</array>
+
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>3</string>
+									<key>name</key>
+									<string>25's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>25</integer>
+											<key>len_details</key>
+											<string>Rest for 4 breaths between 25s</string>
+										</dict>
+									</array>
+
+								</dict>
+
+
+
+							</array>
+						</dict>
+
+					</array>
+				</dict>
+				<dict>
+					<key>number</key>
+					<integer>6</integer>
+					<key>daysToNextWorkoutIdeal</key>
+					<integer>2</integer>
+					<key>daysToNextWorkoutMin</key>
+					<integer>1</integer>
+					<key>daysToNextWorkoutMax</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>6</string>
+					<key>variants</key>
+					<array>
+						<dict>
+							<key>sections</key>
+							<array>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>200's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>1</integer>
+											<key>len</key>
+											<integer>200</integer>
+											<key>len_details</key>
+											<string>Rest for 12 breaths after 200</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>1</string>
+									<key>name</key>
+									<string>100's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>100</integer>
+											<key>len_details</key>
+											<string>Rest for 10 breaths between 100s</string>
+										</dict>
+									</array>
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>2</string>
+									<key>name</key>
+									<string>50's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>50</integer>
+											<key>len_details</key>
+											<string>Rest for 6 breaths between 50s</string>
+										</dict>
+									</array>
+
+								</dict>
+								<dict>
+									<key>order</key>
+									<string>3</string>
+									<key>name</key>
+									<string>25's</string>
+
+
+									<key>activities</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Swim</string>
+											<key>details</key>
+											<string/>
+											<key>len_multiplier</key>
+											<integer>4</integer>
+											<key>len</key>
+											<integer>25</integer>
+											<key>len_details</key>
+											<string>Rest for 4 breaths between 25s</string>
+										</dict>
+									</array>
+
+								</dict>
+
+
+
+							</array>
+						</dict>
+
+					</array>
+				</dict>
+			</array>
 		</dict>
 	</array>
 </plist>

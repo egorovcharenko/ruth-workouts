@@ -2,7 +2,7 @@
 //  Workout.h
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 18.05.14.
+//  Created by Egor Ovcharenko on 28.05.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
@@ -13,13 +13,15 @@
 
 @interface Workout : NSManagedObject
 
-@property (nonatomic) int16_t daysToNextWorkoutIdeal;
-@property (nonatomic) int16_t daysToNextWorkoutMax;
-@property (nonatomic) int16_t daysToNextWorkoutMin;
+@property (nonatomic, retain) NSNumber * daysToNextWorkoutIdeal;
+@property (nonatomic, retain) NSNumber * daysToNextWorkoutMax;
+@property (nonatomic, retain) NSNumber * daysToNextWorkoutMin;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic) int16_t number;
-@property (nonatomic) int16_t selectedVariantNumber;
-@property (nonatomic) NSDate* plannedDate;
+@property (nonatomic, retain) NSNumber * number;
+@property (nonatomic, retain) NSDate * plannedDate;
+@property (nonatomic, retain) NSNumber * selectedVariantNumber;
+@property (nonatomic, retain) NSString * status;
+@property (nonatomic, retain) NSDate * dateCompleted;
 @property (nonatomic, retain) NSSet *childVariants;
 @property (nonatomic, retain) Plan *parentPlan;
 @end

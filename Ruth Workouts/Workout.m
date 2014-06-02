@@ -2,7 +2,7 @@
 //  Workout.m
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 18.05.14.
+//  Created by Egor Ovcharenko on 28.05.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
@@ -18,8 +18,10 @@
 @dynamic daysToNextWorkoutMin;
 @dynamic name;
 @dynamic number;
-@dynamic selectedVariantNumber;
 @dynamic plannedDate;
+@dynamic selectedVariantNumber;
+@dynamic status;
+@dynamic dateCompleted;
 @dynamic childVariants;
 @dynamic parentPlan;
 

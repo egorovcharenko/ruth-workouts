@@ -22,7 +22,9 @@ typedef enum
 } WeekdaysSelection;
 
 
+@class Workout;
 @class WorkoutVariant;
+@class WorkoutVariantEvent;
 @class Plan;
 
 @interface RWDataController : NSObject <NSFetchedResultsControllerDelegate>
@@ -42,6 +44,8 @@ typedef enum
 // workouts
 - (NSFetchedResultsController*) getAllDefaultWorkouts;
 - (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant;
+- (WorkoutVariant*) getWorkoutVariantByNumber: (Workout*) workout number: (int) number;
+- (WorkoutVariantEvent*) getLatestWorkoutVariantEvent: (WorkoutVariant*) variant;
 
 // tips
 - (NSFetchedResultsController*) getAllTips;
@@ -52,5 +56,11 @@ typedef enum
 // plans
 - (NSFetchedResultsController*) getAllPlans;
 - (void) scheduleThePlan: (Plan*) plan;
+- (NSSet*) getCompletedWorkouts: (Plan*) plan;
+- (NSFetchedResultsController*) getWorkoutsOfAPlan: (Plan*) plan;
+- (Plan*) getPlanByNum:(int) planNum;
+
+// general
+- (void)saveData;
 
 @end

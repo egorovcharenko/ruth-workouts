@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="GlossaryTermin" representedClassName="GlossaryTermin" syncable="YES">
         <attribute name="definition" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -42,6 +42,7 @@
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Workout" representedClassName="Workout" syncable="YES">
+        <attribute name="dateCompleted" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="daysToNextWorkoutIdeal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="daysToNextWorkoutMax" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="daysToNextWorkoutMin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -49,6 +50,7 @@
         <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="plannedDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="selectedVariantNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="childVariants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="parentWorkout" inverseEntity="WorkoutVariant" syncable="YES"/>
         <relationship name="parentPlan" maxCount="1" deletionRule="Nullify" destinationEntity="Plan" inverseName="childWorkouts" inverseEntity="Plan" syncable="YES"/>
     </entity>
@@ -58,23 +60,25 @@
         <attribute name="tips" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="childSections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="parentVariant" inverseEntity="Section" syncable="YES"/>
         <relationship name="parentWorkout" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="childVariants" inverseEntity="Workout" syncable="YES"/>
-        <relationship name="variantEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutVariantEvent" inverseName="planVariant" inverseEntity="WorkoutVariantEvent" syncable="YES"/>
+        <relationship name="variantEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutVariantEvent" inverseName="parentVariant" inverseEntity="WorkoutVariantEvent" syncable="YES"/>
     </entity>
     <entity name="WorkoutVariantEvent" representedClassName="WorkoutVariantEvent" syncable="YES">
+        <attribute name="bestLapTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="totalLength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="planVariant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="variantEvents" inverseEntity="WorkoutVariant" syncable="YES"/>
+        <attribute name="totalTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="parentVariant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="variantEvents" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
     <elements>
         <element name="GlossaryTermin" positionX="-164" positionY="273" width="128" height="105"/>
         <element name="GlossaryTopic" positionX="-189" positionY="81" width="128" height="90"/>
-        <element name="Plan" positionX="70" positionY="-207" width="128" height="163"/>
+        <element name="Plan" positionX="70" positionY="-207" width="128" height="165"/>
         <element name="Section" positionX="36" positionY="357" width="128" height="120"/>
         <element name="SectionActivity" positionX="304" positionY="342" width="128" height="150"/>
         <element name="Tip" positionX="-180" positionY="405" width="128" height="75"/>
-        <element name="Workout" positionX="63" positionY="-9" width="128" height="180"/>
+        <element name="Workout" positionX="63" positionY="-9" width="128" height="210"/>
         <element name="WorkoutVariant" positionX="54" positionY="141" width="128" height="133"/>
-        <element name="WorkoutVariantEvent" positionX="349" positionY="153" width="128" height="105"/>
+        <element name="WorkoutVariantEvent" positionX="349" positionY="153" width="128" height="133"/>
     </elements>
 </model>
