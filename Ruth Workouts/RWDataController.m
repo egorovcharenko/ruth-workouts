@@ -288,7 +288,7 @@
     // nil for section name key path means "no sections".
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
     
-    int count = [aFetchedResultsController.fetchedObjects count];
+    int count = (int)[aFetchedResultsController.fetchedObjects count];
     NSLog(@"Plans count = %d", count);
     
     NSError *error = nil;
@@ -308,7 +308,7 @@
     
     newEvent.date = [NSDate date];
     newEvent.comment = @"";
-    newEvent.totalLength = [NSNumber numberWithInt: variant.length];
+    newEvent.totalLength = [NSNumber numberWithInt: (int)[variant.length integerValue]];
     
     NSError *err = nil;
     [context save:&err];
@@ -386,13 +386,17 @@
     }
     return rollingWorkout;
 }
-
 - (void) scheduleThePlan: (Plan*) plan
+{
+    [self scheduleThePlanExtended: plan startDate: plan.startDate startWorkoutNum:1 skipFirstWorkoutWeekdayCheck:NO];
+}
+
+- (void) scheduleThePlanExtended: (Plan*) plan startDate: (NSDate*)startDate startWorkoutNum:(int)startWorkoutNum skipFirstWorkoutWeekdayCheck:(BOOL)skipFirstWorkoutWeekdayCheck;
 {
     // set plan's properties
     plan.status = @"Active";
     
-    NSDate* rollingDate = plan.startDate;
+    NSDate* rollingDate = startDate;
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *components = [cal components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate:rollingDate];
     
@@ -403,12 +407,14 @@
     //rollingDate (midnight);
     NSDate *rollingDateMidnight = [cal dateByAddingComponents:components toDate:rollingDate options:0];
     
-    int deltaDays = 10; // default value for first search
+    long deltaDays = 10; // default value for first search
     
     // set workouts properties
-    for (int wnum = 1; wnum <= [plan.childWorkouts count]; wnum ++) {
+    for (int wnum = startWorkoutNum; wnum <= [plan.childWorkouts count]; wnum ++) {
         Workout* rollingWorkout = [self getWorkoutByNumber:wnum plan:plan];
-    
+        // set workout to non-completed state
+        rollingWorkout.dateCompleted = nil;
+        
         for (int i = 0; i <= 10 /* max number*/; i ++) {
             // go thru all the days and set the date for the rolling workout
             NSDateComponents *weekdayComponents = [cal components:(NSWeekdayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate:rollingDateMidnight];
@@ -416,7 +422,7 @@
             
             int weekdayBit = 1 << (weekday-1);
             
-            if (weekdayBit & plan.weekdaysSelected){
+            if ((weekdayBit & plan.weekdaysSelected) || (skipFirstWorkoutWeekdayCheck && (wnum == startWorkoutNum))){
                 rollingWorkout.plannedDate = rollingDateMidnight;
                 NSLog(@"Found place for workout, weekday:%ld, date:%@", (long)weekday, rollingDateMidnight);
                 break;
@@ -429,10 +435,10 @@
             }
         }
         
-        int daysToAdd = [rollingWorkout.daysToNextWorkoutMin integerValue];
+        int daysToAdd = (int)[rollingWorkout.daysToNextWorkoutMin integerValue] + 1; // + 1 - because it's not the addition, it's skipped days number
         rollingDateMidnight = [rollingDateMidnight dateByAddingTimeInterval:60*60*24 * daysToAdd];
         
-        deltaDays =[rollingWorkout.daysToNextWorkoutMax integerValue] - [rollingWorkout.daysToNextWorkoutMin integerValue];
+        deltaDays = [rollingWorkout.daysToNextWorkoutMax integerValue] - [rollingWorkout.daysToNextWorkoutMin integerValue];
         
     }
     
@@ -440,8 +446,8 @@
     
     // social?
     
-    // set next workout to 1
-    plan.nextWorkout = [self getWorkoutByNumber:1 plan:plan];
+    // set next workout to startWorkoutNum
+    plan.nextWorkout = [self getWorkoutByNumber:startWorkoutNum plan:plan];
     
     // save data to DB
     NSError *err = nil;
@@ -457,7 +463,7 @@
 
 - (NSSet*) getCompletedWorkouts: (Plan*) plan
 {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"status =%@", @"Completed"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"dateCompleted != nil"];
     return [plan.childWorkouts filteredSetUsingPredicate:predicate];
 }
 
@@ -493,7 +499,7 @@
     // nil for section name key path means "no sections".
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
     
-    int count = [aFetchedResultsController.fetchedObjects count];
+    int count = (int)[aFetchedResultsController.fetchedObjects count];
     NSLog(@"Plan workouts count = %d", count);
     
     NSError *error = nil;
@@ -505,6 +511,40 @@
 	}
     
     return aFetchedResultsController;
+}
+
+- (long) getCompletedWorkoutsNumber: (Plan*) plan
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"dateCompleted != nil"];
+    return [[plan.childWorkouts filteredSetUsingPredicate:predicate] count];
+}
+
+- (NSDate*) getPlannedEndDate: (Plan*) plan
+{
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"plannedDate" ascending:NO];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    return ((Workout*)[[plan.childWorkouts  sortedArrayUsingDescriptors:sortDescriptors] firstObject]).plannedDate;
+}
+
+- (Workout*) getNextUncompletedWorkout: (Plan*) plan
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"dateCompleted = nil"];
+    ;
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"plannedDate" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    NSArray *result = [[plan.childWorkouts filteredSetUsingPredicate:predicate]  sortedArrayUsingDescriptors:sortDescriptors];
+    
+    if (result.count == 0){
+        return nil;
+    } else {
+        return ((Workout*)[result firstObject]);
+    }
+}
+
+- (Workout*) getWorkoutByNumber: (Plan*) plan number: (int) number
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"number = %d", number];
+    return [[plan.childWorkouts filteredSetUsingPredicate:predicate] anyObject];
 }
 
 

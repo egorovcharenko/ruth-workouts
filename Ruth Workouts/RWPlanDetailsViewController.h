@@ -15,5 +15,10 @@
 - (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
 - (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue;
 - (IBAction)checkButtonClicked:(id)sender forEvent:(UIEvent *)event;
+- (IBAction)scheduleClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *endDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *progressLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 
 @end

@@ -20,48 +20,6 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-- (void)setupTabbar
-{
-    // setup tabbar
-    // remove gloss from tabbar
-    //[[UITabBar appearance] setSelectionIndicatorImage:[[UIImage alloc] init]];
-    
-    // Assign tab bar item with titles
-    //UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    //UITabBar *tabBar = tabBarController.tabBar;
-    //UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
-    //UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
-    //UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
-    //UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
-    //UITabBarItem *tabBarItem5 = [tabBar.items objectAtIndex:4];
-    
-    //tabBarItem1.title = @"Workouts";
-    //tabBarItem2.title = @"Tips";
-    //tabBarItem3.title = @"Glossary";
-    //tabBarItem4.title = @"Statistics";
-    //tabBarItem5.title = @"Misc";
-    
-    //[tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"workouts_icon_selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"workouts_icon"]];
-    //[tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"tips_icon_selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"tips_icon"]];
-    //[tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"glossary_icon_selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"glossary_icon"]];
-    //[tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"statistics_icon_selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"statistics_icon"]];
-    //[tabBarItem5 setFinishedSelectedImage:[UIImage imageNamed:@"misc_icon_selected"] withFinishedUnselectedImage:[UIImage imageNamed:@"misc_icon"]];
-    
-    // disable statistics for now!
-    //[tabBarItem4 setEnabled:NO];
-    
-    // set background
-    //UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar_background"];
-    //[[UITabBar appearance] setBackgroundImage:tabBarBackground];
-    //[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
-    
-    // change text color
-    //UIColor *titleNormalColor = [UIColor colorWithRed:187/255.0 green:187/255.0 blue:187/255.0 alpha:1.0];
-    //[[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:                                                       titleNormalColor, UITextAttributeTextColor, nil] forState:UIControlStateNormal];
-    //UIColor *titleHighlightedColor = [UIColor colorWithRed:118/255.0 green:200/255.0 blue:216/255.0 alpha:1.0];
-    //[[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:                                                       titleHighlightedColor, UITextAttributeTextColor,    nil] forState:UIControlStateSelected];
-}
-
 - (BOOL)application: (UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -80,10 +38,7 @@
     }
     
     // set background
-    [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
-    
-    // setup tabbar
-    [self setupTabbar];
+    //[self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
     
     // appirater setup
     [Appirater setAppId:@"660028785"];

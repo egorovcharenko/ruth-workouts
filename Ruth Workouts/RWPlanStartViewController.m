@@ -8,7 +8,6 @@
 
 #import "RWPlanStartViewController.h"
 
-#include "RWDataController.h"
 #import "RWDataController.h"
 
 @interface RWPlanStartViewController ()
@@ -73,7 +72,8 @@
     if (plan.weekdaysSelected & SundaySelected)
         self.sunButton.backgroundColor = [UIColor clearColor];
     else
-        self.sunButton.backgroundColor = [UIColor whiteColor];}
+        self.sunButton.backgroundColor = [UIColor whiteColor];
+}
 
 - (void)didReceiveMemoryWarning
 {

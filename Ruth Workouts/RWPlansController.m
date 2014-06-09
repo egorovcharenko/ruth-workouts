@@ -48,7 +48,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int count = [self.fetchResultsController.fetchedObjects count];
+    int count = (int)[self.fetchResultsController.fetchedObjects count];
     return count;
 }
 
@@ -79,7 +79,7 @@
                                                  toDate:secondDate
                                                 options:0];
     
-    return components.day;
+    return (int)components.day;
 }
 
 - (void)configureCell:(RWPlanCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -106,28 +106,33 @@
         cell.startDateLabel.text = [NSString stringWithFormat:@"Started on %@",[dateFormatter stringFromDate:date]];
         
         // next training
-        NSDate* nextPlannedDate = plan.nextWorkout.plannedDate;
-        [cell.nextTrainingLabel setHidden:false];
-        int daysToWorkout = [self daysDiffFrom:plan.nextWorkout.plannedDate to:[NSDate date]];
-        if (daysToWorkout == 0){
-            // workout is today
-            cell.nextTrainingLabel.text = @"Next workout is today!";
-            cell.nextTrainingLabel.textColor = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
-        } else if (daysToWorkout == 1){
-            // workout is tomorrow
-            cell.nextTrainingLabel.text = @"Next workout is today!";
-            cell.nextTrainingLabel.textColor = [UIColor colorWithRed:167.0/255.0 green:219.0/255.0 blue:216.0/255.0 alpha:1.0];
+        if (plan.nextWorkout == nil){
+            // plan completed
+            NSDate* datePlanCompleted = [self.dataController getWorkoutByNumber:plan number:(int)plan.childWorkouts.count].dateCompleted;
+            cell.nextTrainingLabel.text = [NSString stringWithFormat:@"Plan completed on %@!",[dateFormatter stringFromDate:datePlanCompleted]];
         } else {
-            // workout is the other day
-            cell.nextTrainingLabel.text  = [NSString stringWithFormat:@"Next workout on %@",[dateFormatter stringFromDate:nextPlannedDate]];
-            cell.nextTrainingLabel.textColor = [UIColor blackColor];
+            NSDate* nextPlannedDate = plan.nextWorkout.plannedDate;
+            [cell.nextTrainingLabel setHidden:false];
+            int daysToWorkout = [self daysDiffFrom:plan.nextWorkout.plannedDate to:[NSDate date]];
+            if (daysToWorkout == 0){
+                // workout is today
+                cell.nextTrainingLabel.text = @"Next workout is today!";
+                cell.nextTrainingLabel.textColor = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
+            } else if (daysToWorkout == 1){
+                // workout is tomorrow
+                cell.nextTrainingLabel.text = @"Next workout is tomorrow";
+                cell.nextTrainingLabel.textColor = [UIColor colorWithRed:167.0/255.0 green:219.0/255.0 blue:216.0/255.0 alpha:1.0];
+            } else {
+                // workout is the other day
+                cell.nextTrainingLabel.text  = [NSString stringWithFormat:@"Next workout is on %@",[dateFormatter stringFromDate:nextPlannedDate]];
+                cell.nextTrainingLabel.textColor = [UIColor blackColor];
+            }
         }
-        
         // progress of workouts
         [cell.workoutsProgress setHidden:false];
         [cell.workoutsStaticSign setHidden:false];
-        int totalWorkouts = plan.childWorkouts.count;
-        int completedWorkouts = [[[self dataController] getCompletedWorkouts:plan] count];
+        int totalWorkouts = (int)plan.childWorkouts.count;
+        int completedWorkouts = (int)[[[self dataController] getCompletedWorkouts:plan] count];
         cell.workoutsProgress.text = [NSString stringWithFormat:@"%d of %d", completedWorkouts, totalWorkouts];
         
         // desc
@@ -191,29 +196,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"segue: %@",segue.identifier);
     if ([segue.identifier isEqualToString:@"startPlan"]) {
         RWPlanStartViewController *destViewController = segue.destinationViewController;
-        int row = ((UIButton*) sender).tag;
+        int row = (int)((UIButton*) sender).tag;
         
         Plan* plan = [self.dataController getPlanByNum:row];
         
         destViewController.plan = plan;
     } else if ([segue.identifier isEqualToString:@"goToPlanDetails"]) {
         RWPlanDetailsViewController *destViewController = segue.destinationViewController;
-        int row = ((RWPlanCell*) sender).tag;
+        int row = (int)((RWPlanCell*) sender).tag;
         
         Plan* plan = [self.dataController getPlanByNum:row];
         
@@ -223,6 +217,11 @@
 
 - (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue
 {
+    [self.tableView reloadData];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.tableView reloadData];
 }
 @end

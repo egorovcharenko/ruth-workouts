@@ -1368,7 +1368,7 @@
 								</dict>
 								<dict>
 									<key>order</key>
-									<string>1</string>
+									<string>5</string>
 									<key>name</key>
 									<string>Swim-down</string>
 									<key>length</key>
@@ -22410,7 +22410,7 @@
 			<key>name</key>
 			<string>Swim A Mile</string>
 			<key>desc</key>
-			<string>Desc</string>
+			<string>Young or old, fit or not, six weeks seems to be the most common length of time it takes to be able to swim a mile without stopping for rest.</string>
 			<key>weekdaysSelected</key>
 			<integer>21</integer>
 			<key>workouts</key>
@@ -23007,7 +23007,7 @@
 								</dict>
 								<dict>
 									<key>order</key>
-									<string>1</string>
+									<string>2</string>
 									<key>name</key>
 									<string>100's</string>
 
@@ -23032,7 +23032,7 @@
 								</dict>
 								<dict>
 									<key>order</key>
-									<string>2</string>
+									<string>3</string>
 									<key>name</key>
 									<string>50's</string>
 
@@ -23058,7 +23058,7 @@
 								</dict>
 								<dict>
 									<key>order</key>
-									<string>3</string>
+									<string>4</string>
 									<key>name</key>
 									<string>25's</string>
 

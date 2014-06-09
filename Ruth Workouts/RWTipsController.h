@@ -9,5 +9,6 @@
 #import "RWGeneralListController.h"
 
 @interface RWTipsController : RWGeneralListController
+- (IBAction)glossaryClicked:(id)sender;
 
 @end

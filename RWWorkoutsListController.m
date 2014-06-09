@@ -48,7 +48,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int count = [self.fetchResultsController.fetchedObjects count];
+    int count = (int)[self.fetchResultsController.fetchedObjects count];
     return count;
 }
 
@@ -74,7 +74,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showWorkout"]) {
-        UITableViewCell *cell = (UITableViewCell *) ([[((UIButton*) sender) superview] superview]);
+        UIView *view = sender;
+        while (view != nil && ![view isKindOfClass:[UITableViewCell class]]) {
+            view = [view superview];
+        }
+        UITableViewCell *cell = (UITableViewCell *) view;
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
         Workout* workout = (Workout*)[self.fetchResultsController objectAtIndexPath:indexPath];
         WorkoutVariant *variant;
@@ -98,7 +102,7 @@
     
     // workout details
     cell.workoutName.text = workout.name;
-    cell.numberLabel.text = [NSString stringWithFormat:@"# %d", workout.number];
+    cell.numberLabel.text = [NSString stringWithFormat:@"# %ld", (long)[workout.number integerValue]];
     
     // get variants
     NSArray* array = [workout.childVariants allObjects];
@@ -115,10 +119,10 @@
         }
         
         // show variants
-        NSString *length1 = [NSString stringWithFormat:@"%d m", variant1.length];
+        NSString *length1 = [NSString stringWithFormat:@"%ld m", (long)[variant1.length integerValue]];
         [cell.firstButton setTitle:length1 forState:UIControlStateNormal];
         
-        NSString *length2 = [NSString stringWithFormat:@"%d m", variant2.length];
+        NSString *length2 = [NSString stringWithFormat:@"%ld m", (long)[variant2.length integerValue]];
         [cell.secondButton setTitle:length2 forState:UIControlStateNormal];
         
         // TODO show times completed

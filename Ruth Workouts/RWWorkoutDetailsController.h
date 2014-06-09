@@ -13,6 +13,8 @@
 @interface RWWorkoutDetailsController : RWGeneralListController
 
 @property WorkoutVariant* variant;
+@property bool canComplete;
 - (IBAction)completeWorkoutClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *completeButton;
 
 @end

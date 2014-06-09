@@ -30,6 +30,7 @@
 		0E14EC94193BA49A0034B9F5 /* WorkoutVariantEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14EC93193BA49A0034B9F5 /* WorkoutVariantEvent.m */; };
 		0E14EC9B193D16950034B9F5 /* checkmark-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E14EC99193D16950034B9F5 /* checkmark-off@2x.png */; };
 		0E14EC9C193D16950034B9F5 /* checkmark-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E14EC9A193D16950034B9F5 /* checkmark-on@2x.png */; };
+		0E14ECA01941AF2D0034B9F5 /* RWPlanScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14EC9F1941AF2D0034B9F5 /* RWPlanScheduleViewController.m */; };
 		0E19BDD51763A97D0017F351 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BDD41763A97D0017F351 /* Social.framework */; };
 		0E19BDD91763BCDA0017F351 /* RWTipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19BDD81763BCDA0017F351 /* RWTipsController.m */; };
 		0E19BDDB1763BD3C0017F351 /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E19BDDA1763BD3C0017F351 /* tips.plist */; };
@@ -130,6 +131,8 @@
 		0E14EC93193BA49A0034B9F5 /* WorkoutVariantEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutVariantEvent.m; sourceTree = "<group>"; };
 		0E14EC99193D16950034B9F5 /* checkmark-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-off@2x.png"; sourceTree = "<group>"; };
 		0E14EC9A193D16950034B9F5 /* checkmark-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-on@2x.png"; sourceTree = "<group>"; };
+		0E14EC9E1941AF2D0034B9F5 /* RWPlanScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPlanScheduleViewController.h; sourceTree = "<group>"; };
+		0E14EC9F1941AF2D0034B9F5 /* RWPlanScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPlanScheduleViewController.m; sourceTree = "<group>"; };
 		0E19BDD41763A97D0017F351 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0E19BDD71763BCDA0017F351 /* RWTipsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTipsController.h; sourceTree = "<group>"; };
 		0E19BDD81763BCDA0017F351 /* RWTipsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTipsController.m; sourceTree = "<group>"; };
@@ -267,7 +270,7 @@
 			name = "Plan Start";
 			sourceTree = "<group>";
 		};
-		0E124F96175A600E00A0A5CD /* Details of workouts */ = {
+		0E124F96175A600E00A0A5CD /* Details of workout */ = {
 			isa = PBXGroup;
 			children = (
 				0E124FA2175A742500A0A5CD /* RWActivityCell.h */,
@@ -275,7 +278,7 @@
 				0E124F9B175A655800A0A5CD /* RWWorkoutDetailsController.h */,
 				0E124F9C175A655800A0A5CD /* RWWorkoutDetailsController.m */,
 			);
-			name = "Details of workouts";
+			name = "Details of workout";
 			sourceTree = "<group>";
 		};
 		0E124FA1175A6F2800A0A5CD /* General List controller */ = {
@@ -312,6 +315,15 @@
 				0E14EC8A193B6EFD0034B9F5 /* FlatButton.m */,
 			);
 			name = "Flat button";
+			sourceTree = "<group>";
+		};
+		0E14EC9D1941AEF80034B9F5 /* Plan scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				0E14EC9E1941AF2D0034B9F5 /* RWPlanScheduleViewController.h */,
+				0E14EC9F1941AF2D0034B9F5 /* RWPlanScheduleViewController.m */,
+			);
+			name = "Plan scheduling";
 			sourceTree = "<group>";
 		};
 		0E19BDD61763BCB40017F351 /* Tips */ = {
@@ -540,8 +552,9 @@
 				0E8FE2E11923EE9B0012352D /* List of plans */,
 				0E24ACB11933CAE7008DFADA /* Plan details */,
 				0E14EC87193B4E230034B9F5 /* Complete workout */,
+				0E14EC9D1941AEF80034B9F5 /* Plan scheduling */,
 				0EEF4C15175A34F200142660 /* List of workouts */,
-				0E124F96175A600E00A0A5CD /* Details of workouts */,
+				0E124F96175A600E00A0A5CD /* Details of workout */,
 				0EBE13071763954C0051D450 /* After Complete workout */,
 				0E19BDD61763BCB40017F351 /* Tips */,
 				0E19BDE21764847B0017F351 /* Glossary */,
@@ -757,6 +770,7 @@
 				0E07573619290914002524AE /* GlossaryTopic.m in Sources */,
 				0E07573919290914002524AE /* Section.m in Sources */,
 				0E07574219290A68002524AE /* Plan.m in Sources */,
+				0E14ECA01941AF2D0034B9F5 /* RWPlanScheduleViewController.m in Sources */,
 				0E14EC91193BA49A0034B9F5 /* WorkoutVariant.m in Sources */,
 				0E14EC8B193B6EFD0034B9F5 /* FlatButton.m in Sources */,
 				0E19BE0F1764ADB40017F351 /* RWMiscViewController.m in Sources */,

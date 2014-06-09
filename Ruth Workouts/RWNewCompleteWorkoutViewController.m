@@ -12,6 +12,7 @@
 #import "Workout.h"
 #import "WorkoutVariant.h"
 #import "WorkoutVariantEvent.h"
+#import "Plan.h"
 
 @interface RWNewCompleteWorkoutViewController ()
 
@@ -42,17 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)shareOnFacebook:(id)sender {
 }
@@ -139,9 +129,12 @@
     self.workoutVariant.parentWorkout.dateCompleted = [[NSDate alloc] init];
     self.workoutVariant.parentWorkout.status = @"Completed";
     
-    // update plan?
-    
-    // reschedule all others workouts?
+    // update plan's next workout?
+    Plan* plan = self.workoutVariant.parentWorkout.parentPlan;
+    if (plan != nil) {
+        plan.nextWorkout = [dataController getNextUncompletedWorkout:plan];
+    }
+    // ask to reschedule all others workouts? or auto?
     
     // save data
     [dataController saveData];
@@ -161,7 +154,6 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
-    
     return YES;
 }
 @end

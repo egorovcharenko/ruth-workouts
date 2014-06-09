@@ -56,9 +56,14 @@ typedef enum
 // plans
 - (NSFetchedResultsController*) getAllPlans;
 - (void) scheduleThePlan: (Plan*) plan;
+- (void) scheduleThePlanExtended: (Plan*) plan startDate: (NSDate*)startDate startWorkoutNum:(int)startWorkoutNum skipFirstWorkoutWeekdayCheck:(BOOL)skipFirstWorkoutWeekdayCheck;
 - (NSSet*) getCompletedWorkouts: (Plan*) plan;
 - (NSFetchedResultsController*) getWorkoutsOfAPlan: (Plan*) plan;
 - (Plan*) getPlanByNum:(int) planNum;
+- (long) getCompletedWorkoutsNumber: (Plan*) plan;
+- (NSDate*) getPlannedEndDate: (Plan*) plan;
+- (Workout*) getNextUncompletedWorkout: (Plan*) plan;
+- (Workout*) getWorkoutByNumber: (Plan*) plan number: (int) number;
 
 // general
 - (void)saveData;

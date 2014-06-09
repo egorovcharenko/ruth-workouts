@@ -12,6 +12,7 @@
 #import "SectionActivity.h"
 #import "WorkoutVariant.h"
 #import "RWCompleteWorkoutViewController.h"
+#import "RWNewCompleteWorkoutViewController.h"
 
 #import "RWActivityCell.h"
 
@@ -95,6 +96,7 @@
     
     // len details label
     cell.lenDetailsLabel.text = activity.lenDetails;
+    cell.lenDetailsLabel.preferredMaxLayoutWidth = 93;
     
     // swim button
     [cell.activityNameButton setTitle:activity.name forState:UIControlStateNormal];
@@ -119,6 +121,7 @@
                       firstPart,
                       secondPart,
                       thirdPart];
+    
     // Define general attributes for the entire text
     NSDictionary *attribs = @{
                               NSForegroundColorAttributeName: [cell.lenButton titleColorForState:UIControlStateNormal],
@@ -129,6 +132,7 @@
                                            attributes:attribs];
     UIColor *grayTextColor = [UIColor colorWithWhite:60.0/255.0 alpha:1.0];
     UIColor *cyanTextColor = grayTextColor;// [UIColor colorWithRed:74.0/255.0 green:187.0/255.0 blue:209.0/255.0 alpha:1.0];
+    
     // Red text attributes
     NSRange redTextRange = [text rangeOfString:firstPart];
     [attributedText setAttributes:@{NSForegroundColorAttributeName:grayTextColor}
@@ -245,6 +249,9 @@
     if ([[segue identifier] isEqualToString:@"completeWorkout"]) {
         RWCompleteWorkoutViewController *controller = (RWCompleteWorkoutViewController *)segue.destinationViewController;
         controller.variant = self.variant;
+    } else if ([[segue identifier] isEqualToString:@"goToCompleteTrainingScreenFromWorkoutDetails"]) {
+        RWNewCompleteWorkoutViewController *destViewController = segue.destinationViewController;
+        destViewController.workoutVariant = self.variant;
     }
 }
 
@@ -259,12 +266,26 @@
 
 - (IBAction)completeWorkoutClicked:(id)sender
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Are you sure?"
-                                                    message:@"Have you really completed this workout?"
-                                                   delegate:self
-                                          cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:nil];
-    [alert addButtonWithTitle:@"It's completed"];
-    [alert show];
+    if (self.canComplete){
+        [self performSegueWithIdentifier: @"goToCompleteTrainingScreenFromWorkoutDetails" sender: sender];
+    } else {
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Workout is already completed"
+                                                             message:@"This workout is already completed in current plan so you cannot complete it."
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+        [errorAlert show];
+    }
+}
+
+- (CGFloat)heightForLabel:(UILabel*)label containingString:(NSString*)string
+{
+    float horizontalPadding = 10;
+    float verticalPadding = 16;
+    float kFontSize = 14;
+    float widthOfTextView = label.bounds.size.width - horizontalPadding;
+    float height = [string sizeWithFont:[UIFont systemFontOfSize:kFontSize] constrainedToSize:CGSizeMake(widthOfTextView, 999999.0f) lineBreakMode:NSLineBreakByWordWrapping].height + verticalPadding;
+    
+    return height;
 }
 @end

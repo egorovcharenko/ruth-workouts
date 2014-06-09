@@ -12,6 +12,7 @@
 @interface RWNewCompleteWorkoutViewController : UIViewController <UITextFieldDelegate>
 
 @property WorkoutVariant *workoutVariant;
+
 @property (weak, nonatomic) IBOutlet UITextField *totalDistanceText;
 @property (weak, nonatomic) IBOutlet UITextField *totalTimeText;
 @property (weak, nonatomic) IBOutlet UITextField *bestLapTimeText;

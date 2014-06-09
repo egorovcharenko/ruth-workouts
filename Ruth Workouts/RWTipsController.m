@@ -41,7 +41,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int count = [self.fetchResultsController.fetchedObjects count];
+    int count = (int)[self.fetchResultsController.fetchedObjects count];
     return count;
 }
 
@@ -75,4 +75,7 @@
     return rect.size.height + 25;
 }
 
+- (IBAction)glossaryClicked:(id)sender {
+    [self performSegueWithIdentifier:@"goToGlossary" sender:sender];
+}
 @end
