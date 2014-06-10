@@ -80,7 +80,7 @@
             
             workout.number = [dict objectForKey:@"number"];
             workout.name = [dict objectForKey:@"name"];
-            workout.daysToNextWorkoutIdeal = [dict objectForKey:@"daysToNextWorkoutIdeal"];
+            //workout.daysToNextWorkoutIdeal = [dict objectForKey:@"daysToNextWorkoutIdeal"];
             workout.daysToNextWorkoutMax = [dict objectForKey:@"daysToNextWorkoutMax"];
             workout.daysToNextWorkoutMin = [dict objectForKey:@"daysToNextWorkoutMin"];
             workout.selectedVariantNumber = [NSNumber numberWithInt:1];

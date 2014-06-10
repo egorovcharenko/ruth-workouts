@@ -71,15 +71,27 @@
     //[self performSegueWithIdentifier: @"showWorkout" sender: self];
 }
 
+- (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime
+{
+    NSDate *fromDate;
+    NSDate *toDate;
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&fromDate
+                 interval:NULL forDate:fromDateTime];
+    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&toDate
+                 interval:NULL forDate:toDateTime];
+    
+    NSDateComponents *difference = [calendar components:NSDayCalendarUnit
+                                               fromDate:fromDate toDate:toDate options:0];
+    
+    return [difference day];
+}
+
 - (int) daysDiffFrom:(NSDate *) firstDate to:(NSDate*)secondDate
 {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
-                                               fromDate:firstDate
-                                                 toDate:secondDate
-                                                options:0];
-    
-    return (int)components.day;
+    return [self daysBetweenDate:secondDate andDate:firstDate];
 }
 
 - (void)configureCell:(RWPlanCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -121,7 +133,7 @@
             } else if (daysToWorkout == 1){
                 // workout is tomorrow
                 cell.nextTrainingLabel.text = @"Next workout is tomorrow";
-                cell.nextTrainingLabel.textColor = [UIColor colorWithRed:167.0/255.0 green:219.0/255.0 blue:216.0/255.0 alpha:1.0];
+                cell.nextTrainingLabel.textColor = [UIColor colorWithRed:105.0/255.0 green:210.0/255.0 blue:231.0/255.0 alpha:1.0];
             } else {
                 // workout is the other day
                 cell.nextTrainingLabel.text  = [NSString stringWithFormat:@"Next workout is on %@",[dateFormatter stringFromDate:nextPlannedDate]];

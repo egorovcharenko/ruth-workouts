@@ -40,6 +40,9 @@
     // set background
     //[self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
     
+    // set global tint color
+    [[[UIApplication sharedApplication] delegate] window].tintColor = [UIColor colorWithRed:250.0/255.0 green:105.0/255.0 blue:0 alpha:1.0];
+    
     // appirater setup
     [Appirater setAppId:@"660028785"];
     [Appirater appLaunched:YES];

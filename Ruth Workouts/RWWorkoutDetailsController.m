@@ -39,6 +39,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.tableView setSeparatorColor:[UIColor lightGrayColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,76 +98,52 @@
     
     // len details label
     cell.lenDetailsLabel.text = activity.lenDetails;
-    cell.lenDetailsLabel.preferredMaxLayoutWidth = 93;
+    CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:nil];
+    cell.lenDetailsHeightConstraint.constant = rect.size.height;
     
     // swim button
     [cell.activityNameButton setTitle:activity.name forState:UIControlStateNormal];
-    [cell.activityNameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    UIEdgeInsets edge = UIEdgeInsetsMake(13, 13, 14, 13);
-    UIImage *tasks_top = [UIImage imageNamed:@"orange_button"];
-    UIImage *stretchableImage = [tasks_top resizableImageWithCapInsets:edge];
-    [cell.activityNameButton setBackgroundImage:stretchableImage forState:UIControlStateNormal];
-    CGRect rect = [self sizeOfLabel:activity.name maxLabelWidth:999 font:nil];
-    cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
+    rect = [self sizeOfLabel:activity.name maxLabelWidth:999 font:nil];
+    cell.activityNameButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    [cell.activityNameButton sizeToFit];
     
-    // length label
-    NSString *firstPart = [NSString stringWithFormat:@"%d x ", activity.lenMultiplier];
+    //cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
+    
+    // length button
+    NSString *firstPart = [NSString stringWithFormat:@"%d", activity.lenMultiplier];
+    NSString *crossPart = [NSString stringWithFormat:@" x "];
     NSString *secondPart = [NSString stringWithFormat:@"%d", activity.len];
-    NSString *thirdPart = @"";
-    
-    // set len label
+    NSString *thirdPart = @"m";
     if (activity.lenMultiplier == 1){
         firstPart = @"";
+        crossPart = @"";
     }
-    NSString *text = [NSString stringWithFormat:@"%@%@%@",
+    NSString *text = [NSString stringWithFormat:@"%@%@%@%@",
                       firstPart,
+                      crossPart,
                       secondPart,
                       thirdPart];
     
-    // Define general attributes for the entire text
-    NSDictionary *attribs = @{
-                              NSForegroundColorAttributeName: [cell.lenButton titleColorForState:UIControlStateNormal],
-                              NSFontAttributeName: cell.lenButton.titleLabel.font
-                              };
-    NSMutableAttributedString *attributedText =
-    [[NSMutableAttributedString alloc] initWithString:text
-                                           attributes:attribs];
-    UIColor *grayTextColor = [UIColor colorWithWhite:60.0/255.0 alpha:1.0];
-    UIColor *cyanTextColor = grayTextColor;// [UIColor colorWithRed:74.0/255.0 green:187.0/255.0 blue:209.0/255.0 alpha:1.0];
+    // general attributes for the entire text
+    //add alignment
+    //NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    //[paragraphStyle setAlignment:NSTextAlignmentRight];
     
-    // Red text attributes
-    NSRange redTextRange = [text rangeOfString:firstPart];
-    [attributedText setAttributes:@{NSForegroundColorAttributeName:grayTextColor}
-                            range:redTextRange];
+    UIColor *giantGoldfish = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
+    NSDictionary *attribs = @{NSForegroundColorAttributeName:giantGoldfish,
+                              NSFontAttributeName: cell.lenButton.titleLabel.font};
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text attributes:attribs];
     
-    // Green text attributes
-    NSRange greenTextRange = [text rangeOfString:secondPart];
-    [attributedText setAttributes:@{NSForegroundColorAttributeName:cyanTextColor}
-                            range:greenTextRange];
+    UIFont *lightFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:cell.lenButton.titleLabel.font.pointSize];
     
-    // Purple and bold text attributes
-    //UIFont *boldFont = [UIFont boldSystemFontOfSize:cell.lenLabel.font.pointSize];
-    NSRange purpleBoldTextRange = [text rangeOfString:thirdPart];
+    NSRange crossRange = [text rangeOfString:crossPart];
+    [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSBaselineOffsetAttributeName:@2, NSForegroundColorAttributeName:giantGoldfish} range:crossRange];
     
-    [attributedText setAttributes:@{NSForegroundColorAttributeName:grayTextColor
-     //,NSFontAttributeName:boldFont
-     }
-    range:purpleBoldTextRange];
-    
-    //cell.lenLabel.attributedText = attributedText;
-    
-    // len button
-    {
-        UIEdgeInsets edge = UIEdgeInsetsMake(5, 5, 5, 5);
-        UIImage *tasks_top = [UIImage imageNamed:@"blue_button"];
-        UIImage *stretchableImage = [tasks_top resizableImageWithCapInsets:edge];
-        [cell.lenButton setBackgroundImage:stretchableImage forState:UIControlStateNormal];
-        //[cell.lenButton setAttributedTitle:attributedText forState:UIControlStateNormal];
-        [cell.lenButton setTitle:[attributedText string] forState:UIControlStateNormal];
-        //CGRect rect = [self sizeOfLabel:[attributedText string] maxLabelWidth:999];
-        //cell.lenButtonWidthConstraint.constant = rect.size.width + 10;
-    }
-    
+    NSRange thirdRange = [text rangeOfString:thirdPart];
+    [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSForegroundColorAttributeName:giantGoldfish} range:thirdRange];
+
+    [cell.lenButton setAttributedTitle:attributedText forState:UIControlStateNormal];
+    cell.lenButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -180,8 +158,6 @@
     return 30;
 }
 
-
-
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionNumber
 {
     Section *section = [self getSection:sectionNumber];
@@ -191,27 +167,22 @@
     UIView* headerManualView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
     
     // add gradient on the background
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = headerManualView.bounds;
-    gradient.colors = [NSArray arrayWithObjects:
-                       (id)[[UIColor colorWithWhite:67.0/255.0 alpha:1.0]CGColor],
-                       (id)[[UIColor colorWithWhite:84.0/255.0 alpha:1.0]CGColor],
-                       nil];
-    [headerManualView.layer addSublayer:gradient];
+    [headerManualView setBackgroundColor:[UIColor colorWithRed:224.0/255.0 green:228.0/255.0 blue:204.0/255.0 alpha:1.0]];
     
     // font
-    UIFont *yourFont = [UIFont fontWithName:@"Helvetica-Bold" size:[UIFont systemFontSize]];
+    UIFont *yourFont = [UIFont fontWithName:@"Helvetica-Bold" size:20];
 
     // section name
-    UILabel *sectionName = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
+    UILabel *sectionName = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 150, 30)];
     sectionName.text = section.name;
     sectionName.backgroundColor = [UIColor clearColor];
-    sectionName.textColor = [UIColor whiteColor];
-    sectionName.textAlignment = NSTextAlignmentCenter;
+    sectionName.textColor = [UIColor blackColor];
+    sectionName.textAlignment = NSTextAlignmentLeft;
     sectionName.font = yourFont;
     [headerManualView addSubview:sectionName];
     
     // section length
+    /*
     UILabel *sectionLength = [[UILabel alloc] initWithFrame:CGRectMake(150, 0, 64, 30)];
     sectionLength.text = [NSString stringWithFormat:@"%d m", section.length]; // calculate on the fly
     sectionLength.backgroundColor = [UIColor clearColor];
@@ -219,7 +190,7 @@
     sectionLength.textAlignment = NSTextAlignmentCenter;
     sectionLength.font = yourFont;
     [headerManualView addSubview:sectionLength];
-    
+    */
     return headerManualView;
 }
 
@@ -229,19 +200,15 @@
     int detailsLen = 0;
     int lenDetailsLen = 0;
     
-    if (activity.details.length > 0){
-        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica-Bold" size:14];
-        CGRect rect = [self sizeOfLabel:activity.details maxLabelWidth:150 font:detailsFont];
-        detailsLen = rect.size.height + 40;
-    }
-    
     if (activity.lenDetails.length > 0){
-        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica" size:14];
-        CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:93 font:detailsFont];
-        lenDetailsLen = rect.size.height + 20;
+        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+        CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:detailsFont];
+        lenDetailsLen = rect.size.height + 40;
     }
     
-    return MAX(MAX(detailsLen, lenDetailsLen), 40);
+    //return MAX(MAX(detailsLen, lenDetailsLen), 40);
+    return MAX(lenDetailsLen + 47, 47);
+    //return 117;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

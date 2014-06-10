@@ -140,6 +140,7 @@
     if (workout.dateCompleted != nil){
         // completed phrase
         cell.dateLabel.text = [NSString stringWithFormat:@"Completed on %@",[dateFormatter stringFromDate:workout.dateCompleted]];
+        cell.dateLabel.textColor = [UIColor darkGrayColor];
         
         WorkoutVariantEvent *event = [self.dataController getLatestWorkoutVariantEvent:variant];
         
@@ -167,26 +168,32 @@
         
         // check
         [cell.checkButton setImage:[UIImage imageNamed:@"checkmark-on.png"] forState:UIControlStateNormal];
-        cell.checkButton.enabled = false;
+        [cell.checkButton setImage:[UIImage imageNamed:@"checkmark-on.png"] forState:UIControlStateDisabled];
+        [cell.checkButton setImageEdgeInsets:UIEdgeInsetsMake(7, 7, 7, 7)];
+        //cell.checkButton.enabled = false;
+        [cell.checkButton setHidden:NO];
         
     } else {
         // planned text
-        long daysBetweenDates = [self daysBetweenDate:[NSDate date] andDate:workout.plannedDate];
-        
-        if (daysBetweenDates > 2) {
-            cell.dateLabel.text = [NSString stringWithFormat:@"Planned for %@",[dateFormatter stringFromDate:workout.plannedDate]];
-            cell.dateLabel.textColor = [UIColor blackColor];
-        } else if (daysBetweenDates > 1) {
-            cell.dateLabel.text = [NSString stringWithFormat:@"Training in two days"];
-            cell.dateLabel.textColor = [UIColor colorWithRed:167.0/255.0 green:219.0/255.0 blue:216.0/255.0 alpha:1.0];
-        } else if (daysBetweenDates > 0) {
-            cell.dateLabel.text = [NSString stringWithFormat:@"Planned for tomorrow"];
-            cell.dateLabel.textColor = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
-        } else if (daysBetweenDates < 0) {
-            cell.dateLabel.text = [NSString stringWithFormat:@"Overdue, was planned for %@",[dateFormatter stringFromDate:workout.plannedDate]];
-            cell.dateLabel.textColor = [UIColor redColor];
+        if (workout.plannedDate != nil){
+            long daysBetweenDates = [self daysBetweenDate:[NSDate date] andDate:workout.plannedDate];
+            
+            if (daysBetweenDates > 2) {
+                cell.dateLabel.text = [NSString stringWithFormat:@"Planned for %@",[dateFormatter stringFromDate:workout.plannedDate]];
+                cell.dateLabel.textColor = [UIColor darkGrayColor];
+            } else if (daysBetweenDates > 1) {
+                cell.dateLabel.text = [NSString stringWithFormat:@"Training in two days"];
+                cell.dateLabel.textColor = [UIColor colorWithRed:167.0/255.0 green:219.0/255.0 blue:216.0/255.0 alpha:1.0];
+            } else if (daysBetweenDates > 0) {
+                cell.dateLabel.text = [NSString stringWithFormat:@"Planned for tomorrow"];
+                cell.dateLabel.textColor = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
+            } else if (daysBetweenDates < 0) {
+                cell.dateLabel.text = [NSString stringWithFormat:@"Overdue, was planned for %@",[dateFormatter stringFromDate:workout.plannedDate]];
+                cell.dateLabel.textColor = [UIColor redColor];
+            }
+        } else {
+            cell.dateLabel.text = @"";
         }
-        
         // time
         [cell.timeLabel setHidden:true];
         
@@ -195,13 +202,18 @@
         cell.lenLabel.text = [NSString stringWithFormat:@"(%@m)", variant.length];
         
         // check
+        [cell.checkButton setImage:[UIImage imageNamed:@"checkmark-off.png"] forState:UIControlStateDisabled];
         [cell.checkButton setImage:[UIImage imageNamed:@"checkmark-off.png"] forState:UIControlStateNormal];
+        [cell.checkButton setImageEdgeInsets:UIEdgeInsetsMake(7, 7, 7, 7)];
         // disable check if it's not the next training
         if ([self.plan.nextWorkout.number isEqualToNumber:workout.number]){
             cell.checkButton.enabled = true;
+            [cell.checkButton setHidden:NO];
         } else {
             cell.checkButton.enabled = false;
+            [cell.checkButton setHidden:YES];
         }
+        
         
     }
 }

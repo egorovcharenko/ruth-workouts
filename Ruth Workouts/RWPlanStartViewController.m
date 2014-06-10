@@ -33,46 +33,64 @@
     
     self.navigationItem.title = plan.name;
     plan.startDate = [[NSDate alloc] init];
+    self.datePicker.minimumDate = [NSDate date];
     
     [self updateButtons];
 }
 
 - (void) updateButtons
 {
-    if (plan.weekdaysSelected & MondaySelected)
+    if (plan.weekdaysSelected & MondaySelected){
         self.monButton.backgroundColor = [UIColor clearColor];
-    else
+        self.monButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.monButton.backgroundColor = [UIColor whiteColor];
-    
-    if (plan.weekdaysSelected & TuesdaySelected)
+        self.monButton.tintColor = [UIColor grayColor];
+    }
+    if (plan.weekdaysSelected & TuesdaySelected){
         self.tueButton.backgroundColor = [UIColor clearColor];
-    else
+        self.tueButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.tueButton.backgroundColor = [UIColor whiteColor];
-    
-    if (plan.weekdaysSelected & WednesdaySelected)
+        self.tueButton.tintColor = [UIColor grayColor];
+    }
+    if (plan.weekdaysSelected & WednesdaySelected){
         self.wedButton.backgroundColor = [UIColor clearColor];
-    else
+        self.wedButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.wedButton.backgroundColor = [UIColor whiteColor];
-
-    if (plan.weekdaysSelected & ThursdaySelected)
+        self.wedButton.tintColor = [UIColor grayColor];
+    }
+    if (plan.weekdaysSelected & ThursdaySelected){
         self.thuButton.backgroundColor = [UIColor clearColor];
-    else
+        self.thuButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.thuButton.backgroundColor = [UIColor whiteColor];
-
-    if (plan.weekdaysSelected & FridaySelected)
+        self.thuButton.tintColor = [UIColor grayColor];
+    }
+    if (plan.weekdaysSelected & FridaySelected){
         self.friButton.backgroundColor = [UIColor clearColor];
-    else
+        self.friButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.friButton.backgroundColor = [UIColor whiteColor];
-
-    if (plan.weekdaysSelected & SaturdaySelected)
+        self.friButton.tintColor = [UIColor grayColor];
+    }
+    
+    if (plan.weekdaysSelected & SaturdaySelected){
         self.satButton.backgroundColor = [UIColor clearColor];
-    else
+        self.satButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.satButton.backgroundColor = [UIColor whiteColor];
-
-    if (plan.weekdaysSelected & SundaySelected)
+        self.satButton.tintColor = [UIColor grayColor];
+    }
+    
+    if (plan.weekdaysSelected & SundaySelected){
         self.sunButton.backgroundColor = [UIColor clearColor];
-    else
+        self.sunButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
+    } else {
         self.sunButton.backgroundColor = [UIColor whiteColor];
+        self.sunButton.tintColor = [UIColor grayColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning
