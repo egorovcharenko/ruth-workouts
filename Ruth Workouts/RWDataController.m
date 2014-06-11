@@ -16,6 +16,7 @@
 #import "GlossaryTopic.h"
 #import "GlossaryTermin.h"
 #import "Plan.h"
+#import "Category.h"
 
 #import "RWAppDelegate.h"
 
@@ -58,84 +59,103 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"workouts" ofType:@"plist"];
     NSArray *items = [NSArray arrayWithContentsOfFile:path];
     
-    // load all plans
+    int planNumber = 0;
+    // load all categories
     for (NSDictionary *dict in items) {
-        // Plans
-        Plan *plan = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:context];
-        plan.number = [[dict objectForKey:@"number"] integerValue];
-        plan.name = [dict objectForKey:@"name"];
-        plan.desc = [dict objectForKey:@"desc"];
-        plan.weekdaysSelected = [[dict objectForKey:@"weekdaysSelected"] integerValue];
-        plan.status = @"Awaiting";
-        plan.nextWorkout = nil;
+        // categories
+        Category *category = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:context];
+        category.number = [dict objectForKey:@"number"];
+        category.name = [dict objectForKey:@"name"];
+        category.hideInList = [dict objectForKey:@"hideInList"];
         
-        // workouts
-        NSArray *workouts = [dict objectForKey:@"workouts"];
+        // plans
+        NSArray *plans = [dict objectForKey:@"plans"];
+        int planOrder = 0;
         
-        // load all workouts of a plan
-        for (NSDictionary *dict in workouts) {
+        // load all plans
+        for (NSDictionary *dict in plans) {
+            // Plans
+            Plan *plan = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:context];
+            [category addChildPlansObject:plan];
+            
+            plan.displayNumber = [dict objectForKey:@"number"];
+            plan.number = [NSNumber numberWithInt: (planNumber ++)];
+            plan.orderInCategory = [NSNumber numberWithInt: (planOrder ++)];
+            plan.name = [dict objectForKey:@"name"];
+            plan.desc = [dict objectForKey:@"desc"];
+            plan.weekdaysSelected = [dict objectForKey:@"weekdaysSelected"];
+            plan.status = @"Awaiting";
+            plan.nextWorkout = nil;
+            plan.activity = [dict objectForKey:@"activity"];
+            
             // workouts
-            Workout *workout = [NSEntityDescription insertNewObjectForEntityForName:@"Workout" inManagedObjectContext:context];
-            [plan addChildWorkoutsObject:workout];
+            NSArray *workouts = [dict objectForKey:@"workouts"];
             
-            workout.number = [dict objectForKey:@"number"];
-            workout.name = [dict objectForKey:@"name"];
-            //workout.daysToNextWorkoutIdeal = [dict objectForKey:@"daysToNextWorkoutIdeal"];
-            workout.daysToNextWorkoutMax = [dict objectForKey:@"daysToNextWorkoutMax"];
-            workout.daysToNextWorkoutMin = [dict objectForKey:@"daysToNextWorkoutMin"];
-            workout.selectedVariantNumber = [NSNumber numberWithInt:1];
-            workout.status = @"Not planned";
-            
-            // variants
-            NSArray *variants = [dict objectForKey:@"variants"];
-            int variantNumber = 1;
-            for (NSDictionary *dict2 in variants) {
-                WorkoutVariant *variant = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariant" inManagedObjectContext:context];
-                [workout addChildVariantsObject:variant];
+            // load all workouts of a plan
+            for (NSDictionary *dict in workouts) {
+                // workouts
+                Workout *workout = [NSEntityDescription insertNewObjectForEntityForName:@"Workout" inManagedObjectContext:context];
+                [plan addChildWorkoutsObject:workout];
                 
-                //variant.length = [[dict2 objectForKey:@"length"] integerValue];
-                int variantLen = 0;
+                workout.number = [dict objectForKey:@"number"];
+                workout.name = [dict objectForKey:@"name"];
+                //workout.daysToNextWorkoutIdeal = [dict objectForKey:@"daysToNextWorkoutIdeal"];
+                workout.daysToNextWorkoutMax = [dict objectForKey:@"daysToNextWorkoutMax"];
+                workout.daysToNextWorkoutMin = [dict objectForKey:@"daysToNextWorkoutMin"];
+                workout.selectedVariantNumber = [NSNumber numberWithInt:1];
+                workout.status = @"Not planned";
                 
-                variant.number = [NSNumber numberWithInteger:variantNumber];
-                variantNumber ++;
-                
-                // sections
-                NSArray *sections = [dict2 objectForKey:@"sections"];
-                for (NSDictionary *dict3 in sections) {
-                    Section *section = [NSEntityDescription insertNewObjectForEntityForName:@"Section" inManagedObjectContext:context];
-                    [variant addChildSectionsObject:section];
+                // variants
+                NSArray *variants = [dict objectForKey:@"variants"];
+                int variantNumber = 1;
+                for (NSDictionary *dict2 in variants) {
+                    WorkoutVariant *variant = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariant" inManagedObjectContext:context];
+                    [workout addChildVariantsObject:variant];
                     
-                    section.order = [[dict3 objectForKey:@"order"] integerValue];
-                    //section.length = [[dict3 objectForKey:@"length"] integerValue];
-                    section.name = [dict3 objectForKey:@"name"];
+                    //variant.length = [[dict2 objectForKey:@"length"] integerValue];
+                    int variantLen = 0;
                     
-                    int sectionLen = 0;
-                    // activities
-                    NSArray *activities = [dict3 objectForKey:@"activities"];
-                    for (NSDictionary *dict4 in activities) {
-                        SectionActivity *activity = [NSEntityDescription insertNewObjectForEntityForName:@"SectionActivity" inManagedObjectContext:context];
-                        [section addChildActivitiesObject:activity];
+                    variant.number = [NSNumber numberWithInteger:variantNumber];
+                    variantNumber ++;
+                    
+                    // sections
+                    NSArray *sections = [dict2 objectForKey:@"sections"];
+                    for (NSDictionary *dict3 in sections) {
+                        Section *section = [NSEntityDescription insertNewObjectForEntityForName:@"Section" inManagedObjectContext:context];
+                        [variant addChildSectionsObject:section];
                         
-                        activity.order = [[dict4 objectForKey:@"order"] integerValue];
-                        activity.name = [dict4 objectForKey:@"name"];
-                        activity.details = [dict4 objectForKey:@"details"];
-                        activity.lenMultiplier = [[dict4 objectForKey:@"len_multiplier"] integerValue];
-                        activity.len = [[dict4 objectForKey:@"len"] integerValue];
-                        activity.lenDetails = [dict4 objectForKey:@"len_details"];
+                        section.order = [NSNumber numberWithInt: (int)[[dict3 objectForKey:@"order"] integerValue]];
+                        //section.length = [[dict3 objectForKey:@"length"] integerValue];
+                        section.name = [dict3 objectForKey:@"name"];
                         
-                        sectionLen += activity.len * activity.lenMultiplier;
+                        int sectionLen = 0;
+                        // activities
+                        NSArray *activities = [dict3 objectForKey:@"activities"];
+                        for (NSDictionary *dict4 in activities) {
+                            SectionActivity *activity = [NSEntityDescription insertNewObjectForEntityForName:@"SectionActivity" inManagedObjectContext:context];
+                            [section addChildActivitiesObject:activity];
+                            
+                            activity.order = [NSNumber numberWithInt: (int)[[dict4 objectForKey:@"order"] integerValue]];
+                            activity.name = [dict4 objectForKey:@"name"];
+                            activity.details = [dict4 objectForKey:@"details"];
+                            activity.lenMultiplier = [dict4 objectForKey:@"len_multiplier"];
+                            activity.len = [dict4 objectForKey:@"len"];
+                            activity.lenDetails = [dict4 objectForKey:@"len_details"];
+                            
+                            sectionLen += [activity.len integerValue] * [activity.lenMultiplier integerValue];
+                        }
+                        
+                        // calculate section length automatically
+                        section.length = [NSNumber numberWithInt:sectionLen];
+                        variantLen += sectionLen;
                     }
                     
-                    // calculate section length automatically
-                    section.length = sectionLen;
-                    variantLen += sectionLen;
+                    // calculate total length automatically
+                    variant.length = [NSNumber numberWithInteger:variantLen];
                 }
-                
-                // calculate total length automatically
-                variant.length = [NSNumber numberWithInteger:variantLen];
-            }
-        } // workout end
-    } //  plan end
+            } // workout end
+        } //  plan end
+    }// category end
     
     [self saveData];
 }
@@ -279,7 +299,7 @@
     // Edit the sort key as appropriate.
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"number" ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
-        [fetchRequest setSortDescriptors:sortDescriptors];
+    [fetchRequest setSortDescriptors:sortDescriptors];
     
     NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"number>0"];
     [fetchRequest setPredicate:fetchPredicate];
@@ -316,7 +336,7 @@
     if (err != nil) {
         NSLog(@"error saving managed object context: %@", err);
     }
-
+    
 }
 
 - (void) tipsFill
@@ -328,7 +348,7 @@
     for (NSDictionary *dict in items) {
         Tip *tip = [NSEntityDescription insertNewObjectForEntityForName:@"Tip" inManagedObjectContext:context];
         
-        tip.number = [[dict objectForKey:@"number"] integerValue];
+        tip.number = [dict objectForKey:@"number"];
         tip.text = [dict objectForKey:@"text"];
     }
     
@@ -352,7 +372,7 @@
         GlossaryTopic *topic = [NSEntityDescription insertNewObjectForEntityForName:@"GlossaryTopic" inManagedObjectContext:context];
         
         topic.name = [dict objectForKey:@"topic_name"];
-        topic.order = ++ topicOrder;
+        topic.order = [NSNumber numberWithInt:(++ topicOrder)];
         
         // termins
         int terminOrder = 0;
@@ -362,7 +382,7 @@
             
             termin.name = [dict2 objectForKey:@"termin"];
             termin.definition = [dict2 objectForKey:@"definition"];
-            termin.order = ++ terminOrder;
+            termin.order = [NSNumber numberWithInt:(++ terminOrder)];
             
             [topic addTopicTerminsObject:termin];
         }
@@ -422,7 +442,7 @@
             
             int weekdayBit = 1 << (weekday-1);
             
-            if ((weekdayBit & plan.weekdaysSelected) || (skipFirstWorkoutWeekdayCheck && (wnum == startWorkoutNum))){
+            if ((weekdayBit & [plan.weekdaysSelected integerValue]) || (skipFirstWorkoutWeekdayCheck && (wnum == startWorkoutNum))){
                 rollingWorkout.plannedDate = rollingDateMidnight;
                 NSLog(@"Found place for workout, weekday:%ld, date:%@", (long)weekday, rollingDateMidnight);
                 break;
@@ -492,7 +512,7 @@
     NSArray *sortDescriptors = @[sortDescriptor];
     [fetchRequest setSortDescriptors:sortDescriptors];
     
-    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"parentPlan.number=%d", plan.number];
+    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"parentPlan.number=%d", [plan.number integerValue]];
     [fetchRequest setPredicate:fetchPredicate];
     
     // Edit the section name key path and cache name if appropriate.
@@ -547,5 +567,40 @@
     return [[plan.childWorkouts filteredSetUsingPredicate:predicate] anyObject];
 }
 
+- (NSFetchedResultsController*) getAllCategories
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Category" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"number" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // exclude random workouts
+    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"hideInList = 0"];
+    [fetchRequest setPredicate:fetchPredicate];
+    
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+   
+    NSError *error = nil;
+	if (![aFetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
+    
+    return aFetchedResultsController;
+}
+
+- (Plan*) getPlanFromCategory: (Category*)category planNum:(int)planNum
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"orderInCategory = %d", planNum];
+    return [[category.childPlans filteredSetUsingPredicate:predicate] anyObject];
+}
 
 @end

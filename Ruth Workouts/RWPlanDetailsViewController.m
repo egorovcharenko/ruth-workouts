@@ -307,7 +307,7 @@
         //NSDateComponents *componentsTomorrow = [cal components:NSCalendarUnitWeekday fromDate:tomorrow];
         //int tomorrowsWeekday = ([componentsTomorrow weekday]) % 7;
         NSUInteger adjustedWeekdayOrdinal = [cal ordinalityOfUnit:NSWeekdayCalendarUnit inUnit:NSWeekCalendarUnit forDate:tomorrow];
-        if ((1 << (adjustedWeekdayOrdinal-1)) & self.plan.weekdaysSelected){
+        if ((1 << (adjustedWeekdayOrdinal-1)) & [self.plan.weekdaysSelected integerValue]){
             // date match - ok, move replan without options
             [self.dataController scheduleThePlanExtended:self.plan startDate:tomorrow startWorkoutNum:(int)[self.plan.nextWorkout.number integerValue] skipFirstWorkoutWeekdayCheck:NO];
             [self refresh];

@@ -146,7 +146,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSa-eU-1DU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647" y="-1476"/>
+            <point key="canvasLocation" x="-1017" y="0.0"/>
         </scene>
         <!--Misc View Controller - Misc-->
         <scene sceneID="0je-r4-Qcc">
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhm-7n-Lbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="-1476"/>
+            <point key="canvasLocation" x="-473" y="672"/>
         </scene>
         <!--Table View Controller - Statistics-->
         <scene sceneID="A5A-wI-EZY">
@@ -351,16 +351,16 @@
         <scene sceneID="6K3-7D-kJU">
             <objects>
                 <tableViewController id="sC2-eM-xjk" customClass="RWPlansController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="22" sectionFooterHeight="22" id="x2b-dE-PjI">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="166" sectionHeaderHeight="10" sectionFooterHeight="10" id="x2b-dE-PjI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="162" id="P2o-Qv-bOJ" customClass="RWPlanCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="162"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="166" id="P2o-Qv-bOJ" customClass="RWPlanCell">
+                                <rect key="frame" x="0.0" y="119" width="320" height="166"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P2o-Qv-bOJ" id="GHs-Gs-wRt">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swim A Mile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEy-sA-eZq">
@@ -445,7 +445,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05c-yB-Omi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="-2168"/>
+            <point key="canvasLocation" x="41" y="-1612"/>
         </scene>
         <!--Plan Start View Controller-->
         <scene sceneID="Mj5-oa-OeQ">
@@ -603,7 +603,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDv-Uz-SmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="HPS-sj-wt6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="686" y="-2168"/>
+            <point key="canvasLocation" x="34" y="-2364"/>
         </scene>
         <!--Plan Details View Controller-->
         <scene sceneID="cPo-hZ-XVx">
@@ -732,7 +732,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOG-qt-JR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="-2861"/>
+            <point key="canvasLocation" x="556" y="-1617"/>
         </scene>
         <!--New Complete Workout View Controller - Training completed-->
         <scene sceneID="U4o-gM-Llk">
@@ -839,7 +839,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJX-o4-dmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="1Xn-c6-dNQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="-2912"/>
+            <point key="canvasLocation" x="549" y="-2364"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JjK-IV-Zke">
@@ -870,8 +870,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="80" id="lJ0-d7-vTF" customClass="RWWorkoutCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="80"/>
@@ -1007,24 +1006,34 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Details bla bla bla" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ca7-rj-g2W">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Details bl" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ca7-rj-g2W">
                                             <rect key="frame" x="89" y="13" width="109" height="26"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="CTl-w2-56f"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                             <color key="textColor" red="0.41176470590000003" green="0.82352941180000006" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBh-IP-ODL">
+                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBh-IP-ODL">
                                             <rect key="frame" x="10" y="12" width="71" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="nxF-N1-7ch"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <state key="normal" title="Swim">
                                                 <color key="titleColor" red="0.41176470588235292" green="0.82352941176470584" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
                                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvn-c4-EFi">
                                             <rect key="frame" x="206" y="12" width="109" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="yjN-lp-8Ki"/>
+                                            </constraints>
                                             <size key="titleShadowOffset" width="0.0" height="1"/>
                                             <state key="normal">
                                                 <attributedString key="attributedTitle">
@@ -1043,8 +1052,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                         <constraint firstItem="VBh-IP-ODL" firstAttribute="baseline" secondItem="cvn-c4-EFi" secondAttribute="baseline" id="7Hu-88-UjH"/>
                                         <constraint firstItem="cvn-c4-EFi" firstAttribute="leading" secondItem="Ca7-rj-g2W" secondAttribute="trailing" constant="8" id="Bqb-fU-x5H"/>
                                         <constraint firstItem="Ca7-rj-g2W" firstAttribute="leading" secondItem="VBh-IP-ODL" secondAttribute="trailing" constant="8" id="FkO-bz-biP"/>
-                                        <constraint firstItem="VBh-IP-ODL" firstAttribute="top" secondItem="S6k-YA-eRi" secondAttribute="top" constant="10" id="S9W-H1-1WV"/>
                                         <constraint firstItem="VBh-IP-ODL" firstAttribute="leading" secondItem="S6k-YA-eRi" secondAttribute="leading" constant="10" id="Tk8-4X-0No"/>
+                                        <constraint firstItem="VBh-IP-ODL" firstAttribute="top" secondItem="S6k-YA-eRi" secondAttribute="top" constant="12" id="jRe-KR-eJM"/>
                                         <constraint firstItem="VBh-IP-ODL" firstAttribute="baseline" secondItem="Ca7-rj-g2W" secondAttribute="baseline" id="tX2-JR-chm"/>
                                         <constraint firstAttribute="trailing" secondItem="cvn-c4-EFi" secondAttribute="trailing" constant="5" id="xfU-tA-ZqZ"/>
                                     </constraints>
@@ -1078,7 +1087,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMu-qv-D9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="-2147"/>
+            <point key="canvasLocation" x="1446" y="-1617"/>
         </scene>
         <!--Complete Workout View Controller - Workout completed-->
         <scene sceneID="VLg-Fv-gL3">
@@ -1177,7 +1186,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHx-k9-J6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2169" y="-806"/>
+            <point key="canvasLocation" x="2053" y="-1612"/>
         </scene>
         <!--Navigation Controller - Plans-->
         <scene sceneID="5fE-ev-TCB">
@@ -1196,7 +1205,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwa-0W-GLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-370" y="-2168"/>
+            <point key="canvasLocation" x="-389" y="-1612"/>
         </scene>
         <!--Plan Schedule View Controller-->
         <scene sceneID="Uoh-xX-9hP">
@@ -1378,7 +1387,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbS-5L-tK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="LWy-ep-zPO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="-2861"/>
+            <point key="canvasLocation" x="1090" y="-2364"/>
         </scene>
     </scenes>
     <resources>
@@ -1401,7 +1410,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Ve1-EM-uNO"/>
-        <segue reference="0w3-KY-Zka"/>
+        <segue reference="ws0-Bg-6ZN"/>
+        <segue reference="pwU-Zd-2vO"/>
     </inferredMetricsTieBreakers>
 </document>

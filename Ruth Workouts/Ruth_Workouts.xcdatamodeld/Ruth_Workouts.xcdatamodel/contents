@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="hideInList" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="childPlans" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Plan" inverseName="parentCategory" inverseEntity="Plan" syncable="YES"/>
+    </entity>
     <entity name="GlossaryTermin" representedClassName="GlossaryTermin" syncable="YES">
         <attribute name="definition" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,33 +14,37 @@
     </entity>
     <entity name="GlossaryTopic" representedClassName="GlossaryTopic" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="topicTermins" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GlossaryTermin" inverseName="parentTopic" inverseEntity="GlossaryTermin" syncable="YES"/>
     </entity>
     <entity name="Plan" representedClassName="Plan" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderInCategory" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="weekdaysSelected" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weekdaysSelected" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="childWorkouts" toMany="YES" deletionRule="Nullify" destinationEntity="Workout" inverseName="parentPlan" inverseEntity="Workout" syncable="YES"/>
         <relationship name="nextWorkout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" syncable="YES"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="childPlans" inverseEntity="Category" syncable="YES"/>
     </entity>
     <entity name="Section" representedClassName="Section" syncable="YES">
-        <attribute name="length" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="childActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SectionActivity" inverseName="parentSection" inverseEntity="SectionActivity" syncable="YES"/>
         <relationship name="parentVariant" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutVariant" inverseName="childSections" inverseEntity="WorkoutVariant" syncable="YES"/>
     </entity>
     <entity name="SectionActivity" representedClassName="SectionActivity" syncable="YES">
         <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="len" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="len" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="lenDetails" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="lenMultiplier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lenMultiplier" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="parentSection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="childActivities" inverseEntity="Section" syncable="YES"/>
     </entity>
     <entity name="Tip" representedClassName="Tip" syncable="YES">
@@ -72,12 +82,13 @@
     <elements>
         <element name="GlossaryTermin" positionX="-164" positionY="273" width="128" height="105"/>
         <element name="GlossaryTopic" positionX="-189" positionY="81" width="128" height="90"/>
-        <element name="Plan" positionX="70" positionY="-207" width="128" height="165"/>
-        <element name="Section" positionX="36" positionY="357" width="128" height="120"/>
+        <element name="Plan" positionX="70" positionY="-207" width="128" height="223"/>
+        <element name="Section" positionX="36" positionY="357" width="128" height="118"/>
         <element name="SectionActivity" positionX="304" positionY="342" width="128" height="150"/>
         <element name="Tip" positionX="-180" positionY="405" width="128" height="75"/>
-        <element name="Workout" positionX="63" positionY="-9" width="128" height="195"/>
+        <element name="Workout" positionX="63" positionY="-9" width="128" height="193"/>
         <element name="WorkoutVariant" positionX="54" positionY="141" width="128" height="133"/>
         <element name="WorkoutVariantEvent" positionX="349" positionY="153" width="128" height="133"/>
+        <element name="Category" positionX="9" positionY="-63" width="128" height="103"/>
     </elements>
 </model>

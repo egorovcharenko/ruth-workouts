@@ -104,7 +104,7 @@ numberOfRowsInComponent:(NSInteger)component
     RWDataController *dataController = [[RWDataController alloc] initWithAppDelegate:(RWAppDelegate*)[[UIApplication sharedApplication] delegate ]];
     
     // update plan
-    plan.weekdaysSelected = weekdaysSelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:weekdaysSelected];
     int nextWorkoutNumber = (int)([self.nextTrainingPicker selectedRowInComponent:0] + 1);
     Workout* nextWorkout = [dataController getWorkoutByNumber:plan number:nextWorkoutNumber];
     plan.nextWorkout = nextWorkout;

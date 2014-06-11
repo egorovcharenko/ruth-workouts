@@ -40,35 +40,35 @@
 
 - (void) updateButtons
 {
-    if (plan.weekdaysSelected & MondaySelected){
+    if ([plan.weekdaysSelected integerValue] & MondaySelected){
         self.monButton.backgroundColor = [UIColor clearColor];
         self.monButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
         self.monButton.backgroundColor = [UIColor whiteColor];
         self.monButton.tintColor = [UIColor grayColor];
     }
-    if (plan.weekdaysSelected & TuesdaySelected){
+    if ([plan.weekdaysSelected integerValue] & TuesdaySelected){
         self.tueButton.backgroundColor = [UIColor clearColor];
         self.tueButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
         self.tueButton.backgroundColor = [UIColor whiteColor];
         self.tueButton.tintColor = [UIColor grayColor];
     }
-    if (plan.weekdaysSelected & WednesdaySelected){
+    if ([plan.weekdaysSelected integerValue] & WednesdaySelected){
         self.wedButton.backgroundColor = [UIColor clearColor];
         self.wedButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
         self.wedButton.backgroundColor = [UIColor whiteColor];
         self.wedButton.tintColor = [UIColor grayColor];
     }
-    if (plan.weekdaysSelected & ThursdaySelected){
+    if ([plan.weekdaysSelected integerValue] & ThursdaySelected){
         self.thuButton.backgroundColor = [UIColor clearColor];
         self.thuButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
         self.thuButton.backgroundColor = [UIColor whiteColor];
         self.thuButton.tintColor = [UIColor grayColor];
     }
-    if (plan.weekdaysSelected & FridaySelected){
+    if ([plan.weekdaysSelected integerValue] & FridaySelected){
         self.friButton.backgroundColor = [UIColor clearColor];
         self.friButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
@@ -76,7 +76,7 @@
         self.friButton.tintColor = [UIColor grayColor];
     }
     
-    if (plan.weekdaysSelected & SaturdaySelected){
+    if ([plan.weekdaysSelected integerValue] & SaturdaySelected){
         self.satButton.backgroundColor = [UIColor clearColor];
         self.satButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
@@ -84,7 +84,7 @@
         self.satButton.tintColor = [UIColor grayColor];
     }
     
-    if (plan.weekdaysSelected & SundaySelected){
+    if ([plan.weekdaysSelected integerValue] & SundaySelected){
         self.sunButton.backgroundColor = [UIColor clearColor];
         self.sunButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
     } else {
@@ -114,37 +114,37 @@
 }
 
 - (IBAction)monClicked:(id)sender {
-    plan.weekdaysSelected ^= MondaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ MondaySelected)];
     [self updateButtons];
 }
 
 - (IBAction)tueClicked:(id)sender {
-    plan.weekdaysSelected ^= TuesdaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ TuesdaySelected)];
     [self updateButtons];
 }
 
 - (IBAction)wedClicked:(id)sender {
-    plan.weekdaysSelected ^= WednesdaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ WednesdaySelected)];
     [self updateButtons];
 }
 
 - (IBAction)thuClicked:(id)sender {
-    plan.weekdaysSelected ^= ThursdaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ ThursdaySelected)];
     [self updateButtons];
 }
 
 - (IBAction)friClicked:(id)sender {
-    plan.weekdaysSelected ^= FridaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ FridaySelected)];
     [self updateButtons];
 }
 
 - (IBAction)satClicked:(id)sender {
-    plan.weekdaysSelected ^= SaturdaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ SaturdaySelected)];
     [self updateButtons];
 }
 
 - (IBAction)sunClicked:(id)sender {
-    plan.weekdaysSelected ^= SundaySelected;
+    plan.weekdaysSelected = [NSNumber numberWithInt:(int)([plan.weekdaysSelected integerValue] ^ SundaySelected)];
     [self updateButtons];
 }
 

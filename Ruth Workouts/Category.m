@@ -1,17 +1,20 @@
 //
-//  Tip.m
+//  Category.m
 //  Ruth Workouts
 //
 //  Created by Egor Ovcharenko on 12.06.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
-#import "Tip.h"
+#import "Category.h"
+#import "Plan.h"
 
 
-@implementation Tip
+@implementation Category
 
+@dynamic name;
 @dynamic number;
-@dynamic text;
+@dynamic hideInList;
+@dynamic childPlans;
 
 @end

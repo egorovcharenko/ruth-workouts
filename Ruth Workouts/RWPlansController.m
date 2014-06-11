@@ -13,6 +13,7 @@
 #include "RWPlanStartViewController.h"
 #include "Workout.h"
 #include "RWPlanDetailsViewController.h"
+#include "Category.h"
 
 
 @interface RWPlansController ()
@@ -37,18 +38,20 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    int count = (int)[self.fetchResultsController.fetchedObjects count];
+    return count;
 }
 
 - (void)initFetchController
 {
     // init fetch controller
-    self.fetchResultsController = [self.dataController getAllPlans];
+    self.fetchResultsController = [self.dataController getAllCategories];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    int count = (int)[self.fetchResultsController.fetchedObjects count];
+    Category *category = [[self.fetchResultsController fetchedObjects] objectAtIndex:section];
+    int count = (int)category.childPlans.count;
     return count;
 }
 
@@ -91,21 +94,27 @@
 
 - (int) daysDiffFrom:(NSDate *) firstDate to:(NSDate*)secondDate
 {
-    return [self daysBetweenDate:secondDate andDate:firstDate];
+    return (int)[self daysBetweenDate:secondDate andDate:firstDate];
+}
+
+- (Category *)getCategory:(NSIndexPath *)indexPath
+{
+    Category *category = [[self.fetchResultsController fetchedObjects] objectAtIndex:indexPath.section];
+    return category;
 }
 
 - (void)configureCell:(RWPlanCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    Plan* plan = (Plan*)[self.fetchResultsController objectAtIndexPath:indexPath];
+    Plan* plan = [self getPlan:indexPath];
     
     // plan details
-    cell.numberLabel.text = [NSString stringWithFormat:@"%d", plan.number];
+    cell.numberLabel.text = [NSString stringWithFormat:@"%ld", (long)[plan.displayNumber integerValue]];
     cell.nameLabel.text = plan.name;
     cell.descLabel.text = plan.desc;
     
     // set tags
-    cell.startButton.tag = plan.number;
-    cell.tag = plan.number;
+    cell.startButton.tag = [plan.number integerValue];
+    cell.tag = [plan.number integerValue];
     
     
     if ([plan.status isEqualToString:@"Active"]) {
@@ -208,20 +217,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (Plan *)getPlan:(NSIndexPath *)indexPath {
+    Category* category = [self getCategory:indexPath];
+    Plan* plan = [self.dataController getPlanFromCategory:category planNum:(int)(indexPath.row)];
+    return plan;
+}
+
+- (NSIndexPath *)getIndexPath:(id)sender {
+    //int row = (int)((UIButton*) sender).tag;
+    
+    UIView *view = sender;
+    while (view != nil && ![view isKindOfClass:[UITableViewCell class]]) {
+        view = [view superview];
+    }
+    UITableViewCell *cell = (UITableViewCell *) view;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    return indexPath;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"segue: %@",segue.identifier);
     if ([segue.identifier isEqualToString:@"startPlan"]) {
         RWPlanStartViewController *destViewController = segue.destinationViewController;
-        int row = (int)((UIButton*) sender).tag;
+        NSIndexPath *indexPath;
+        indexPath = [self getIndexPath:sender];
         
-        Plan* plan = [self.dataController getPlanByNum:row];
+        Plan *plan;
+        plan = [self getPlan:indexPath];
         
         destViewController.plan = plan;
     } else if ([segue.identifier isEqualToString:@"goToPlanDetails"]) {
         RWPlanDetailsViewController *destViewController = segue.destinationViewController;
-        int row = (int)((RWPlanCell*) sender).tag;
+        NSIndexPath *indexPath;
+        indexPath = [self getIndexPath:sender];
         
-        Plan* plan = [self.dataController getPlanByNum:row];
+        Plan *plan;
+        plan = [self getPlan:indexPath];
         
         destViewController.plan = plan;
     }
@@ -232,8 +262,15 @@
     [self.tableView reloadData];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    Category *category = [[self.fetchResultsController fetchedObjects] objectAtIndex:section];
+    return category.name;
+}
+
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.tableView reloadData];
 }
+
 @end

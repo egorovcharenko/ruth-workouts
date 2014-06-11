@@ -2,7 +2,7 @@
 //  GlossaryTopic.h
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 18.05.14.
+//  Created by Egor Ovcharenko on 12.06.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
@@ -14,7 +14,7 @@
 @interface GlossaryTopic : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic) int16_t order;
+@property (nonatomic, retain) NSNumber * order;
 @property (nonatomic, retain) NSSet *topicTermins;
 @end
 

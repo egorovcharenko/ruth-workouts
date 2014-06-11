@@ -110,11 +110,11 @@
     //cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
     
     // length button
-    NSString *firstPart = [NSString stringWithFormat:@"%d", activity.lenMultiplier];
+    NSString *firstPart = [NSString stringWithFormat:@"%ld", (long)[activity.lenMultiplier integerValue]];
     NSString *crossPart = [NSString stringWithFormat:@" x "];
-    NSString *secondPart = [NSString stringWithFormat:@"%d", activity.len];
+    NSString *secondPart = [NSString stringWithFormat:@"%ld", (long)[activity.len integerValue]];
     NSString *thirdPart = @"m";
-    if (activity.lenMultiplier == 1){
+    if ([activity.lenMultiplier integerValue] == 1){
         firstPart = @"";
         crossPart = @"";
     }

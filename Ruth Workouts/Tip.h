@@ -2,7 +2,7 @@
 //  Tip.h
 //  Ruth Workouts
 //
-//  Created by Egor Ovcharenko on 18.05.14.
+//  Created by Egor Ovcharenko on 12.06.14.
 //  Copyright (c) 2014 Egor Ovcharenko. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @interface Tip : NSManagedObject
 
-@property (nonatomic) int16_t number;
+@property (nonatomic, retain) NSNumber * number;
 @property (nonatomic, retain) NSString * text;
 
 @end

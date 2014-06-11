@@ -26,6 +26,7 @@ typedef enum
 @class WorkoutVariant;
 @class WorkoutVariantEvent;
 @class Plan;
+@class Category;
 
 @interface RWDataController : NSObject <NSFetchedResultsControllerDelegate>
 
@@ -64,6 +65,10 @@ typedef enum
 - (NSDate*) getPlannedEndDate: (Plan*) plan;
 - (Workout*) getNextUncompletedWorkout: (Plan*) plan;
 - (Workout*) getWorkoutByNumber: (Plan*) plan number: (int) number;
+
+// categories
+- (NSFetchedResultsController*) getAllCategories;
+- (Plan*) getPlanFromCategory: (Category*)category planNum:(int)planNum;
 
 // general
 - (void)saveData;
