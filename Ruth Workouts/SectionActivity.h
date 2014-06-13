@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSNumber * lenMultiplier;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * order;
+@property (nonatomic, retain) NSString * unit;
 @property (nonatomic, retain) Section *parentSection;
 
 @end

@@ -21,6 +21,7 @@
 @property (nonatomic, retain) NSDate * plannedDate;
 @property (nonatomic, retain) NSNumber * selectedVariantNumber;
 @property (nonatomic, retain) NSString * status;
+@property (nonatomic, retain) NSString * activity;
 @property (nonatomic, retain) NSSet *childVariants;
 @property (nonatomic, retain) Plan *parentPlan;
 @end

@@ -15,6 +15,7 @@
 #include "RWPlanDetailsViewController.h"
 #include "Category.h"
 
+#import "RWHelper.h"
 
 @interface RWPlansController ()
 
@@ -110,12 +111,13 @@
     // plan details
     cell.numberLabel.text = [NSString stringWithFormat:@"%ld", (long)[plan.displayNumber integerValue]];
     cell.nameLabel.text = plan.name;
+    cell.nameLabel.textColor = [UIColor blackColor];
+    
     cell.descLabel.text = plan.desc;
     
     // set tags
     cell.startButton.tag = [plan.number integerValue];
     cell.tag = [plan.number integerValue];
-    
     
     if ([plan.status isEqualToString:@"Active"]) {
         [cell.startButton setHidden:true];
@@ -138,16 +140,19 @@
             if (daysToWorkout == 0){
                 // workout is today
                 cell.nextTrainingLabel.text = @"Next workout is today!";
-                cell.nextTrainingLabel.textColor = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
+                cell.nextTrainingLabel.textColor = [RWHelper sharedInstance].unrealFoodPills;
             } else if (daysToWorkout == 1){
                 // workout is tomorrow
                 cell.nextTrainingLabel.text = @"Next workout is tomorrow";
-                cell.nextTrainingLabel.textColor = [UIColor colorWithRed:105.0/255.0 green:210.0/255.0 blue:231.0/255.0 alpha:1.0];
+                cell.nextTrainingLabel.textColor = [RWHelper sharedInstance].aoi;
             } else {
                 // workout is the other day
                 cell.nextTrainingLabel.text  = [NSString stringWithFormat:@"Next workout is on %@",[dateFormatter stringFromDate:nextPlannedDate]];
                 cell.nextTrainingLabel.textColor = [UIColor blackColor];
             }
+            
+            // highlight the plan name
+            cell.nameLabel.textColor = [RWHelper sharedInstance].unrealFoodPills;
         }
         // progress of workouts
         [cell.workoutsProgress setHidden:false];

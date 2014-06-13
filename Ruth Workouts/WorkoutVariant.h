@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSNumber * length;
 @property (nonatomic, retain) NSNumber * number;
 @property (nonatomic, retain) NSString * tips;
+@property (nonatomic, retain) NSNumber * time;
 @property (nonatomic, retain) NSSet *childSections;
 @property (nonatomic, retain) Workout *parentWorkout;
 @property (nonatomic, retain) NSSet *variantEvents;

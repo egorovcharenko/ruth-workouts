@@ -19,5 +19,6 @@
 - (IBAction)shareOnFacebook:(id)sender;
 - (IBAction)saveClicked:(id)sender;
 - (IBAction)shareOnTwitter:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *commentTextView;
 
 @end

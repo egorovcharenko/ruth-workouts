@@ -11,5 +11,7 @@
 @interface RWMiscViewController : UIViewController
 - (IBAction)rateButtonClicked:(id)sender;
 - (IBAction)sendFeedbackButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *rateButton;
+@property (weak, nonatomic) IBOutlet UIButton *sendButton;
 
 @end

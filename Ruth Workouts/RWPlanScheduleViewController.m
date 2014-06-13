@@ -42,7 +42,7 @@
     self.navigationItem.title = self.plan.name;
     
     // weekdays
-    weekdaysSelected = plan.weekdaysSelected;
+    weekdaysSelected = [plan.weekdaysSelected integerValue];
     [self updateButtons];
 
     // next workout date
@@ -58,9 +58,9 @@
     for (Workout* workout in plan.childWorkouts) {
         NSString* workoutName;
         if (workout.dateCompleted != nil) {
-            workoutName = [NSString stringWithFormat:@"%@:(Done)%@", workout.number, workout.name];
+            workoutName = [NSString stringWithFormat:@"%02ld:(Done)%@", [workout.number integerValue], workout.name];
         } else {
-            workoutName = [NSString stringWithFormat:@"%@:%@", workout.number, workout.name];
+            workoutName = [NSString stringWithFormat:@"%02ld:%@", [workout.number integerValue], workout.name];
         }
         [workouts addObject:workoutName];
     }
@@ -107,7 +107,7 @@ numberOfRowsInComponent:(NSInteger)component
     plan.weekdaysSelected = [NSNumber numberWithInt:weekdaysSelected];
     int nextWorkoutNumber = (int)([self.nextTrainingPicker selectedRowInComponent:0] + 1);
     Workout* nextWorkout = [dataController getWorkoutByNumber:plan number:nextWorkoutNumber];
-    plan.nextWorkout = nextWorkout;
+    //plan.nextWorkout = nextWorkout;
     
     // complete all workouts before selected one
     for (Workout* workout in plan.childWorkouts) {
@@ -121,13 +121,13 @@ numberOfRowsInComponent:(NSInteger)component
     }
     
     // set date of next workout
-    nextWorkout.plannedDate = self.nextTrainingDatePicker.date;
+    //nextWorkout.plannedDate = self.nextTrainingDatePicker.date;
     
     // replan all incomplete workouts including selected
     [dataController scheduleThePlanExtended:plan startDate:self.nextTrainingDatePicker.date startWorkoutNum:nextWorkoutNumber skipFirstWorkoutWeekdayCheck:NO];
     
     // save context
-    [[[RWDataController alloc] initWithAppDelegate:(RWAppDelegate*)[[UIApplication sharedApplication] delegate ]] saveData];
+    //[[[RWDataController alloc] initWithAppDelegate:(RWAppDelegate*)[[UIApplication sharedApplication] delegate ]] saveData];
     
     // unwind to previous screen
     [self performSegueWithIdentifier:@"unwindToPlansList" sender:self];

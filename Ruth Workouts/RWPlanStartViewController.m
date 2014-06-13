@@ -75,7 +75,6 @@
         self.friButton.backgroundColor = [UIColor whiteColor];
         self.friButton.tintColor = [UIColor grayColor];
     }
-    
     if ([plan.weekdaysSelected integerValue] & SaturdaySelected){
         self.satButton.backgroundColor = [UIColor clearColor];
         self.satButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];
@@ -83,7 +82,6 @@
         self.satButton.backgroundColor = [UIColor whiteColor];
         self.satButton.tintColor = [UIColor grayColor];
     }
-    
     if ([plan.weekdaysSelected integerValue] & SundaySelected){
         self.sunButton.backgroundColor = [UIColor clearColor];
         self.sunButton.tintColor = [[[[UIApplication sharedApplication] delegate] window] tintColor];

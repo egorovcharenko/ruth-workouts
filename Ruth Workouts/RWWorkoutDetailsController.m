@@ -13,6 +13,7 @@
 #import "WorkoutVariant.h"
 #import "RWCompleteWorkoutViewController.h"
 #import "RWNewCompleteWorkoutViewController.h"
+#import "RWHelper.h"
 
 #import "RWActivityCell.h"
 
@@ -110,38 +111,42 @@
     //cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
     
     // length button
-    NSString *firstPart = [NSString stringWithFormat:@"%ld", (long)[activity.lenMultiplier integerValue]];
-    NSString *crossPart = [NSString stringWithFormat:@" x "];
-    NSString *secondPart = [NSString stringWithFormat:@"%ld", (long)[activity.len integerValue]];
-    NSString *thirdPart = @"m";
-    if ([activity.lenMultiplier integerValue] == 1){
-        firstPart = @"";
-        crossPart = @"";
+    NSMutableAttributedString *attributedText;
+    
+    if ([activity.unit isEqualToString:@"meters"]){
+        // show length
+        NSString *firstPart = [NSString stringWithFormat:@"%ld", (long)[activity.lenMultiplier integerValue]];
+        NSString *crossPart = [NSString stringWithFormat:@" x "];
+        NSString *secondPart = [NSString stringWithFormat:@"%ld", (long)[activity.len integerValue]];
+        NSString *unitsPart = @"m";
+        if ([activity.lenMultiplier integerValue] == 1){
+            firstPart = @"";
+            crossPart = @"";
+        }
+        NSString *text = [NSString stringWithFormat:@"%@%@%@%@",
+                          firstPart,
+                          crossPart,
+                          secondPart,
+                          unitsPart];
+        
+        // general attributes for the entire text
+        UIColor *giantGoldfish = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
+        NSDictionary *attribs = @{NSForegroundColorAttributeName:giantGoldfish,
+                                  NSFontAttributeName: cell.lenButton.titleLabel.font};
+        attributedText = [[NSMutableAttributedString alloc] initWithString:text attributes:attribs];
+        
+        UIFont *lightFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:cell.lenButton.titleLabel.font.pointSize];
+        
+        NSRange crossRange = [text rangeOfString:crossPart];
+        [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSBaselineOffsetAttributeName:@2, NSForegroundColorAttributeName:giantGoldfish} range:crossRange];
+        
+        NSRange thirdRange = [text rangeOfString:unitsPart];
+        [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSForegroundColorAttributeName:giantGoldfish} range:thirdRange];
+        
+    } else if ([activity.unit isEqualToString:@"seconds"]){
+        attributedText = [[RWHelper sharedInstance] prepareTimeString:[activity.len doubleValue] mainStyle:[RWHelper sharedInstance].hoursStyle thinStyle:[RWHelper sharedInstance].timeDots];
     }
-    NSString *text = [NSString stringWithFormat:@"%@%@%@%@",
-                      firstPart,
-                      crossPart,
-                      secondPart,
-                      thirdPart];
     
-    // general attributes for the entire text
-    //add alignment
-    //NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    //[paragraphStyle setAlignment:NSTextAlignmentRight];
-    
-    UIColor *giantGoldfish = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
-    NSDictionary *attribs = @{NSForegroundColorAttributeName:giantGoldfish,
-                              NSFontAttributeName: cell.lenButton.titleLabel.font};
-    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text attributes:attribs];
-    
-    UIFont *lightFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:cell.lenButton.titleLabel.font.pointSize];
-    
-    NSRange crossRange = [text rangeOfString:crossPart];
-    [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSBaselineOffsetAttributeName:@2, NSForegroundColorAttributeName:giantGoldfish} range:crossRange];
-    
-    NSRange thirdRange = [text rangeOfString:thirdPart];
-    [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSForegroundColorAttributeName:giantGoldfish} range:thirdRange];
-
     [cell.lenButton setAttributedTitle:attributedText forState:UIControlStateNormal];
     cell.lenButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
 }
@@ -170,8 +175,8 @@
     [headerManualView setBackgroundColor:[UIColor colorWithRed:224.0/255.0 green:228.0/255.0 blue:204.0/255.0 alpha:1.0]];
     
     // font
-    UIFont *yourFont = [UIFont fontWithName:@"Helvetica-Bold" size:20];
-
+    UIFont *yourFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
+    
     // section name
     UILabel *sectionName = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 150, 30)];
     sectionName.text = section.name;
@@ -181,16 +186,18 @@
     sectionName.font = yourFont;
     [headerManualView addSubview:sectionName];
     
-    // section length
-    /*
-    UILabel *sectionLength = [[UILabel alloc] initWithFrame:CGRectMake(150, 0, 64, 30)];
-    sectionLength.text = [NSString stringWithFormat:@"%d m", section.length]; // calculate on the fly
-    sectionLength.backgroundColor = [UIColor clearColor];
-    sectionLength.textColor = [UIColor whiteColor];
-    sectionLength.textAlignment = NSTextAlignmentCenter;
-    sectionLength.font = yourFont;
-    [headerManualView addSubview:sectionLength];
-    */
+    // section repetitions
+    if ([section.repetitions integerValue] > 1) {
+        UIFont *repetitionsFont = [UIFont fontWithName:@"HelveticaNeue" size:20];
+        
+        UILabel *sectionLength = [[UILabel alloc] initWithFrame:CGRectMake(120, 0, 190, 30)];
+        sectionLength.text = [NSString stringWithFormat:@"repeat %ld times", [section.repetitions integerValue]];
+        sectionLength.backgroundColor = [UIColor clearColor];
+        sectionLength.textColor = [UIColor colorWithRed:250.0/255.0 green:105.0/255.0 blue:0.0/255.0 alpha:1.0];
+        sectionLength.textAlignment = NSTextAlignmentRight;
+        sectionLength.font = repetitionsFont;
+        [headerManualView addSubview:sectionLength];
+    }
     return headerManualView;
 }
 

@@ -17,6 +17,7 @@
 @dynamic length;
 @dynamic number;
 @dynamic tips;
+@dynamic time;
 @dynamic childSections;
 @dynamic parentWorkout;
 @dynamic variantEvents;

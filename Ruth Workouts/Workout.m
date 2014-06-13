@@ -21,6 +21,7 @@
 @dynamic plannedDate;
 @dynamic selectedVariantNumber;
 @dynamic status;
+@dynamic activity;
 @dynamic childVariants;
 @dynamic parentPlan;
 

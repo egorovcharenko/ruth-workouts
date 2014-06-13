@@ -14,6 +14,8 @@
 #import "WorkoutVariantEvent.h"
 #import "Plan.h"
 
+#import "RWHelper.h"
+
 @interface RWNewCompleteWorkoutViewController ()
 
 @end
@@ -35,7 +37,19 @@
     // Do any additional setup after loading the view.
     
     // pre-populate total len
-    self.totalDistanceText.text = [NSString stringWithFormat:@"%@", self.workoutVariant.length];
+    if ([self.workoutVariant.length integerValue] > 0) {
+        self.totalDistanceText.text = [NSString stringWithFormat:@"%@", self.workoutVariant.length];
+    }
+    
+    // pre-pop total time
+    if ([self.workoutVariant.time doubleValue]> 0.01){
+        NSAttributedString * timeString = [[RWHelper sharedInstance] prepareTimeString:[self.workoutVariant.time doubleValue] mainStyle:[RWHelper sharedInstance].hoursStyle thinStyle:[RWHelper sharedInstance].timeDots];
+        self.totalTimeText.text = timeString.string;
+    }
+    
+    self.totalTimeText.delegate = self;
+    self.totalDistanceText.delegate = self;
+    self.bestLapTimeText.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,10 +88,10 @@
 - (IBAction)saveClicked:(id)sender
 {
     // calc times first
-    double totalTime, bestLapTime = 0.0;
+    double totalTime = 0.0, bestLapTime = 0.0;
     NSString *inputTotalTime =self.totalTimeText.text;
     if ([inputTotalTime length] > 0) {
-        double totalTime = [self parseString:inputTotalTime];
+        totalTime = [self parseString:inputTotalTime];
         if (totalTime < 0.01) {
             UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                                  message:@"Please check that you enter time in format: 'hours:minutes:seconds.milliseconds', hours and minutes are optional"
@@ -88,12 +102,12 @@
             return;
         }
     } else {
-        totalTime = 0;
+        totalTime = 0.0;
     }
     
     NSString *inputBestTime =self.bestLapTimeText.text;
     if ([inputBestTime length] > 0) {
-        double bestLapTime = [self parseString:inputBestTime];
+        bestLapTime = [self parseString:inputBestTime];
         if (bestLapTime < 0.01) {
             UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                                  message:@"Please enter time in format: 'hours:minutes:seconds.milliseconds' (hours and minutes are optional)"
@@ -104,23 +118,44 @@
             return;
         }
     } else {
-        bestLapTime = 0;
+        bestLapTime = 0.0;
     }
 
+    // check total len first
+    int totalDistance = 0;
+    
+    // total len
+    if (self.totalDistanceText.text.length > 0){
+        totalDistance = [self.totalDistanceText.text intValue];
+    }
+    
+    if ((totalDistance == 0) && (totalTime < 0.001)) {
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                             message:@"Please enter at least either total time or total length"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+        [errorAlert show];
+        return;
+    }
+    
     // create event
     RWDataController *dataController = [[RWDataController alloc] initWithAppDelegate:(RWAppDelegate*)[[UIApplication sharedApplication] delegate ]];
     WorkoutVariantEvent *event = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariantEvent" inManagedObjectContext:dataController.context];
     
-    event.comment = @""; // TODO
-    
+    event.comment = self.commentTextView.text;
+        
     // total len
-    event.totalLength = [NSNumber numberWithInt:[self.totalDistanceText.text intValue]];
+    event.totalLength = [NSNumber numberWithInt:totalDistance];
     
     // total time
     event.totalTime = [NSNumber numberWithDouble:totalTime];
     
     // lap time
-    event.totalTime = [NSNumber numberWithDouble:bestLapTime];
+    event.bestLapTime = [NSNumber numberWithDouble:bestLapTime];
+    
+    // date completed
+    event.date = [NSDate date];
     
     // parent
     event.parentVariant = self.workoutVariant;

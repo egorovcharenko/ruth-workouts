@@ -26,7 +26,7 @@
 							<key>number</key>
 							<integer>1</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -472,7 +472,7 @@
 							<key>number</key>
 							<integer>2</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -951,7 +951,7 @@
 							<key>number</key>
 							<integer>3</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -1410,7 +1410,7 @@
 							<key>number</key>
 							<integer>4</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -1833,7 +1833,7 @@
 							<key>number</key>
 							<integer>5</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -2252,7 +2252,7 @@
 							<key>number</key>
 							<integer>6</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -2697,7 +2697,7 @@
 							<key>number</key>
 							<integer>7</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -2980,7 +2980,7 @@
 							<key>number</key>
 							<integer>8</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -3599,7 +3599,7 @@
 							<key>number</key>
 							<integer>9</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -4158,7 +4158,7 @@
 							<key>number</key>
 							<integer>10</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -4545,7 +4545,7 @@
 							<key>number</key>
 							<integer>11</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -5139,7 +5139,7 @@
 							<key>number</key>
 							<integer>12</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -5534,7 +5534,7 @@
 							<key>number</key>
 							<integer>13</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -5759,7 +5759,7 @@
 							<key>number</key>
 							<integer>13</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -5984,7 +5984,7 @@
 							<key>number</key>
 							<integer>14</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -6449,7 +6449,7 @@
 							<key>number</key>
 							<integer>15</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -6872,7 +6872,7 @@
 							<key>number</key>
 							<integer>16</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -7371,7 +7371,7 @@
 							<key>number</key>
 							<integer>17</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -7850,7 +7850,7 @@
 							<key>number</key>
 							<integer>18</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -8357,7 +8357,7 @@
 							<key>number</key>
 							<integer>19</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -8838,7 +8838,7 @@
 							<key>number</key>
 							<integer>20</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -9229,7 +9229,7 @@
 							<key>number</key>
 							<integer>21</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -9749,7 +9749,7 @@
 							<key>number</key>
 							<integer>22</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -10215,7 +10215,7 @@
 							<key>number</key>
 							<integer>23</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -10608,7 +10608,7 @@
 							<key>number</key>
 							<integer>24</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -11003,7 +11003,7 @@
 							<key>number</key>
 							<integer>25</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -11538,7 +11538,7 @@
 							<key>number</key>
 							<integer>26</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -11931,7 +11931,7 @@
 							<key>number</key>
 							<integer>27</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -12381,7 +12381,7 @@
 							<key>number</key>
 							<integer>28</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -12818,7 +12818,7 @@
 							<key>number</key>
 							<integer>29</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -13263,7 +13263,7 @@
 							<key>number</key>
 							<integer>30</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -13650,7 +13650,7 @@
 							<key>number</key>
 							<integer>31</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -14077,7 +14077,7 @@
 							<key>number</key>
 							<integer>32</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -14420,7 +14420,7 @@
 							<key>number</key>
 							<integer>33</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -14747,7 +14747,7 @@
 							<key>number</key>
 							<integer>34</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -15150,7 +15150,7 @@
 							<key>number</key>
 							<integer>35</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -15693,7 +15693,7 @@
 							<key>number</key>
 							<integer>36</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -16164,7 +16164,7 @@
 							<key>number</key>
 							<integer>37</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -16753,7 +16753,7 @@
 							<key>number</key>
 							<integer>38</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -17174,7 +17174,7 @@
 							<key>number</key>
 							<integer>39</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -17641,7 +17641,7 @@
 							<key>number</key>
 							<integer>40</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -18162,7 +18162,7 @@
 							<key>number</key>
 							<integer>41</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -18555,7 +18555,7 @@
 							<key>number</key>
 							<integer>42</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -18948,7 +18948,7 @@
 							<key>number</key>
 							<integer>43</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -19417,7 +19417,7 @@
 							<key>number</key>
 							<integer>44</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -19821,7 +19821,7 @@
 							<key>number</key>
 							<integer>45</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -20084,7 +20084,7 @@
 							<key>number</key>
 							<integer>46</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -20554,7 +20554,7 @@
 							<key>number</key>
 							<integer>47</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -21171,7 +21171,7 @@
 							<key>number</key>
 							<integer>48</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -21542,7 +21542,7 @@
 							<key>number</key>
 							<integer>49</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -22039,7 +22039,7 @@
 							<key>number</key>
 							<integer>50</integer>
 							<key>daysToNextWorkoutIdeal</key>
-							<integer>0</integer>
+							<integer>0</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMin</key>
 							<integer>0</integer>
 							<key>daysToNextWorkoutMax</key>
@@ -22470,7 +22470,7 @@
 							<key>number</key>
 							<integer>1</integer>
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -22560,7 +22560,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -22661,7 +22661,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -22762,7 +22762,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -22886,7 +22886,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23012,7 +23012,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23138,7 +23138,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23264,7 +23264,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23390,7 +23390,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23516,7 +23516,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23642,7 +23642,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23768,7 +23768,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23894,7 +23894,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -23996,7 +23996,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -24098,7 +24098,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -24200,7 +24200,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -24302,7 +24302,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -24404,7 +24404,7 @@
 
 
 							<key>daysToNextWorkoutMin</key>
-							<integer>1</integer>
+							<integer>1</integer><key>activity</key><string>Swimming</string>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
@@ -24467,9 +24467,9 @@
 					<key>number</key>
 					<integer>1</integer>
 					<key>name</key>
-					<string>From beginner to 5k</string>
+					<string>Beginner to 5K</string>
 					<key>desc</key>
-					<string>If this is your first 5K or you are new to running then Beginner might be right for you.</string>
+					<string>This plan will help you build stamina and running skills needed to run 5 kilometers in 9 weeks.</string>
 					<key>weekdaysSelected</key>
 					<integer>21</integer>
 					<key>activity</key>
@@ -24479,14 +24479,14 @@
 						<dict>
 							<key>number</key>
 							<integer>1</integer>
-							<key>daysToNextWorkoutIdeal</key>
-							<integer>1</integer>
+							
+							
 							<key>daysToNextWorkoutMin</key>
 							<integer>1</integer>
 							<key>daysToNextWorkoutMax</key>
 							<integer>2</integer>
 							<key>name</key>
-							<string>1</string>
+							<string>First day</string><key>activity</key><string>Running</string>
 							<key>variants</key>
 							<array>
 								<dict>
@@ -24496,7 +24496,7 @@
 											<key>order</key>
 											<string>1</string>
 											<key>name</key>
-											<string>100's</string>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
 
 
 											<key>activities</key>
@@ -24505,23 +24505,22 @@
 												<key>order</key>
 												<string>1</string>
 												<key>name</key>
-												<string>Swim</string>
+												<string>Warm-up</string>
 												<key>details</key>
-												<string/>
+												<string>and stretch</string>
 												<key>len_multiplier</key>
-												<integer>4</integer>
+												<integer>1</integer>
 												<key>len</key>
-												<integer>100</integer>
+												<integer>300</integer><key>unit</key><string>seconds</string>
 												<key>len_details</key>
-												<string>Rest for 12 breaths between 100s</string>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
 												</dict>
 											</array>
-										</dict>
-										<dict>
+										</dict><dict>
 											<key>order</key>
 											<string>2</string>
 											<key>name</key>
-											<string>50's</string>
+											<string>Running</string><key>repetitions</key><integer>8</integer>
 
 
 											<key>activities</key>
@@ -24530,24 +24529,35 @@
 												<key>order</key>
 												<string>1</string>
 												<key>name</key>
-												<string>Swim</string>
+												<string>Running</string>
 												<key>details</key>
-												<string/>
+												<string>low intensity</string>
 												<key>len_multiplier</key>
-												<integer>4</integer>
+												<integer>1</integer>
 												<key>len</key>
-												<integer>50</integer>
+												<integer>60</integer><key>unit</key><string>seconds</string>
 												<key>len_details</key>
-												<string>Rest for 8 breaths between 50s</string>
+												<string>Don't feel pressured to continue faster than you're able.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
 												</dict>
 											</array>
-
-										</dict>
-										<dict>
+										</dict><dict>
 											<key>order</key>
 											<string>3</string>
 											<key>name</key>
-											<string>25's</string>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
 
 
 											<key>activities</key>
@@ -24556,18 +24566,3036 @@
 												<key>order</key>
 												<string>1</string>
 												<key>name</key>
-												<string>Swim</string>
+												<string>Cool down</string>
 												<key>details</key>
-												<string/>
+												<string>and stretch</string>
 												<key>len_multiplier</key>
-												<integer>4</integer>
+												<integer>1</integer>
 												<key>len</key>
-												<integer>25</integer>
+												<integer>300</integer><key>unit</key><string>seconds</string>
 												<key>len_details</key>
-												<string>Rest for 4 breaths between 25s</string>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
 												</dict>
 											</array>
 										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>2</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week one, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>8</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Don't feel pressured to continue faster than you're able.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>3</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week one, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>8</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Don't feel pressured to continue faster than you're able.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>4</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week two, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>8</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Don't feel pressured to continue faster than you're able.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>120</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>5</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week two, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>8</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Don't feel pressured to continue faster than you're able.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>120</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>6</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week two, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>8</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Don't feel pressured to continue faster than you're able.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>120</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>7</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week three, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>2</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>8</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week three, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>2</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>9</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week three, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>2</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>10</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week four, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>150</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>5</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>6</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>7</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>11</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week four, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>150</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>5</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>6</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>7</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>12</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week four, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>150</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>5</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>6</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>7</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>13</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week five, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>5</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>14</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week five, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>480</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>480</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>15</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week five, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1200</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Try doing it without walking</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>16</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week six, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>480</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>4</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>5</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>17</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week six, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Walking</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Take your time to recover during walking </string>
+												</dict><dict>
+												<key>order</key>
+												<string>3</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>18</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week six, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1320</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Try doing it without walking</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>19</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week seven, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1500</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>20</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week seven, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1500</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>21</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week seven, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1500</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>22</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week eight, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1680</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>23</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week eight, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1680</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>24</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week eight, day three</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1680</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>25</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week nine, day one</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1800</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>26</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week nine, day two</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1800</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>27</integer>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Final day</string><key>activity</key><string>Running</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies or a brisk walk. It will help prevent injures. You can try 5-10 reps of: leg swings (forwards &amp; sideways), lunges (front, back &amp; lateral), arms swings, trunk rotations etc.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Running</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Running</string>
+												<key>details</key>
+												<string>low intensity</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1800</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>You can do 3-5 minutes of brisk then gentle walking, then leg and total body stretches</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
 									</array>
 								</dict>
 							</array>

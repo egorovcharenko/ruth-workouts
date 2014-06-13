@@ -10,25 +10,23 @@
 #import <MessageUI/MessageUI.h>
 #import "Appirater.h"
 
+#import "RWHelper.h"
+
 @interface RWMiscViewController ()
 
 @end
 
 @implementation RWMiscViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.sendButton.backgroundColor = [RWHelper sharedInstance].giantGoldfish;
+    self.sendButton.titleLabel.textColor = [UIColor whiteColor];
+
+    self.rateButton.backgroundColor = [RWHelper sharedInstance].giantGoldfish;
+    self.rateButton.titleLabel.textColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,15 +50,13 @@
     if ([MFMailComposeViewController canSendMail])
     {
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-        mailer.mailComposeDelegate = nil;
-        [mailer setSubject:@"Feedback on 'Ruth Workouts'"];
+        mailer.mailComposeDelegate = self;
+        [mailer setSubject:@"Feedback on 'Swim a Mile' app"];
         NSArray *toRecipients = [NSArray arrayWithObjects:@"egor.ovcharenko@gmail.com", nil];
         [mailer setToRecipients:toRecipients];
         NSString *emailBody = @"Hi Egor, ";
         [mailer setMessageBody:emailBody isHTML:NO];
-        [self presentViewController:mailer animated:YES completion:^(){
-            //put your code here
-        }];
+        [self presentViewController:mailer animated:YES completion:nil];
     }
     else
     {
@@ -71,6 +67,9 @@
                                               otherButtonTitles: nil];
         [alert show];
     }
+}
+-(void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

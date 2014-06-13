@@ -14,6 +14,8 @@
 
 #import "Appirater.h"
 
+#import "RWHelper.h"
+
 @implementation RWAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -22,6 +24,7 @@
 
 - (BOOL)application: (UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Appirater setAppId:@"587366798"];
     // Override point for customization after application launch.
     
     //UITabBarController *navigationController = (UITabBarController *)self.window.rootViewController;
@@ -41,11 +44,17 @@
     //[self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
     
     // set global tint color
-    [[[UIApplication sharedApplication] delegate] window].tintColor = [UIColor colorWithRed:250.0/255.0 green:105.0/255.0 blue:0 alpha:1.0];
+    [[[UIApplication sharedApplication] delegate] window].tintColor = [RWHelper sharedInstance].unrealFoodPills;
     
     // appirater setup
-    [Appirater setAppId:@"660028785"];
+    [Appirater setDaysUntilPrompt:5];
+    [Appirater setUsesUntilPrompt:10];
+    [Appirater setSignificantEventsUntilPrompt:-1];
+    [Appirater setTimeBeforeReminding:2];
+    [Appirater setDebug:YES];
+    
     [Appirater appLaunched:YES];
+    
 
     return YES;
 }

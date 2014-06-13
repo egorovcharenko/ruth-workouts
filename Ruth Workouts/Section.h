@@ -16,6 +16,8 @@
 @property (nonatomic, retain) NSNumber * length;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * order;
+@property (nonatomic, retain) NSNumber * repetitions;
+@property (nonatomic, retain) NSNumber * time;
 @property (nonatomic, retain) NSSet *childActivities;
 @property (nonatomic, retain) WorkoutVariant *parentVariant;
 @end

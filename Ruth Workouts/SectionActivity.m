@@ -18,6 +18,7 @@
 @dynamic lenMultiplier;
 @dynamic name;
 @dynamic order;
+@dynamic unit;
 @dynamic parentSection;
 
 @end

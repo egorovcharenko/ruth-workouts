@@ -70,6 +70,9 @@ typedef enum
 - (NSFetchedResultsController*) getAllCategories;
 - (Plan*) getPlanFromCategory: (Category*)category planNum:(int)planNum;
 
+// history
+- (NSFetchedResultsController*) getAllEvents;
+
 // general
 - (void)saveData;
 

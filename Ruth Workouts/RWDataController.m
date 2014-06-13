@@ -99,7 +99,7 @@
                 
                 workout.number = [dict objectForKey:@"number"];
                 workout.name = [dict objectForKey:@"name"];
-                //workout.daysToNextWorkoutIdeal = [dict objectForKey:@"daysToNextWorkoutIdeal"];
+                workout.activity = [dict objectForKey:@"activity"];
                 workout.daysToNextWorkoutMax = [dict objectForKey:@"daysToNextWorkoutMax"];
                 workout.daysToNextWorkoutMin = [dict objectForKey:@"daysToNextWorkoutMin"];
                 workout.selectedVariantNumber = [NSNumber numberWithInt:1];
@@ -112,8 +112,8 @@
                     WorkoutVariant *variant = [NSEntityDescription insertNewObjectForEntityForName:@"WorkoutVariant" inManagedObjectContext:context];
                     [workout addChildVariantsObject:variant];
                     
-                    //variant.length = [[dict2 objectForKey:@"length"] integerValue];
                     int variantLen = 0;
+                    int variantTime = 0;
                     
                     variant.number = [NSNumber numberWithInteger:variantNumber];
                     variantNumber ++;
@@ -125,10 +125,12 @@
                         [variant addChildSectionsObject:section];
                         
                         section.order = [NSNumber numberWithInt: (int)[[dict3 objectForKey:@"order"] integerValue]];
-                        //section.length = [[dict3 objectForKey:@"length"] integerValue];
                         section.name = [dict3 objectForKey:@"name"];
+                        section.repetitions = [NSNumber numberWithLong:[[dict3 objectForKey:@"repetitions"] integerValue]];
                         
                         int sectionLen = 0;
+                        int sectionTime = 0;
+                        
                         // activities
                         NSArray *activities = [dict3 objectForKey:@"activities"];
                         for (NSDictionary *dict4 in activities) {
@@ -141,17 +143,29 @@
                             activity.lenMultiplier = [dict4 objectForKey:@"len_multiplier"];
                             activity.len = [dict4 objectForKey:@"len"];
                             activity.lenDetails = [dict4 objectForKey:@"len_details"];
+                            activity.unit = [dict4 objectForKey:@"unit"]; // optional
                             
-                            sectionLen += [activity.len integerValue] * [activity.lenMultiplier integerValue];
+                            if (activity.unit == nil){
+                                activity.unit = @"meters";
+                            }
+                            if ([activity.unit isEqualToString:@"meters"]){
+                                sectionLen += [activity.len integerValue] * [activity.lenMultiplier integerValue];
+                            } else if ([activity.unit isEqualToString:@"seconds"]){
+                                sectionTime += [activity.len integerValue];
+                            }
                         }
                         
                         // calculate section length automatically
                         section.length = [NSNumber numberWithInt:sectionLen];
+                        section.time =[NSNumber numberWithInt:sectionTime];
+                        
                         variantLen += sectionLen;
+                        variantTime += sectionTime;
                     }
                     
                     // calculate total length automatically
                     variant.length = [NSNumber numberWithInteger:variantLen];
+                    variant.time = [NSNumber numberWithInteger:variantTime];
                 }
             } // workout end
         } //  plan end
@@ -344,11 +358,13 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"tips" ofType:@"plist"];
     NSArray *items = [NSArray arrayWithContentsOfFile:path];
     
+    int tipNumber = 1;
+    
     // load all data
     for (NSDictionary *dict in items) {
         Tip *tip = [NSEntityDescription insertNewObjectForEntityForName:@"Tip" inManagedObjectContext:context];
         
-        tip.number = [dict objectForKey:@"number"];
+        tip.number = [NSNumber numberWithInt:tipNumber ++]; //[dict objectForKey:@"number"];
         tip.text = [dict objectForKey:@"text"];
     }
     
@@ -601,6 +617,36 @@
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"orderInCategory = %d", planNum];
     return [[category.childPlans filteredSetUsingPredicate:predicate] anyObject];
+}
+
+- (NSFetchedResultsController*) getAllEvents
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"WorkoutVariantEvent" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // exclude random workouts
+    //NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"hideInList = 0"];
+    //[fetchRequest setPredicate:fetchPredicate];
+    
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+    
+    NSError *error = nil;
+	if (![aFetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
+    
+    return aFetchedResultsController;
 }
 
 @end

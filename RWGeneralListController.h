@@ -27,3 +27,4 @@
 - (CGRect) sizeOfLabel:(NSString*)text maxLabelWidth:(NSInteger)maxLabelWidth font:(UIFont*)font;
 
 @end
+

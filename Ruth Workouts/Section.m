@@ -16,6 +16,8 @@
 @dynamic length;
 @dynamic name;
 @dynamic order;
+@dynamic repetitions;
+@dynamic time;
 @dynamic childActivities;
 @dynamic parentVariant;
 
