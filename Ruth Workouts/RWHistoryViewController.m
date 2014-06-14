@@ -177,7 +177,7 @@
     int commentLen = 0;
     
     if (event.comment.length > 0){
-        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica" size:14];
+        UIFont *detailsFont = [UIFont systemFontOfSize:14];
         CGRect rect = [self sizeOfLabel:event.comment maxLabelWidth:300 font:detailsFont];
         commentLen = rect.size.height + 100;
     }

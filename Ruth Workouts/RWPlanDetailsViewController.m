@@ -188,18 +188,14 @@
         if (workout.plannedDate != nil){
             long daysBetweenDates = [self daysBetweenDate:[NSDate date] andDate:workout.plannedDate];
             
-            if (daysBetweenDates > 2) {
-                cell.dateLabel.text = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:workout.plannedDate]];
-            } else if (daysBetweenDates > 1) {
-                cell.dateLabel.text = [NSString stringWithFormat:@"in two days"];
-            } else if (daysBetweenDates > 0) {
+            if (daysBetweenDates == 1) {
                 cell.dateLabel.text = [NSString stringWithFormat:@"tomorrow"];
             } else if (daysBetweenDates == 0) {
-                //cell.dateLabel.text = [NSString stringWithFormat:@"Overdue, was planned for %@",[dateFormatter stringFromDate:workout.plannedDate]];
                 cell.dateLabel.text = @"Today";
             } else if (daysBetweenDates < 0) {
-                //cell.dateLabel.text = [NSString stringWithFormat:@"Overdue, was planned for %@",[dateFormatter stringFromDate:workout.plannedDate]];
                 cell.dateLabel.text = @"Overdue";
+            } else {
+                cell.dateLabel.text = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:workout.plannedDate]];
             }
         } else {
             cell.dateLabel.text = @"";

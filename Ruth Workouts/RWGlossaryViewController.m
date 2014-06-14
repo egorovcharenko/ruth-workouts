@@ -130,7 +130,7 @@
 {
     GlossaryTermin *termin = [self getGlossaryTermin:indexPath];
     
-    UIFont *detailsFont = [UIFont fontWithName:@"Helvetica" size:14];
+    UIFont *detailsFont = [UIFont systemFontOfSize:14];
     CGRect rect = [self sizeOfLabel:termin.definition maxLabelWidth:220 font:detailsFont];
     return rect.size.height + 25;
 }

@@ -641,9 +641,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EC9FA61173E9B2600C03DE6 /* RuthWorkouts */ = {
+		0EC9FA61173E9B2600C03DE6 /* Swim A Mile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EC9FA90173E9B2600C03DE6 /* Build configuration list for PBXNativeTarget "RuthWorkouts" */;
+			buildConfigurationList = 0EC9FA90173E9B2600C03DE6 /* Build configuration list for PBXNativeTarget "Swim A Mile" */;
 			buildPhases = (
 				0EC9FA5E173E9B2600C03DE6 /* Sources */,
 				0EC9FA5F173E9B2600C03DE6 /* Frameworks */,
@@ -653,7 +653,7 @@
 			);
 			dependencies = (
 			);
-			name = RuthWorkouts;
+			name = "Swim A Mile";
 			productName = "Ruth Workouts";
 			productReference = 0EC9FA62173E9B2600C03DE6 /* RuthWorkouts.app */;
 			productType = "com.apple.product-type.application";
@@ -710,7 +710,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0EC9FA61173E9B2600C03DE6 /* RuthWorkouts */,
+				0EC9FA61173E9B2600C03DE6 /* Swim A Mile */,
 			);
 		};
 /* End PBXProject section */
@@ -965,7 +965,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EC9FA90173E9B2600C03DE6 /* Build configuration list for PBXNativeTarget "RuthWorkouts" */ = {
+		0EC9FA90173E9B2600C03DE6 /* Build configuration list for PBXNativeTarget "Swim A Mile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EC9FA91173E9B2600C03DE6 /* Debug */,

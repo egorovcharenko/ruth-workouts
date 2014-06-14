@@ -278,4 +278,18 @@
     [self.tableView reloadData];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Plan* plan = [self getPlan:indexPath];
+    int commentLen = 0;
+    
+    if (plan.desc.length > 0){
+        UIFont *detailsFont = [UIFont systemFontOfSize:15];
+        CGRect rect = [self sizeOfLabel:plan.desc maxLabelWidth:280 font:detailsFont];
+        commentLen = rect.size.height + 82;
+    }
+    
+    return MAX(commentLen, 82) + 15;
+}
+
 @end

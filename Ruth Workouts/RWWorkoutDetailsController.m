@@ -96,19 +96,17 @@
     
     // details label
     cell.detailsLabel.text =  activity.details;
-    
+    CGRect rect;
     // len details label
     cell.lenDetailsLabel.text = activity.lenDetails;
-    CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:nil];
-    cell.lenDetailsHeightConstraint.constant = rect.size.height;
+    //rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:nil];
+    //cell.lenDetailsHeightConstraint.constant = rect.size.height;
     
     // swim button
     [cell.activityNameButton setTitle:activity.name forState:UIControlStateNormal];
     rect = [self sizeOfLabel:activity.name maxLabelWidth:999 font:nil];
     cell.activityNameButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [cell.activityNameButton sizeToFit];
-    
-    //cell.detailsButtonWidthConstraint.constant = rect.size.width + 26;
     
     // length button
     NSMutableAttributedString *attributedText;
@@ -204,18 +202,15 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SectionActivity* activity = [self getSectionActivity:indexPath];
-    int detailsLen = 0;
     int lenDetailsLen = 0;
     
     if (activity.lenDetails.length > 0){
-        UIFont *detailsFont = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+        UIFont *detailsFont = [UIFont systemFontOfSize:14];
         CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:detailsFont];
-        lenDetailsLen = rect.size.height + 40;
+        lenDetailsLen = rect.size.height + 47;
     }
     
-    //return MAX(MAX(detailsLen, lenDetailsLen), 40);
-    return MAX(lenDetailsLen + 47, 47);
-    //return 117;
+    return MAX(lenDetailsLen, 40) + 15;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

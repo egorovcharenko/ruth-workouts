@@ -27603,6 +27603,4505 @@
 					</array>
 				</dict>
 			</array>
+		</dict><dict>
+			<key>name</key>
+			<string>Cycling</string>
+			<key>number</key>
+			<integer>3</integer>
+			<key>hideInList</key>
+			<integer>0</integer>
+			<key>plans</key>
+			<array>
+				<dict>
+					<key>number</key>
+					<integer>1</integer>
+					<key>name</key>
+					<string>10 weeks</string>
+					<key>desc</key>
+					<string>After completing this plan you will be ready for your first race! This plan has been created for someone who is already physically active but has minimal experience of cycling - you should be able to comfortably exercise for one hour.</string>
+					<key>weekdaysSelected</key>
+					<integer>106</integer>
+					<key>activity</key>
+					<string>Cycling</string>
+					<key>workouts</key>
+					<array>
+						<dict>
+							<key>number</key>
+							<integer>1</integer><key>techDescription</key><string>45 plus hills 1 3 by 6</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>First day</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Hills session 1</string><key>repetitions</key><integer>6</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Up the hill</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a hill that takes at least five minutes to climb. Keep in the saddle the whole time. The hill should be steep enough that you cannot coast at any stage but not so steep that you find yourself labouring in your easiest gear.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Down the hill</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Use the descent as an opportunity to recover in preparation for the next climb.Time to go down can be different, don't worry</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>2</integer><key>techDescription</key><string>2</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week one day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>3</integer><key>techDescription</key><string>2</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week one day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>4</integer><key>techDescription</key><string>2</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week one day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>7200</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>5</integer><key>techDescription</key><string>45 plus intervals 10</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week two day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1050</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>10</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a suitable stretch of road that you can ride uninterrupted for up to five minutes.  Intervals are best done on flat to rolling roads.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1050</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>6</integer><key>techDescription</key><string>2</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week two day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>7</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week two day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>8</integer><key>techDescription</key><string>2 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week two day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>7200</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>9</integer><key>techDescription</key><string>60 plus hills 2</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week three day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Hills session 2</string><key>repetitions</key><integer>6</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Up the hill</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a hill that takes at least five minutes to climb. Keep in the saddle the whole time. The hill should be steep enough that you cannot coast at any stage but not so steep that you find yourself labouring in your easiest gear.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Down the hill</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Use the descent as an opportunity to recover in preparation for the next climb.Time to go down can be different, don't worry</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>10</integer><key>techDescription</key><string>45 plus intervals 15</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week three day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>900</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>15</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a suitable stretch of road that you can ride uninterrupted for up to five minutes.  Intervals are best done on flat to rolling roads.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>900</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>11</integer><key>techDescription</key><string>50 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week three day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>12</integer><key>techDescription</key><string>2.5 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week three day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>9000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>13</integer><key>techDescription</key><string>45 plus hills 1 3 by 6</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week four day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Hills session 1</string><key>repetitions</key><integer>6</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Up the hill</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a hill that takes at least five minutes to climb. Keep in the saddle the whole time. The hill should be steep enough that you cannot coast at any stage but not so steep that you find yourself labouring in your easiest gear.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Down the hill</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Use the descent as an opportunity to recover in preparation for the next climb.Time to go down can be different, don't worry</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>14</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week four day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>15</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week four day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>16</integer><key>techDescription</key><string>2 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week four day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>7200</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>17</integer><key>techDescription</key><string>60 plus hills 2</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week five day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Hills session 2</string><key>repetitions</key><integer>6</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Up the hill</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a hill that takes at least five minutes to climb. Keep in the saddle the whole time. The hill should be steep enough that you cannot coast at any stage but not so steep that you find yourself labouring in your easiest gear.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Down the hill</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Use the descent as an opportunity to recover in preparation for the next climb.Time to go down can be different, don't worry</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>720</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>18</integer><key>techDescription</key><string>45 steady</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week five day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>steady pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This is faster than your ‘easy’ pace. You should be able to carry on a conversation but may have to occasionally take an extra breath between sentences.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>19</integer><key>techDescription</key><string>50 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week five day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>20</integer><key>techDescription</key><string>2.5 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week five day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>9000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>21</integer><key>techDescription</key><string>60 minutes including hills 
+session 1 (3 minutes x 7) </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week six day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>960</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Hills session 1</string><key>repetitions</key><integer>7</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Up the hill</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>180</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a hill that takes at least five minutes to climb. Keep in the saddle the whole time. The hill should be steep enough that you cannot coast at any stage but not so steep that you find yourself labouring in your easiest gear.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Down the hill</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Use the descent as an opportunity to recover in preparation for the next climb.Time to go down can be different, don't worry</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>960</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>22</integer><key>techDescription</key><string>60 minutes 
+including 
+intervals 
+5x5 </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week six day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>825</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>5</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This session builds endurance and power. You ride for five minutes at 80 to 90% exertion with a 90 second recovery between efforts. </string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>825</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>23</integer><key>techDescription</key><string>60 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week six day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>24</integer><key>techDescription</key><string>2.5 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week six day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>9000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>25</integer><key>techDescription</key><string>60 minutes including 20 
+minutes of 30/30 </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week seven day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1200</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>20</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a suitable stretch of road that you can ride uninterrupted for up to five minutes.  Intervals are best done on flat to rolling roads.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1200</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>26</integer><key>techDescription</key><string>60 minutes 
+including 
+intervals 
+5x5 </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week seven day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>825</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>5</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This session builds endurance and power. You ride for five minutes at 80 to 90% exertion with a 90 second recovery between efforts. </string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>825</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>27</integer><key>techDescription</key><string>60 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week seven day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>28</integer><key>techDescription</key><string>3 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week seven day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>10800</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>29</integer><key>techDescription</key><string>60 minutes including hills 
+session 1 (4 minutes by 6) </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week eight day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>900</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Hills session 1</string><key>repetitions</key><integer>6</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Up the hill</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>240</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a hill that takes at least five minutes to climb. Keep in the saddle the whole time. The hill should be steep enough that you cannot coast at any stage but not so steep that you find yourself labouring in your easiest gear.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Down the hill</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>60</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Use the descent as an opportunity to recover in preparation for the next climb.Time to go down can be different, don't worry</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>900</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>30</integer><key>techDescription</key><string>60 minutes 
+steady </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week eight day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>steady pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This is faster than your ‘easy’ pace. You should be able to carry on a conversation but may have to occasionally take an extra breath between sentences.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>31</integer><key>techDescription</key><string>50 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week eight day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>32</integer><key>techDescription</key><string>3.5 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week eight day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>12600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>33</integer><key>techDescription</key><string>60 minutes 
+including 
+intervals 
+5x5 </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week nine day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>825</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>5</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This session builds endurance and power. You ride for five minutes at 80 to 90% exertion with a 90 second recovery between efforts. </string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>90</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>825</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>34</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week nine day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>35</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Week nine day three</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>36</integer><key>techDescription</key><string>2.5 long ride</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week nine day four</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Long ride</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>long ride</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>9000</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Long rides should be ridden at an easy to steady pace. You should be able to carry on a conversation during a long ride – if you cannot you are working your body too hard! Take the opportunity to ride over hills.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>37</integer><key>techDescription</key><string>60 minutes including 15 
+minutes of 30/30 </string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week ten day one</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1350</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Intervals</string><key>repetitions</key><integer>15</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycle</string>
+												<key>details</key>
+												<string>hard</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Find a suitable stretch of road that you can ride uninterrupted for up to five minutes.  Intervals are best done on flat to rolling roads.</string>
+												</dict><dict>
+												<key>order</key>
+												<string>2</string>
+												<key>name</key>
+												<string>Easy cycle</string>
+												<key>details</key>
+												<string>recovery</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>30</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>4</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string></string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>1350</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>5</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>38</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>1</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>2</integer>
+							<key>name</key>
+							<string>Week ten day two</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Cycling</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>easy pace</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>2700</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string></string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict><dict>
+							<key>number</key>
+							<integer>39</integer><key>techDescription</key><string>45 easy</string>
+							
+							
+							<key>daysToNextWorkoutMin</key>
+							<integer>0</integer>
+							<key>daysToNextWorkoutMax</key>
+							<integer>1</integer>
+							<key>name</key>
+							<string>Event day!</string><key>activity</key><string>Cycling</string>
+							<key>variants</key>
+							<array>
+								<dict>
+									<key>sections</key>
+									<array>
+										<dict>
+											<key>order</key>
+											<string>1</string>
+											<key>name</key>
+											<string>Warm-up</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Warm-up</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>Do some warm up and stretch excersies. It will help prevent injures.</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>2</string>
+											<key>name</key>
+											<string>Event</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cycling</string>
+												<key>details</key>
+												<string>race</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>3600</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>So you finally made it and now you hopefully can attend your first race! Good luck!</string>
+												</dict>
+											</array>
+										</dict><dict>
+											<key>order</key>
+											<string>3</string>
+											<key>name</key>
+											<string>Cool down</string><key>repetitions</key><integer>1</integer>
+
+
+											<key>activities</key>
+											<array>
+												<dict>
+												<key>order</key>
+												<string>1</string>
+												<key>name</key>
+												<string>Cool down</string>
+												<key>details</key>
+												<string>and stretch</string>
+												<key>len_multiplier</key>
+												<integer>1</integer>
+												<key>len</key>
+												<integer>300</integer><key>unit</key><string>seconds</string>
+												<key>len_details</key>
+												<string>This will help your heart to pump the blood using your muscles. Stretching will improve your flexibility and aid recovery.</string>
+												</dict>
+											</array>
+										</dict>
+										
+										
+									</array>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
 		</dict>
 	</array>
 </plist>

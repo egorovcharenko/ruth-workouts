@@ -70,7 +70,7 @@
 {
     Tip *tip = [self.fetchResultsController objectAtIndexPath:indexPath];
     
-    UIFont *detailsFont = [UIFont fontWithName:@"Helvetica" size:17];
+    UIFont *detailsFont = [UIFont systemFontOfSize:17];
     CGRect rect = [self sizeOfLabel:tip.text maxLabelWidth:242 font:detailsFont];
     return rect.size.height + 25;
 }

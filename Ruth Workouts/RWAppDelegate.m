@@ -50,8 +50,8 @@
     [Appirater setDaysUntilPrompt:5];
     [Appirater setUsesUntilPrompt:10];
     [Appirater setSignificantEventsUntilPrompt:-1];
-    [Appirater setTimeBeforeReminding:2];
-    [Appirater setDebug:YES];
+    [Appirater setTimeBeforeReminding:5];
+    //[Appirater setDebug:YES];
     
     [Appirater appLaunched:YES];
     
