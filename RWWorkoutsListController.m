@@ -15,6 +15,8 @@
 #import "WorkoutVariant.h"
 #import "RWWorkoutCell.h"
 
+#import "RWHelper.h"
+
 @interface RWWorkoutsListController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -93,6 +95,8 @@
         
         RWWorkoutDetailsController *controller = (RWWorkoutDetailsController *)segue.destinationViewController;
         controller.variant= variant;
+        controller.canComplete = true;
+        controller.comeFromListOfWorkouts = true;
     }
 }
 
@@ -121,6 +125,8 @@
         // show variants
         NSString *length1 = [NSString stringWithFormat:@"%ld m", (long)[variant1.length integerValue]];
         [cell.firstButton setTitle:length1 forState:UIControlStateNormal];
+        //cell.firstButton.titleLabel.textColor = [UIColor whiteColor];
+        //cell.firstButton.titleLabel.backgroundColor = [RWHelper sharedInstance].aoi;
         
         NSString *length2 = [NSString stringWithFormat:@"%ld m", (long)[variant2.length integerValue]];
         [cell.secondButton setTitle:length2 forState:UIControlStateNormal];
@@ -142,6 +148,11 @@
 
 - (IBAction)secondVariantClicked:(id)sender forEvent:(UIEvent *)event {
     [self performSegueWithIdentifier:@"showWorkout" sender:sender];
+}
+
+- (IBAction)unwindToListOfWorkouts:(UIStoryboardSegue *)unwindSegue
+{
+    
 }
 @end
 

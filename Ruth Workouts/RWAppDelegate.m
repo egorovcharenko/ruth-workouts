@@ -16,11 +16,57 @@
 
 #import "RWHelper.h"
 
+#import "Plan.h"
+
 @implementation RWAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
+- (void) upgrade:(RWDataController*) dataController
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSMutableArray *dueDatesArray = [[NSMutableArray alloc] initWithObjects:
+                                     [defaults objectForKey:@"traing1complete"],
+                                     [defaults objectForKey:@"traing2complete"],
+                                     [defaults objectForKey:@"traing3complete"],
+                                     [defaults objectForKey:@"traing4complete"],
+                                     [defaults objectForKey:@"traing5complete"],
+                                     [defaults objectForKey:@"traing6complete"],
+                                     [defaults objectForKey:@"traing7complete"],
+                                     [defaults objectForKey:@"traing8complete"],
+                                     [defaults objectForKey:@"traing9complete"],
+                                     [defaults objectForKey:@"traing10complete"],
+                                     [defaults objectForKey:@"traing11complete"],
+                                     [defaults objectForKey:@"traing12complete"],
+                                     [defaults objectForKey:@"traing13complete"],
+                                     [defaults objectForKey:@"traing14complete"],
+                                     [defaults objectForKey:@"traing15complete"],
+                                     [defaults objectForKey:@"traing16complete"],
+                                     [defaults objectForKey:@"traing17complete"],
+                                     [defaults objectForKey:@"traing18complete"],
+                                     nil];
+    if (dueDatesArray.count == 0)
+        return;
+    
+    for (int i = 0; i < 18; i ++) {
+        //NSLog(@"%@", [dueDatesArray objectAtIndex:i]);
+        if([[dueDatesArray objectAtIndex:i] isEqualToString:@"TT"]) {
+            [dataController setCurrentTrainingAtSwimAMileTo:i datesArray:dueDatesArray];
+            
+            // change start date
+            NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+            [formatter setDateFormat:@"dd.MM.yyyy"];
+            NSDate* appStartDate = [formatter dateFromString:[defaults objectForKey:@"applicationLounchDate"]];
+            [dataController getPlanByNum:1].startDate = appStartDate;
+            
+            [dataController saveData];
+            break;
+        }
+    }
+}
 
 - (BOOL)application: (UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -185,6 +231,9 @@
 {
     RWDataController *dataController = [[RWDataController alloc] initWithAppDelegate:self];
     [dataController initialDatabaseFill];
+    
+    // updrage if needed
+    [self upgrade:dataController];
 }
 
 @end

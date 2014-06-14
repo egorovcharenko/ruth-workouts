@@ -106,7 +106,7 @@ numberOfRowsInComponent:(NSInteger)component
     // update plan
     plan.weekdaysSelected = [NSNumber numberWithInt:weekdaysSelected];
     int nextWorkoutNumber = (int)([self.nextTrainingPicker selectedRowInComponent:0] + 1);
-    Workout* nextWorkout = [dataController getWorkoutByNumber:plan number:nextWorkoutNumber];
+    //Workout* nextWorkout = [dataController getWorkoutByNumber:plan number:nextWorkoutNumber];
     //plan.nextWorkout = nextWorkout;
     
     // complete all workouts before selected one
@@ -125,9 +125,6 @@ numberOfRowsInComponent:(NSInteger)component
     
     // replan all incomplete workouts including selected
     [dataController scheduleThePlanExtended:plan startDate:self.nextTrainingDatePicker.date startWorkoutNum:nextWorkoutNumber skipFirstWorkoutWeekdayCheck:NO];
-    
-    // save context
-    //[[[RWDataController alloc] initWithAppDelegate:(RWAppDelegate*)[[UIApplication sharedApplication] delegate ]] saveData];
     
     // unwind to previous screen
     [self performSegueWithIdentifier:@"unwindToPlansList" sender:self];

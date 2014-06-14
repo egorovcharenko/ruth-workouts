@@ -100,7 +100,7 @@
 
 - (NSString*) getText
 {
-    return [NSString stringWithFormat:@"I have completed workout #%ld in Ruth Workouts! The total length was %ld", (long)[variant.parentWorkout.number integerValue], (long)[variant.length integerValue]];
+    return [NSString stringWithFormat:@"I have completed workout #%ld in Swim A Mile! The total length was %ld", (long)[variant.parentWorkout.number integerValue], (long)[variant.length integerValue]];
 }
 
 - (IBAction)shareFacebookButtonClicked:(id)sender

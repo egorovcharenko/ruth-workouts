@@ -133,6 +133,9 @@
             // plan completed
             NSDate* datePlanCompleted = [self.dataController getWorkoutByNumber:plan number:(int)plan.childWorkouts.count].dateCompleted;
             cell.nextTrainingLabel.text = [NSString stringWithFormat:@"Plan completed on %@!",[dateFormatter stringFromDate:datePlanCompleted]];
+            cell.nextTrainingLabel.textColor = [RWHelper sharedInstance].cleanPoundwater;
+            // highlight the plan name
+            cell.nameLabel.textColor = [RWHelper sharedInstance].cleanPoundwater;
         } else {
             NSDate* nextPlannedDate = plan.nextWorkout.plannedDate;
             [cell.nextTrainingLabel setHidden:false];
@@ -150,6 +153,7 @@
                 cell.nextTrainingLabel.text  = [NSString stringWithFormat:@"Next workout is on %@",[dateFormatter stringFromDate:nextPlannedDate]];
                 cell.nextTrainingLabel.textColor = [UIColor blackColor];
             }
+            cell.nextTrainingLabel.textColor = [UIColor blackColor];
             
             // highlight the plan name
             cell.nameLabel.textColor = [RWHelper sharedInstance].unrealFoodPills;

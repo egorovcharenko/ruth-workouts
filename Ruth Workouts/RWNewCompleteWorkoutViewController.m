@@ -21,6 +21,7 @@
 @end
 
 @implementation RWNewCompleteWorkoutViewController
+@synthesize returnToWorkoutsList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -167,7 +168,9 @@
     // update plan's next workout?
     Plan* plan = self.workoutVariant.parentWorkout.parentPlan;
     if (plan != nil) {
-        plan.nextWorkout = [dataController getNextUncompletedWorkout:plan];
+        if ([plan.number integerValue] != 1) {
+            plan.nextWorkout = [dataController getNextUncompletedWorkout:plan];
+        }
     }
     // ask to reschedule all others workouts? or auto?
     
@@ -175,7 +178,11 @@
     [dataController saveData];
     
     // unwind to previous screen
-    [self performSegueWithIdentifier:@"unwindToPlanDetails" sender:self];
+    if (returnToWorkoutsList) {
+        [self performSegueWithIdentifier:@"unwindToListOfWorkouts" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"unwindToPlanDetails" sender:self];
+    }
 }
 
 - (IBAction)shareOnTwitter:(id)sender {

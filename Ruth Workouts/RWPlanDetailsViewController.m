@@ -243,7 +243,7 @@
     } else if ([[segue identifier] isEqualToString:@"workoutDetailsFromPlan"]) {
         RWWorkoutDetailsController *destViewController = segue.destinationViewController;
         destViewController.variant= [self workoutVariantBySender:sender];
-        if (destViewController.variant.parentWorkout.dateCompleted != nil){
+        if (destViewController.variant.parentWorkout.dateCompleted != nil) {
             destViewController.canComplete = false;
         } else {
             destViewController.canComplete = true;
@@ -311,12 +311,8 @@
         }
         NSDate *tomorrow = [self getTomorrow];
         
-        // check if it's on allowed dates
-        NSCalendar *cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        [cal setFirstWeekday:2];
-        //NSDateComponents *componentsTomorrow = [cal components:NSCalendarUnitWeekday fromDate:tomorrow];
-        //int tomorrowsWeekday = ([componentsTomorrow weekday]) % 7;
-        NSUInteger adjustedWeekdayOrdinal = [cal ordinalityOfUnit:NSWeekdayCalendarUnit inUnit:NSWeekCalendarUnit forDate:tomorrow];
+        NSUInteger adjustedWeekdayOrdinal;
+        adjustedWeekdayOrdinal = [RWHelper getWeekday:tomorrow];
         if ((1 << (adjustedWeekdayOrdinal-1)) & [self.plan.weekdaysSelected integerValue]){
             // date match - ok, move replan without options
             [self.dataController scheduleThePlanExtended:self.plan startDate:tomorrow startWorkoutNum:(int)[self.plan.nextWorkout.number integerValue] skipFirstWorkoutWeekdayCheck:NO];

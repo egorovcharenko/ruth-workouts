@@ -50,4 +50,6 @@
 @property UIFont *boldFont24;
 @property UIFont *thinFont24;
 
+// weekday
++ (NSUInteger)getWeekday:(NSDate *)date;
 @end

@@ -42,6 +42,9 @@ typedef enum
 - (void) tipsFill;
 - (void) glossaryFill;
 
+// upgrade
+- (void) setCurrentTrainingAtSwimAMileTo: (int) workoutNum datesArray:(NSArray*) datesArray;
+
 // workouts
 - (NSFetchedResultsController*) getAllDefaultWorkouts;
 - (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant;

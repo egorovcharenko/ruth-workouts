@@ -20,5 +20,6 @@
 - (IBAction)saveClicked:(id)sender;
 - (IBAction)shareOnTwitter:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *commentTextView;
+@property bool returnToWorkoutsList;
 
 @end

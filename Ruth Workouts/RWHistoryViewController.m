@@ -175,14 +175,39 @@
 {
     WorkoutVariantEvent* event = [self.fetchResultsController objectAtIndexPath:indexPath];
     int commentLen = 0;
+    int trainingLen = 0;
+    
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(0, 0, 149, 30);
+    label.numberOfLines = 0;
+    label.preferredMaxLayoutWidth = 149;
+    Plan* plan = event.parentVariant.parentWorkout.parentPlan;
+    NSMutableArray *pairs = [[NSMutableArray alloc] init];
+    RWStringStylePair* pair = [[RWStringStylePair alloc] init];
+    pair.text = [NSString stringWithFormat:@"%@ / ", plan.name];
+    pair.style = [RWHelper sharedInstance].aoiThickStyle;
+    [pairs addObject:pair];
+    pair = [[RWStringStylePair alloc] init];
+    pair.text = event.parentVariant.parentWorkout.name;
+    pair.style = [RWHelper sharedInstance].aoiThinStyle;
+    [pairs addObject:pair];
+    
+    label.attributedText = [RWHelper prepareAttributedString:pairs];
+    [label sizeToFit];
+    
+    trainingLen = label.frame.size.height;
     
     if (event.comment.length > 0){
         UIFont *detailsFont = [UIFont systemFontOfSize:14];
         CGRect rect = [self sizeOfLabel:event.comment maxLabelWidth:300 font:detailsFont];
-        commentLen = rect.size.height + 100;
+        commentLen = rect.size.height;
+        return MAX(trainingLen + 48 + 10 + commentLen + 15, 100);
+    } else {
+        return MAX(trainingLen + 48 + 15, 100);
+        
     }
     
-    return MAX(commentLen + 15, 100);
 }
 
 @end

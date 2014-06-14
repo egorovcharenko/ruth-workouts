@@ -182,6 +182,9 @@
     sectionName.textColor = [UIColor blackColor];
     sectionName.textAlignment = NSTextAlignmentLeft;
     sectionName.font = yourFont;
+    sectionName.adjustsFontSizeToFitWidth = true;
+    sectionName.minimumScaleFactor = 0.3;
+    
     [headerManualView addSubview:sectionName];
     
     // section repetitions
@@ -221,6 +224,11 @@
     } else if ([[segue identifier] isEqualToString:@"goToCompleteTrainingScreenFromWorkoutDetails"]) {
         RWNewCompleteWorkoutViewController *destViewController = segue.destinationViewController;
         destViewController.workoutVariant = self.variant;
+        if (self.comeFromListOfWorkouts) {
+            destViewController.returnToWorkoutsList = true;
+        } else {
+            destViewController.returnToWorkoutsList = false;
+        }
     }
 }
 

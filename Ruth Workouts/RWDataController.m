@@ -19,6 +19,7 @@
 #import "Category.h"
 
 #import "RWAppDelegate.h"
+#import "RWHelper.h"
 
 
 @implementation RWDataController
@@ -453,9 +454,11 @@
         
         for (int i = 0; i <= 10 /* max number*/; i ++) {
             // go thru all the days and set the date for the rolling workout
-            NSDateComponents *weekdayComponents = [cal components:(NSWeekdayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate:rollingDateMidnight];
-            NSInteger weekday = [weekdayComponents weekday] - [cal firstWeekday];
+            //NSDateComponents *weekdayComponents = [cal components:(NSWeekdayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate:rollingDateMidnight];
+            //NSInteger weekday = [weekdayComponents weekday] - [cal firstWeekday];
             
+            NSInteger weekday = [RWHelper getWeekday:rollingDateMidnight];
+
             int weekdayBit = 1 << (weekday-1);
             
             if ((weekdayBit & [plan.weekdaysSelected integerValue]) || (skipFirstWorkoutWeekdayCheck && (wnum == startWorkoutNum))){
@@ -649,4 +652,28 @@
     return aFetchedResultsController;
 }
 
+- (void) setCurrentTrainingAtSwimAMileTo: (int) workoutNum datesArray:(NSArray*) datesArray
+{
+    Plan *swimAMile = [self getPlanByNum:1];
+    // complete all workouts before selected one
+    for (Workout* workout in swimAMile.childWorkouts) {
+        if (([workout.number integerValue] - 1) < workoutNum){
+            // all skipped workouts should be marked as completed today
+            if (workout.dateCompleted == nil){
+                // set completed date
+                NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateFormat:@"dd.MM.yyyy"];
+                NSString* date = [datesArray objectAtIndex:([workout.number integerValue] - 1)];
+                date = [date substringFromIndex:13]; // @"Completed on"
+                NSDate* startDate = [formatter dateFromString:date];
+                workout.dateCompleted = startDate;
+                workout.status = @"Skipped";
+            }
+        }
+    }
+    
+    // replan all incomplete workouts including selected
+    [self scheduleThePlanExtended:swimAMile startDate:[NSDate date] startWorkoutNum:(workoutNum + 1) skipFirstWorkoutWeekdayCheck:NO];
+    
+}
 @end

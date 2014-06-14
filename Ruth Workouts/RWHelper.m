@@ -235,4 +235,14 @@
     return resultingLenAndTimeAttrString;
 }
 
+
++ (NSUInteger)getWeekday:(NSDate *)date
+{
+    // check if it's on allowed dates
+    NSCalendar *cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [cal setFirstWeekday:2];
+    NSUInteger adjustedWeekdayOrdinal = [cal ordinalityOfUnit:NSWeekdayCalendarUnit inUnit:NSWeekCalendarUnit forDate:date];
+    return adjustedWeekdayOrdinal;
+}
+
 @end

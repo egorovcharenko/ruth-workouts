@@ -14,6 +14,7 @@
 
 @property WorkoutVariant* variant;
 @property bool canComplete;
+@property bool comeFromListOfWorkouts;
 - (IBAction)completeWorkoutClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *completeButton;
 
