@@ -32,6 +32,8 @@
 @property RWStyle* smallGrayMetersStyle;
 @property RWStyle* aoiThickStyle;
 @property RWStyle* aoiThinStyle;
+@property RWStyle* swimThickStyle;
+@property RWStyle* swimThinStyle;
 
 // time styles
 @property RWStyle* hoursStyle;

@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RWMiscViewController : UIViewController
+#import <Foundation/Foundation.h>
+
+#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+
+@interface RWMiscViewController : UIViewController <MFMailComposeViewControllerDelegate>
 - (IBAction)rateButtonClicked:(id)sender;
 - (IBAction)sendFeedbackButtonClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *rateButton;

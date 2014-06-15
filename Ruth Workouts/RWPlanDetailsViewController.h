@@ -10,7 +10,7 @@
 #import "Plan.h"
 
 
-@interface RWPlanDetailsViewController : RWGeneralListController
+@interface RWPlanDetailsViewController : RWGeneralListController <UIActionSheetDelegate>
 @property Plan* plan;
 - (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
 - (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue;

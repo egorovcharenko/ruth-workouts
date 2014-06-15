@@ -62,7 +62,7 @@
 {
     Tip *tip = [self.fetchResultsController objectAtIndexPath:indexPath];
     
-    cell.tipNumberLabel.text = [NSString stringWithFormat:@"# %ld", [tip.number integerValue]];;
+    cell.tipNumberLabel.text = [NSString stringWithFormat:@"# %ld", (long)[tip.number integerValue]];;
     cell.tipTextLabel.text = tip.text;
 }
 

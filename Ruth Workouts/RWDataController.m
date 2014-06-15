@@ -127,7 +127,12 @@
                         
                         section.order = [NSNumber numberWithInt: (int)[[dict3 objectForKey:@"order"] integerValue]];
                         section.name = [dict3 objectForKey:@"name"];
-                        section.repetitions = [NSNumber numberWithLong:[[dict3 objectForKey:@"repetitions"] integerValue]];
+                        long reps = [[dict3 objectForKey:@"repetitions"] integerValue];
+                        if (reps == 0){
+                            section.repetitions = [NSNumber numberWithLong:1];
+                        } else {
+                            section.repetitions = [NSNumber numberWithLong:[[dict3 objectForKey:@"repetitions"] integerValue]];
+                        }
                         
                         int sectionLen = 0;
                         int sectionTime = 0;
@@ -157,11 +162,11 @@
                         }
                         
                         // calculate section length automatically
-                        section.length = [NSNumber numberWithInt:sectionLen];
-                        section.time =[NSNumber numberWithInt:sectionTime];
+                        section.length = [NSNumber numberWithLong:(sectionLen * [section.repetitions integerValue])];
+                        section.time = [NSNumber numberWithLong:(sectionTime * [section.repetitions integerValue])] ;
                         
-                        variantLen += sectionLen;
-                        variantTime += sectionTime;
+                        variantLen += [section.length integerValue];
+                        variantTime += [section.time integerValue];
                     }
                     
                     // calculate total length automatically
@@ -463,12 +468,12 @@
             
             if ((weekdayBit & [plan.weekdaysSelected integerValue]) || (skipFirstWorkoutWeekdayCheck && (wnum == startWorkoutNum))){
                 rollingWorkout.plannedDate = rollingDateMidnight;
-                NSLog(@"Found place for workout, weekday:%ld, date:%@", (long)weekday, rollingDateMidnight);
+                //NSLog(@"Found place for workout, weekday:%ld, date:%@", (long)weekday, rollingDateMidnight);
                 break;
             } else {
                 rollingDateMidnight = [rollingDateMidnight dateByAddingTimeInterval:60*60*24 * 1];
                 if (i > deltaDays) {
-                    NSLog(@"Not found place for workout");
+                    //NSLog(@"Not found place for workout");
                     // TODO show error
                 }
             }
@@ -492,7 +497,7 @@
     NSError *err = nil;
     [context save:&err];
     
-    NSLog(@"Saved context");
+    //NSLog(@"Saved context");
     
     if (err != nil) {
         NSLog(@"error saving managed object context: %@", err);
@@ -515,7 +520,7 @@
 - (WorkoutVariantEvent*) getLatestWorkoutVariantEvent: (WorkoutVariant*) variant
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"parentVariant = %@", variant];
-    NSSortDescriptor *date = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+    NSSortDescriptor *date = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
     
     return [[[variant.variantEvents filteredSetUsingPredicate:predicate] sortedArrayUsingDescriptors:[NSArray arrayWithObjects: date, nil] ] firstObject];
 }
@@ -538,8 +543,8 @@
     // nil for section name key path means "no sections".
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
     
-    int count = (int)[aFetchedResultsController.fetchedObjects count];
-    NSLog(@"Plan workouts count = %d", count);
+    //int count = (int)[aFetchedResultsController.fetchedObjects count];
+    //NSLog(@"Plan workouts count = %d", count);
     
     NSError *error = nil;
 	if (![aFetchedResultsController performFetch:&error]) {

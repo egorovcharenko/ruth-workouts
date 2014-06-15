@@ -33,16 +33,16 @@
         
         // fonts
         self.boldFont15 = [UIFont fontWithName:@"HelveticaNeue-Bold" size:15];
-        self.thinFont15 = [UIFont fontWithName:@"HelveticaNeue-Thin" size:15];
+        self.thinFont15 = [UIFont fontWithName:@"HelveticaNeue" size:15];
         
         self.boldFont17 = [UIFont fontWithName:@"HelveticaNeue-Bold" size:17];
-        self.thinFont17 = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17];
+        self.thinFont17 = [UIFont fontWithName:@"HelveticaNeue" size:17];
         
         self.boldFont20 = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
-        self.thinFont20 = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
+        self.thinFont20 = [UIFont fontWithName:@"HelveticaNeue" size:20];
         
         self.boldFont24 = [UIFont fontWithName:@"HelveticaNeue-Bold" size:24];
-        self.thinFont24 = [UIFont fontWithName:@"HelveticaNeue-Thin" size:24];
+        self.thinFont24 = [UIFont fontWithName:@"HelveticaNeue" size:24];
         
         // styles
         self.lengthStyle = [[RWStyle alloc] init];
@@ -87,7 +87,15 @@
         
         self.aoiThinStyle = [[RWStyle alloc] init];
         self.aoiThinStyle.color = self.aoi;
-        self.aoiThinStyle.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
+        self.aoiThinStyle.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
+        
+        self.swimThickStyle = [[RWStyle alloc] init];
+        self.swimThickStyle.color = self.aoi;
+        self.swimThickStyle.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
+        
+        self.swimThinStyle = [[RWStyle alloc] init];
+        self.swimThinStyle.color = self.aoi;
+        self.swimThinStyle.font = [UIFont fontWithName:@"HelveticaNeue" size:20];
     }
     return self;
 }

@@ -94,53 +94,69 @@
     if ([activity.lenDetails length] == 0)
         activity.lenDetails = @" ";
     
-    // details label
-    cell.detailsLabel.text =  activity.details;
-    CGRect rect;
     // len details label
     cell.lenDetailsLabel.text = activity.lenDetails;
-    //rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:nil];
-    //cell.lenDetailsHeightConstraint.constant = rect.size.height;
+    
+    // details label
+    //cell.detailsLabel.text =  activity.details;
     
     // swim button
-    [cell.activityNameButton setTitle:activity.name forState:UIControlStateNormal];
-    rect = [self sizeOfLabel:activity.name maxLabelWidth:999 font:nil];
-    cell.activityNameButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [cell.activityNameButton sizeToFit];
+    //[cell.activityNameButton setTitle:activity.name forState:UIControlStateNormal];
+    //CGRect rect;
+    //rect = [self sizeOfLabel:activity.name maxLabelWidth:999 font:nil];
+    //cell.activityNameButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    //[cell.activityNameButton sizeToFit];
+    
+    // name and details label
+    NSMutableArray *pairs = [[NSMutableArray alloc] init];
+    RWStringStylePair* pair;
+    
+    pair = [[RWStringStylePair alloc] init];
+    pair.style = [RWHelper sharedInstance].swimThickStyle;
+    pair.text = [NSString stringWithFormat:@"%@ ", activity.name];
+    [pairs addObject:pair];
+    
+    pair = [[RWStringStylePair alloc] init];
+    pair.style = [RWHelper sharedInstance].swimThinStyle;
+    pair.text = activity.details;
+    [pairs addObject:pair];
+    
+    NSAttributedString* activityNameAttributedString = [RWHelper prepareAttributedString:pairs];
+    
+    cell.swimAndDetailsLabel.attributedText = activityNameAttributedString;
     
     // length button
     NSMutableAttributedString *attributedText;
     
     if ([activity.unit isEqualToString:@"meters"]){
         // show length
-        NSString *firstPart = [NSString stringWithFormat:@"%ld", (long)[activity.lenMultiplier integerValue]];
-        NSString *crossPart = [NSString stringWithFormat:@" x "];
-        NSString *secondPart = [NSString stringWithFormat:@"%ld", (long)[activity.len integerValue]];
-        NSString *unitsPart = @"m";
-        if ([activity.lenMultiplier integerValue] == 1){
-            firstPart = @"";
-            crossPart = @"";
+        NSMutableArray *pairs = [[NSMutableArray alloc] init];
+        RWStringStylePair* pair;
+        
+        if ([activity.lenMultiplier integerValue] > 1){
+            pair = [[RWStringStylePair alloc] init];
+            pair.style = [RWHelper sharedInstance].lengthStyle;
+            pair.text = [NSString stringWithFormat:@"%ld", (long)[activity.lenMultiplier integerValue]];
+            [pairs addObject:pair];
+            
+            pair = [[RWStringStylePair alloc] init];
+            pair.style = [RWHelper sharedInstance].metersStyle;
+            pair.text = [NSString stringWithFormat:@" x "];
+            [pairs addObject:pair];
         }
-        NSString *text = [NSString stringWithFormat:@"%@%@%@%@",
-                          firstPart,
-                          crossPart,
-                          secondPart,
-                          unitsPart];
         
-        // general attributes for the entire text
-        UIColor *giantGoldfish = [UIColor colorWithRed:243.0/255.0 green:134.0/255.0 blue:48.0/255.0 alpha:1.0];
-        NSDictionary *attribs = @{NSForegroundColorAttributeName:giantGoldfish,
-                                  NSFontAttributeName: cell.lenButton.titleLabel.font};
-        attributedText = [[NSMutableAttributedString alloc] initWithString:text attributes:attribs];
+        pair = [[RWStringStylePair alloc] init];
+        pair.style = [RWHelper sharedInstance].lengthStyle;
+        pair.text = [NSString stringWithFormat:@"%ld", (long)[activity.len integerValue]];
+        [pairs addObject:pair];
         
-        UIFont *lightFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:cell.lenButton.titleLabel.font.pointSize];
+        pair = [[RWStringStylePair alloc] init];
+        pair.style = [RWHelper sharedInstance].metersStyle;
+        pair.text = @"m";;
+        [pairs addObject:pair];
         
-        NSRange crossRange = [text rangeOfString:crossPart];
-        [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSBaselineOffsetAttributeName:@2, NSForegroundColorAttributeName:giantGoldfish} range:crossRange];
-        
-        NSRange thirdRange = [text rangeOfString:unitsPart];
-        [attributedText setAttributes:@{NSFontAttributeName:lightFont, NSForegroundColorAttributeName:giantGoldfish} range:thirdRange];
-        
+        attributedText = [RWHelper prepareAttributedString:pairs];
+
     } else if ([activity.unit isEqualToString:@"seconds"]){
         attributedText = [[RWHelper sharedInstance] prepareTimeString:[activity.len doubleValue] mainStyle:[RWHelper sharedInstance].hoursStyle thinStyle:[RWHelper sharedInstance].timeDots];
     }
@@ -192,7 +208,7 @@
         UIFont *repetitionsFont = [UIFont fontWithName:@"HelveticaNeue" size:20];
         
         UILabel *sectionLength = [[UILabel alloc] initWithFrame:CGRectMake(120, 0, 190, 30)];
-        sectionLength.text = [NSString stringWithFormat:@"repeat %ld times", [section.repetitions integerValue]];
+        sectionLength.text = [NSString stringWithFormat:@"repeat %ld times", (long)[section.repetitions integerValue]];
         sectionLength.backgroundColor = [UIColor clearColor];
         sectionLength.textColor = [UIColor colorWithRed:250.0/255.0 green:105.0/255.0 blue:0.0/255.0 alpha:1.0];
         sectionLength.textAlignment = NSTextAlignmentRight;

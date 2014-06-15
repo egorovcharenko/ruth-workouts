@@ -168,7 +168,7 @@
     // update plan's next workout?
     Plan* plan = self.workoutVariant.parentWorkout.parentPlan;
     if (plan != nil) {
-        if ([plan.number integerValue] != 1) {
+        if ([plan.number integerValue] != 0) {
             plan.nextWorkout = [dataController getNextUncompletedWorkout:plan];
         }
     }

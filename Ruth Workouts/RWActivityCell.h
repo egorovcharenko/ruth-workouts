@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *activityNameButton;
 @property (weak, nonatomic) IBOutlet UIButton *lenButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *lenDetailsHeightConstraint;
+@property (weak, nonatomic) IBOutlet UILabel *swimAndDetailsLabel;
 
 @end

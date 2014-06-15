@@ -140,6 +140,7 @@
             NSDate* nextPlannedDate = plan.nextWorkout.plannedDate;
             [cell.nextTrainingLabel setHidden:false];
             int daysToWorkout = [self daysDiffFrom:plan.nextWorkout.plannedDate to:[NSDate date]];
+            cell.nextTrainingLabel.textColor = [UIColor blackColor];
             if (daysToWorkout == 0){
                 // workout is today
                 cell.nextTrainingLabel.text = @"Next workout is today!";
@@ -153,7 +154,6 @@
                 cell.nextTrainingLabel.text  = [NSString stringWithFormat:@"Next workout is on %@",[dateFormatter stringFromDate:nextPlannedDate]];
                 cell.nextTrainingLabel.textColor = [UIColor blackColor];
             }
-            cell.nextTrainingLabel.textColor = [UIColor blackColor];
             
             // highlight the plan name
             cell.nameLabel.textColor = [RWHelper sharedInstance].unrealFoodPills;

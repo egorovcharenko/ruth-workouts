@@ -118,7 +118,6 @@
                     <tabBarItem key="tabBarItem" title="Workouts" image="workouts_icon.png" id="1s0-kG-3Ea"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.1529411765" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="fQd-up-fMy">
                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>
@@ -278,22 +277,22 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swim a Mile / Week two, day one" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="149" translatesAutoresizingMaskIntoConstraints="NO" id="3FC-tq-Ld3">
-                                            <rect key="frame" x="8" y="48" width="149" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Swim a Mile / Week two, day one" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="155" translatesAutoresizingMaskIntoConstraints="NO" id="3FC-tq-Ld3">
+                                            <rect key="frame" x="8" y="48" width="155" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="149" id="zac-Fp-CSZ"/>
+                                                <constraint firstAttribute="width" constant="155" id="zac-Fp-CSZ"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Comment Comment Comment Comment Comment Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-Ss-D8U">
-                                            <rect key="frame" x="10" y="98" width="300" height="48"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Comment Comment Comment Comment Comment Comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-Ss-D8U">
+                                            <rect key="frame" x="8" y="98" width="300" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="300" id="8D4-gD-PQn"/>
-                                                <constraint firstAttribute="height" constant="48" id="cpg-9i-OzR"/>
+                                                <constraint firstAttribute="height" priority="1" constant="25" id="cpg-9i-OzR"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="highlightedColor"/>
@@ -313,7 +312,9 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="4jC-Ss-D8U" firstAttribute="top" relation="greaterThanOrEqual" secondItem="e2r-Uo-hU1" secondAttribute="top" constant="98" id="JLa-eJ-viT"/>
+                                        <constraint firstItem="4jC-Ss-D8U" firstAttribute="leading" secondItem="e2r-Uo-hU1" secondAttribute="leading" constant="8" id="QUq-5h-PX7"/>
                                         <constraint firstItem="4jC-Ss-D8U" firstAttribute="top" secondItem="3FC-tq-Ld3" secondAttribute="bottom" constant="10" id="kbD-RF-Oaq"/>
+                                        <constraint firstItem="3FC-tq-Ld3" firstAttribute="top" secondItem="e2r-Uo-hU1" secondAttribute="top" constant="48" id="mdE-wT-cy7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1072,7 +1073,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Advanced workouts" id="36"/>
+                    <navigationItem key="navigationItem" title="Advanced swim workouts" id="36"/>
                     <connections>
                         <segue destination="sAc-gA-as4" kind="push" identifier="showWorkout" id="ws0-Bg-6ZN"/>
                     </connections>
@@ -1098,43 +1099,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Len Details" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="N3B-GN-Uzs">
-                                            <rect key="frame" x="10" y="47" width="300" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Len Details" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="N3B-GN-Uzs">
+                                            <rect key="frame" x="8" y="46" width="300" height="21"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="tkE-MG-ul6"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="shadowOffset" width="0.0" height="1"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="Details bl" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ca7-rj-g2W">
-                                            <rect key="frame" x="89" y="13" width="109" height="26"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="26" id="CTl-w2-56f"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
-                                            <color key="textColor" red="0.41176470590000003" green="0.82352941180000006" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="shadowOffset" width="0.0" height="0.0"/>
-                                        </label>
-                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBh-IP-ODL">
-                                            <rect key="frame" x="10" y="12" width="71" height="27"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="27" id="nxF-N1-7ch"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                            <state key="normal" title="Swim">
-                                                <color key="titleColor" red="0.41176470588235292" green="0.82352941176470584" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
-                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvn-c4-EFi">
-                                            <rect key="frame" x="206" y="12" width="104" height="27"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="27" id="yjN-lp-8Ki"/>
-                                            </constraints>
+                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvn-c4-EFi">
+                                            <rect key="frame" x="206" y="8" width="104" height="32"/>
                                             <size key="titleShadowOffset" width="0.0" height="1"/>
                                             <state key="normal">
                                                 <attributedString key="attributedTitle">
@@ -1148,25 +1126,26 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                 </attributedString>
                                             </state>
                                         </button>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-b6-Gbg">
+                                            <rect key="frame" x="8" y="8" width="199" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Swim and details">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="VBh-IP-ODL" firstAttribute="baseline" secondItem="cvn-c4-EFi" secondAttribute="baseline" id="7Hu-88-UjH"/>
-                                        <constraint firstItem="cvn-c4-EFi" firstAttribute="leading" secondItem="Ca7-rj-g2W" secondAttribute="trailing" constant="8" id="Bqb-fU-x5H"/>
-                                        <constraint firstItem="Ca7-rj-g2W" firstAttribute="leading" secondItem="VBh-IP-ODL" secondAttribute="trailing" constant="8" id="FkO-bz-biP"/>
-                                        <constraint firstItem="VBh-IP-ODL" firstAttribute="leading" secondItem="S6k-YA-eRi" secondAttribute="leading" constant="10" id="Tk8-4X-0No"/>
-                                        <constraint firstItem="N3B-GN-Uzs" firstAttribute="leading" secondItem="S6k-YA-eRi" secondAttribute="leading" constant="10" id="WuP-XK-nM1"/>
-                                        <constraint firstItem="N3B-GN-Uzs" firstAttribute="top" secondItem="S6k-YA-eRi" secondAttribute="top" constant="47" id="bUh-aM-d6R"/>
-                                        <constraint firstItem="VBh-IP-ODL" firstAttribute="top" secondItem="S6k-YA-eRi" secondAttribute="top" constant="12" id="jRe-KR-eJM"/>
-                                        <constraint firstItem="VBh-IP-ODL" firstAttribute="baseline" secondItem="Ca7-rj-g2W" secondAttribute="baseline" id="tX2-JR-chm"/>
-                                        <constraint firstAttribute="trailing" secondItem="N3B-GN-Uzs" secondAttribute="trailing" constant="10" id="wlC-R3-QrT"/>
-                                        <constraint firstAttribute="trailing" secondItem="cvn-c4-EFi" secondAttribute="trailing" constant="5" id="xfU-tA-ZqZ"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="activityNameButton" destination="VBh-IP-ODL" id="KMl-18-g2M"/>
-                                    <outlet property="detailsLabel" destination="Ca7-rj-g2W" id="j2o-kb-VBY"/>
                                     <outlet property="lenButton" destination="cvn-c4-EFi" id="Wcm-g5-DLy"/>
                                     <outlet property="lenDetailsLabel" destination="N3B-GN-Uzs" id="cR0-QS-ohU"/>
+                                    <outlet property="swimAndDetailsLabel" destination="ZFd-b6-Gbg" id="vSf-OR-9rp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1416,6 +1395,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ws0-Bg-6ZN"/>
-        <segue reference="Ve1-EM-uNO"/>
+        <segue reference="pwU-Zd-2vO"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -501,6 +501,13 @@
 			name = Design;
 			sourceTree = "<group>";
 		};
+		0EA917D7194DCF730094FEB0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		0EBE1300176383E40051D450 /* Share screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +549,7 @@
 		0EC9FA6D173E9B2600C03DE6 /* Swim A Mile */ = {
 			isa = PBXGroup;
 			children = (
+				0EA917D7194DCF730094FEB0 /* iPad */,
 				0E14ED4F194AED310034B9F5 /* Helper */,
 				0E98E6C11756867300AD5523 /* Design */,
 				0EC9FA94173E9BE500C03DE6 /* Data Model */,
@@ -913,8 +921,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Egor Ovcharenko";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Egor Ovcharenko";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Egor Ovcharenko (7FMPYD4JLS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Egor Ovcharenko (7FMPYD4JLS)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -922,8 +930,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "886427F7-F715-4F52-B5F9-6EA4880F8E75";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "886427F7-F715-4F52-B5F9-6EA4880F8E75";
+				PROVISIONING_PROFILE = "C288EC9A-A6D0-4BF0-BF3B-D301653BD5E9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C288EC9A-A6D0-4BF0-BF3B-D301653BD5E9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -935,11 +943,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruth Workouts/Swim A Mile-Prefix.pch";
 				INFOPLIST_FILE = "Ruth Workouts/Swim A Mile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -949,11 +961,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Egor Ovcharenko (7FMPYD4JLS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Egor Ovcharenko (7FMPYD4JLS)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruth Workouts/Swim A Mile-Prefix.pch";
 				INFOPLIST_FILE = "Ruth Workouts/Swim A Mile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE = "C288EC9A-A6D0-4BF0-BF3B-D301653BD5E9";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

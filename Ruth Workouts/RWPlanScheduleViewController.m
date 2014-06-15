@@ -42,7 +42,7 @@
     self.navigationItem.title = self.plan.name;
     
     // weekdays
-    weekdaysSelected = [plan.weekdaysSelected integerValue];
+    weekdaysSelected = (int)[plan.weekdaysSelected integerValue];
     [self updateButtons];
 
     // next workout date
@@ -58,9 +58,9 @@
     for (Workout* workout in plan.childWorkouts) {
         NSString* workoutName;
         if (workout.dateCompleted != nil) {
-            workoutName = [NSString stringWithFormat:@"%02ld:(Done)%@", [workout.number integerValue], workout.name];
+            workoutName = [NSString stringWithFormat:@"%02ld:(Done)%@", (long)[workout.number integerValue], workout.name];
         } else {
-            workoutName = [NSString stringWithFormat:@"%02ld:%@", [workout.number integerValue], workout.name];
+            workoutName = [NSString stringWithFormat:@"%02ld:%@", (long)[workout.number integerValue], workout.name];
         }
         [workouts addObject:workoutName];
     }

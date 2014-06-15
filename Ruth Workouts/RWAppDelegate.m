@@ -93,10 +93,10 @@
     [[[UIApplication sharedApplication] delegate] window].tintColor = [RWHelper sharedInstance].unrealFoodPills;
     
     // appirater setup
-    [Appirater setDaysUntilPrompt:5];
+    [Appirater setDaysUntilPrompt:10];
     [Appirater setUsesUntilPrompt:10];
     [Appirater setSignificantEventsUntilPrompt:-1];
-    [Appirater setTimeBeforeReminding:5];
+    [Appirater setTimeBeforeReminding:2];
     //[Appirater setDebug:YES];
     
     [Appirater appLaunched:YES];

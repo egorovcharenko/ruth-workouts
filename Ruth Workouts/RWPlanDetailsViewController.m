@@ -296,7 +296,7 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"The %ld button was tapped.", (long)buttonIndex);
+    //NSLog(@"The %ld button was tapped.", (long)buttonIndex);
     if (buttonIndex == 0)
     {
         // plan next training for tomorrow
