@@ -284,12 +284,19 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    int width;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        width = 728;
+    } else {
+        width = 280;
+    }
+    
     Plan* plan = [self getPlan:indexPath];
     int commentLen = 0;
     
     if (plan.desc.length > 0){
         UIFont *detailsFont = [UIFont systemFontOfSize:15];
-        CGRect rect = [self sizeOfLabel:plan.desc maxLabelWidth:280 font:detailsFont];
+        CGRect rect = [self sizeOfLabel:plan.desc maxLabelWidth:width font:detailsFont];
         commentLen = rect.size.height + 82;
     }
     

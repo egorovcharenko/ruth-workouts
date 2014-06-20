@@ -173,15 +173,30 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    int widthComment;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        widthComment = 728;
+    } else {
+        widthComment = 300;
+    }
+    
+    int widthPlan;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        widthPlan = 555;
+    } else {
+        widthPlan = 149;
+    }
+    
+    
     WorkoutVariantEvent* event = [self.fetchResultsController objectAtIndexPath:indexPath];
-    int commentLen = 0;
-    int trainingLen = 0;
+    int commentHeight = 0;
+    int trainingHeight = 0;
     
     
     UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectMake(0, 0, 149, 30);
+    label.frame = CGRectMake(0, 0, widthPlan, 30);
     label.numberOfLines = 0;
-    label.preferredMaxLayoutWidth = 149;
+    label.preferredMaxLayoutWidth = widthPlan;
     Plan* plan = event.parentVariant.parentWorkout.parentPlan;
     NSMutableArray *pairs = [[NSMutableArray alloc] init];
     RWStringStylePair* pair = [[RWStringStylePair alloc] init];
@@ -196,18 +211,23 @@
     label.attributedText = [RWHelper prepareAttributedString:pairs];
     [label sizeToFit];
     
-    trainingLen = label.frame.size.height;
+    trainingHeight = label.frame.size.height;
+    
+    int additionalIpadHeight;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        additionalIpadHeight = 15;
+    } else {
+        additionalIpadHeight = 0;
+    }
     
     if (event.comment.length > 0){
         UIFont *detailsFont = [UIFont systemFontOfSize:14];
-        CGRect rect = [self sizeOfLabel:event.comment maxLabelWidth:300 font:detailsFont];
-        commentLen = rect.size.height;
-        return MAX(trainingLen + 48 + 10 + commentLen + 15, 100);
+        CGRect rect = [self sizeOfLabel:event.comment maxLabelWidth:widthComment font:detailsFont];
+        commentHeight = rect.size.height;
+        return MAX(trainingHeight + 48 + 10 + commentHeight + 15 + additionalIpadHeight, 100);
     } else {
-        return MAX(trainingLen + 48 + 15, 100);
-        
+        return MAX(trainingHeight + 48 + 15, 100);
     }
-    
 }
 
 @end

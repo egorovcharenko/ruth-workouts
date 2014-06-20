@@ -38,8 +38,6 @@
 		0E14ED5F194B4F900034B9F5 /* checkmark-off-grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E14ED5E194B4F900034B9F5 /* checkmark-off-grey@2x.png */; };
 		0E14ED62194B54630034B9F5 /* RWHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14ED61194B54630034B9F5 /* RWHistoryViewController.m */; };
 		0E14ED65194B570B0034B9F5 /* RWEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14ED64194B570B0034B9F5 /* RWEventCell.m */; };
-		0E14ED69194C5CF00034B9F5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E14ED68194C5CF00034B9F5 /* Default.png */; };
-		0E14ED6B194C5DCD0034B9F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E14ED6A194C5DCD0034B9F5 /* Default-568h@2x.png */; };
 		0E14ED6D194C5ED60034B9F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E14ED6C194C5ED60034B9F5 /* Images.xcassets */; };
 		0E19BDD51763A97D0017F351 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E19BDD41763A97D0017F351 /* Social.framework */; };
 		0E19BDD91763BCDA0017F351 /* RWTipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19BDD81763BCDA0017F351 /* RWTipsController.m */; };
@@ -61,6 +59,7 @@
 		0E24ACB41933CB06008DFADA /* RWPlanDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E24ACB31933CB06008DFADA /* RWPlanDetailsViewController.m */; };
 		0E24ACB71933CB2A008DFADA /* RWPlanWorkoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E24ACB61933CB2A008DFADA /* RWPlanWorkoutCell.m */; };
 		0E2C1D121927E4330021B582 /* signal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C1D111927E4330021B582 /* signal@2x.png */; };
+		0E641E9D194DDE3900B6877C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E641E9B194DDE3900B6877C /* MainStoryboard_iPad.storyboard */; };
 		0E8BDD751764C3670051F352 /* send_feedback_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD741764C3670051F352 /* send_feedback_button@2x.png */; };
 		0E8BDD771764C4210051F352 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8BDD761764C4210051F352 /* MessageUI.framework */; };
 		0E8BDD7A1768FDDF0051F352 /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8BDD791768FDDF0051F352 /* workouts.plist */; };
@@ -152,8 +151,6 @@
 		0E14ED61194B54630034B9F5 /* RWHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWHistoryViewController.m; sourceTree = "<group>"; };
 		0E14ED63194B570B0034B9F5 /* RWEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEventCell.h; sourceTree = "<group>"; };
 		0E14ED64194B570B0034B9F5 /* RWEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEventCell.m; sourceTree = "<group>"; };
-		0E14ED68194C5CF00034B9F5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		0E14ED6A194C5DCD0034B9F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0E14ED6C194C5ED60034B9F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Swim A Mile/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		0E19BDD41763A97D0017F351 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0E19BDD71763BCDA0017F351 /* RWTipsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTipsController.h; sourceTree = "<group>"; };
@@ -209,6 +206,7 @@
 		0E24ACB51933CB2A008DFADA /* RWPlanWorkoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPlanWorkoutCell.h; sourceTree = "<group>"; };
 		0E24ACB61933CB2A008DFADA /* RWPlanWorkoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPlanWorkoutCell.m; sourceTree = "<group>"; };
 		0E2C1D111927E4330021B582 /* signal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal@2x.png"; sourceTree = "<group>"; };
+		0E641E9C194DDE3900B6877C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0E8BDD741764C3670051F352 /* send_feedback_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send_feedback_button@2x.png"; sourceTree = "<group>"; };
 		0E8BDD761764C4210051F352 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0E8BDD791768FDDF0051F352 /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
@@ -558,6 +556,7 @@
 				0EC9FA76173E9B2600C03DE6 /* RWAppDelegate.h */,
 				0EC9FA77173E9B2600C03DE6 /* RWAppDelegate.m */,
 				0EC9FA7F173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard */,
+				0E641E9B194DDE3900B6877C /* MainStoryboard_iPad.storyboard */,
 				0E14ED6C194C5ED60034B9F5 /* Images.xcassets */,
 				0EC9FA6E173E9B2600C03DE6 /* Supporting Files */,
 			);
@@ -572,8 +571,6 @@
 				0EC9FA70173E9B2600C03DE6 /* InfoPlist.strings */,
 				0EC9FA73173E9B2600C03DE6 /* main.m */,
 				0EC9FA75173E9B2600C03DE6 /* Swim A Mile-Prefix.pch */,
-				0E14ED68194C5CF00034B9F5 /* Default.png */,
-				0E14ED6A194C5DCD0034B9F5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -733,7 +730,6 @@
 				0E2C1D121927E4330021B582 /* signal@2x.png in Resources */,
 				0EC9FA81173E9B2600C03DE6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				0E98E6C31756867F00AD5523 /* workouts_icon@2x.png in Resources */,
-				0E14ED6B194C5DCD0034B9F5 /* Default-568h@2x.png in Resources */,
 				0EA4F7CF17592F7E0035EF7C /* workouts_icon_selected@2x.png in Resources */,
 				0EA4F7D1175931EF0035EF7C /* tabbar_background@2x.png in Resources */,
 				0EC1CABF175932840042527E /* tabbar_selected@2x.png in Resources */,
@@ -750,7 +746,6 @@
 				0EEF4C111759344400142660 /* tips_icon_selected@2x.png in Resources */,
 				0EEF4C47175A4F9800142660 /* length_button@2x.png in Resources */,
 				0E124F95175A515700A0A5CD /* background@2x.png in Resources */,
-				0E14ED69194C5CF00034B9F5 /* Default.png in Resources */,
 				0E124FA8175B35F300A0A5CD /* orange_button@2x.png in Resources */,
 				0E124FAA175BAB5500A0A5CD /* workouts_old.plist in Resources */,
 				0E124FBE175BC69B00A0A5CD /* blue_button@2x.png in Resources */,
@@ -764,6 +759,7 @@
 				0E19BDDB1763BD3C0017F351 /* tips.plist in Resources */,
 				0E19BDEA176485270017F351 /* glossary.plist in Resources */,
 				0E19BE0B1764ACE00017F351 /* rate_button@2x.png in Resources */,
+				0E641E9D194DDE3900B6877C /* MainStoryboard_iPad.storyboard in Resources */,
 				0E19BE331764B0BF0017F351 /* .gitignore in Resources */,
 				0E19BE351764B0BF0017F351 /* Appirater.podspec in Resources */,
 				0E19BE361764B0BF0017F351 /* AppiraterLocalizable.strings in Resources */,
@@ -856,6 +852,14 @@
 				0E19BE321764B0BF0017F351 /* zh-Hant */,
 			);
 			name = AppiraterLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		0E641E9B194DDE3900B6877C /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E641E9C194DDE3900B6877C /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		0EC9FA70173E9B2600C03DE6 /* InfoPlist.strings */ = {

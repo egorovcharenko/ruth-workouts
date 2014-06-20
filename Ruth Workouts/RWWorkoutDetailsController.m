@@ -179,6 +179,13 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionNumber
 {
+    int repeatSectionOffset;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        repeatSectionOffset = 560;
+    } else {
+        repeatSectionOffset = 120;
+    }
+    
     Section *section = [self getSection:sectionNumber];
     CGFloat width = CGRectGetWidth(self.view.bounds);
     
@@ -207,7 +214,7 @@
     if ([section.repetitions integerValue] > 1) {
         UIFont *repetitionsFont = [UIFont fontWithName:@"HelveticaNeue" size:20];
         
-        UILabel *sectionLength = [[UILabel alloc] initWithFrame:CGRectMake(120, 0, 190, 30)];
+        UILabel *sectionLength = [[UILabel alloc] initWithFrame:CGRectMake(repeatSectionOffset, 0, 190, 30)];
         sectionLength.text = [NSString stringWithFormat:@"repeat %ld times", (long)[section.repetitions integerValue]];
         sectionLength.backgroundColor = [UIColor clearColor];
         sectionLength.textColor = [UIColor colorWithRed:250.0/255.0 green:105.0/255.0 blue:0.0/255.0 alpha:1.0];
@@ -220,12 +227,19 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    int widthComment;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        widthComment = 740;
+    } else {
+        widthComment = 600;
+    }
+    
     SectionActivity* activity = [self getSectionActivity:indexPath];
     int lenDetailsLen = 0;
     
     if (activity.lenDetails.length > 0){
         UIFont *detailsFont = [UIFont systemFontOfSize:14];
-        CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:300 font:detailsFont];
+        CGRect rect = [self sizeOfLabel:activity.lenDetails maxLabelWidth:widthComment font:detailsFont];
         lenDetailsLen = rect.size.height + 47;
     }
     

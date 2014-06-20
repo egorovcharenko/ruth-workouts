@@ -128,10 +128,17 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    int widthComment;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        widthComment = 653;
+    } else {
+        widthComment = 220;
+    }
+    
     GlossaryTermin *termin = [self getGlossaryTermin:indexPath];
     
     UIFont *detailsFont = [UIFont systemFontOfSize:14];
-    CGRect rect = [self sizeOfLabel:termin.definition maxLabelWidth:220 font:detailsFont];
+    CGRect rect = [self sizeOfLabel:termin.definition maxLabelWidth:widthComment font:detailsFont];
     return rect.size.height + 25;
 }
 
