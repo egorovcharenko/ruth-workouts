@@ -231,7 +231,7 @@
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
         widthComment = 740;
     } else {
-        widthComment = 600;
+        widthComment = 300;
     }
     
     SectionActivity* activity = [self getSectionActivity:indexPath];

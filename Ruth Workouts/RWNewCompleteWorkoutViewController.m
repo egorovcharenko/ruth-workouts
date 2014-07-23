@@ -60,7 +60,27 @@
 }
 
 - (IBAction)shareOnFacebook:(id)sender {
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        
+        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [controller setInitialText:[NSString stringWithFormat:@"I've just done the '%@' workout with #swimbikerun, the length was %dm", self.workoutVariant.parentWorkout.name, [self.workoutVariant.length intValue]]];
+        //[controller addURL:[NSURL URLWithString:@"http://www.appcoda.com"]];
+        //[controller addImage:[UIImage imageNamed:@"socialsharing-facebook-image.jpg"]];
+        
+        [self presentViewController:controller animated:YES completion:Nil];
+        
+    } else {
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Facebook is not enabled"
+                                                             message:@"Most likely you don't have any Facebook accounts set up on your device. Just go to Settings to add an account."
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+        [errorAlert show];
+    }
 }
+
+
 - (NSTimeInterval)parseString:(NSString *)input
 {
     NSTimeInterval ti;
@@ -186,6 +206,20 @@
 }
 
 - (IBAction)shareOnTwitter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController
+                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:[NSString stringWithFormat:@"I've just done the '%@' workout with #swimbikerun, the length was %dm", self.workoutVariant.parentWorkout.name, [self.workoutVariant.length intValue]]];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    } else {
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Twitter is not enabled"
+                                                             message:@"Most likely you don't have any Twitter accounts set up on your device. Just go to Settings to add an account."
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+        [errorAlert show];
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

@@ -45,6 +45,10 @@ typedef enum
 // upgrade
 - (void) setCurrentTrainingAtSwimAMileTo: (int) workoutNum datesArray:(NSArray*) datesArray;
 
+// upgrade - add missing plans
+- (void) addMissingPlans;
+-(void) workoutsFill14;
+
 // workouts
 - (NSFetchedResultsController*) getAllDefaultWorkouts;
 - (void) addCompleteWorkoutEvent: (WorkoutVariant*) variant;

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "WorkoutVariant.h"
+#import <Social/Social.h>
+
 
 @interface RWNewCompleteWorkoutViewController : UIViewController <UITextFieldDelegate>
 

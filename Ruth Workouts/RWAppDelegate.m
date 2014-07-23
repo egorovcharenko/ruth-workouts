@@ -86,14 +86,23 @@
         [self firstRun];
     }
     
+    if (![defaults objectForKey:@"firstRun14"])
+    {
+        [defaults setObject:[NSDate date] forKey:@"firstRun14"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self firstRun14];
+    }
+    
     // set background
     //[self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
     
     // set global tint color
+    //if ([[UIView appearance] respondsToSelector:@selector(setTintColor:)]) {
     [[[UIApplication sharedApplication] delegate] window].tintColor = [RWHelper sharedInstance].unrealFoodPills;
+    //}
     
     // appirater setup
-    [Appirater setDaysUntilPrompt:10];
+    [Appirater setDaysUntilPrompt:5];
     [Appirater setUsesUntilPrompt:10];
     [Appirater setSignificantEventsUntilPrompt:-1];
     [Appirater setTimeBeforeReminding:2];
@@ -235,5 +244,21 @@
     // updrage if needed
     [self upgrade:dataController];
 }
+
+- (void) firstRun14
+{
+    RWDataController *dataController = [[RWDataController alloc] initWithAppDelegate:self];
+    [dataController workoutsFill14];
+    
+    // change places - swim a mile and prepare
+    Plan* swimAMilePlan = [dataController getPlanByNum:1];
+    swimAMilePlan.orderInCategory = [NSNumber numberWithInt:1];
+    
+    Plan* preparationForSwimAMile = [dataController getPlanByNum:4];
+    preparationForSwimAMile.orderInCategory = [NSNumber numberWithInt:0];
+    
+    [dataController saveData];
+}
+
 
 @end
